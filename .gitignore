@@ -1,0 +1,49 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+
+# Model files / checkpoints
+*.pkl
+*.pt
+*.pth
+
+# Project config
+CLAUDE.md
+
+.claude/
+
+# Ablation models (keep only base + ReProf)
+models/two_layer.py
+models/no_residual.py
+models/__pycache__/
+
+# Experiment configs (keep only ReProf.json)
+exps/two_layer.json
+exps/no_residual.json
+
+# Logs
+logs/
+日志/
+*.log
+
+# IDE
+.vscode/
+.idea/
+
+# Environment
+.env
+.venv/
+venv/
+
+# Local data (download separately; see data/README.md)
+data/COT-Bench/
+
+# Local paper and experiment-reference files
+实验记录一.md
+cot.pdf
+EMNLP 2026_ReProF Residual Prototype Fusion for Continual LLM Attribution.md
+main.pdf
