@@ -91,7 +91,7 @@ Reproduced experiment logs are archived in `results/`.
 
 ## 👨‍🏫 Acknowledgment
 
-This implementation builds on [PyCIL](https://github.com/G-U-N/PyCIL) and the continual origin tracing benchmark and codebase from [GLPD](https://github.com/lhr01/continual-origin-tracing). We thank their authors for releasing these resources.
+This codebase is built upon [LAMDA-PILOT](https://github.com/LAMDA-CL/LAMDA-PILOT) and the continual origin tracing codebase from [GLPD](https://github.com/lhr01/continual-origin-tracing). We thank their authors for releasing these resources.
 
 ## Citation
 
