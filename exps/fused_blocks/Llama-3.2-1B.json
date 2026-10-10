@@ -1,0 +1,46 @@
+{
+    "prefix": " ",
+    "dataset": [
+        "/home/wangyujie/code/ReProf/data/COT-Bench/abstracts"
+    ],
+    "memory_size": 0,
+    "memory_per_class": 0,
+    "fixed_memory": false,
+    "shuffle": false,
+    "init_cls": 2,
+    "increment": 2,
+    "model_name": "ReProf",
+    "convnet_type": "Llama-3.2-1B",
+    "device": [
+        "7"
+    ],
+    "seed": [
+        1
+    ],
+    "tuned_epoch": [
+        0
+    ],
+    "init_lr": [
+        0.01
+    ],
+    "batch_size": [
+        16
+    ],
+    "weight_decay": 0.05,
+    "min_lr": 1e-08,
+    "use_RP": true,
+    "M": 10000,
+    "K": [
+        1,
+        2,
+        3,
+        4,
+        5
+    ],
+    "fusion_type_list": [
+        "M-F"
+    ],
+    "type": "origin",
+    "method": "svcca",
+    "recalculate": false
+}

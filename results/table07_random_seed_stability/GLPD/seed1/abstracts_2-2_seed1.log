@@ -1,0 +1,373 @@
+2024-12-25 05:11:03,750 [trainer.py] => config: ./exps/ranpac_simplecil.json
+2024-12-25 05:11:03,750 [trainer.py] => prefix:  
+2024-12-25 05:11:03,750 [trainer.py] => dataset: COT-Bench/abstracts
+2024-12-25 05:11:03,750 [trainer.py] => memory_size: 0
+2024-12-25 05:11:03,750 [trainer.py] => memory_per_class: 0
+2024-12-25 05:11:03,750 [trainer.py] => fixed_memory: False
+2024-12-25 05:11:03,750 [trainer.py] => shuffle: False
+2024-12-25 05:11:03,750 [trainer.py] => init_cls: 2
+2024-12-25 05:11:03,750 [trainer.py] => increment: 2
+2024-12-25 05:11:03,750 [trainer.py] => model_name: ranpac_simplecil
+2024-12-25 05:11:03,750 [trainer.py] => convnet_type: Llama-3.2-1B
+2024-12-25 05:11:03,750 [trainer.py] => device: [device(type='cuda', index=0)]
+2024-12-25 05:11:03,750 [trainer.py] => seed: 1
+2024-12-25 05:11:03,750 [trainer.py] => tuned_epoch: 0
+2024-12-25 05:11:03,750 [trainer.py] => init_lr: 0.01
+2024-12-25 05:11:03,750 [trainer.py] => batch_size: 16
+2024-12-25 05:11:03,750 [trainer.py] => weight_decay: 0.05
+2024-12-25 05:11:03,750 [trainer.py] => min_lr: 1e-08
+2024-12-25 05:11:03,750 [trainer.py] => use_RP: True
+2024-12-25 05:11:03,750 [trainer.py] => M: 10000
+2024-12-25 05:11:04,284 [data_manager.py] => [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]
+2024-12-25 05:11:06,704 [trainer.py] => All params: 1235818496
+2024-12-25 05:11:06,705 [trainer.py] => Trainable params: 1235818496
+2024-12-25 05:11:07,269 [ranpac_simplecil.py] => Learning on 0-2
+2024-12-25 05:14:35,123 [ranpac_simplecil.py] => Optimal lambda: 100000.0
+2024-12-25 05:14:42,500 [ranpac_simplecil.py] => Optimal lambda: 100000.0
+2024-12-25 05:15:24,271 [trainer.py] => No All accuracy.
+2024-12-25 05:15:24,272 [trainer.py] => Stage: {'total': 30000.0, '00-01': 30000.0, 'old': 0, 'new': 30000.0}
+2024-12-25 05:15:24,272 [trainer.py] => 
+Accuracy per class: 
+{'human': 1.0, 'gpt2': 1.0}
+2024-12-25 05:15:24,272 [trainer.py] => Stage Acc and Err per class: {'human': {'human': 1.0, 'gpt2': 0.0}, 'gpt2': {'human': 0.0, 'gpt2': 1.0}}
+2024-12-25 05:15:24,272 [trainer.py] => CNN top1 curve: [100.0]
+2024-12-25 05:15:24,272 [trainer.py] => Average Accuracy (CNN): 100.0
+2024-12-25 05:15:24,272 [trainer.py] => All params: 1235858498
+2024-12-25 05:15:24,273 [trainer.py] => Trainable params: 1235858498
+2024-12-25 05:15:24,274 [ranpac_simplecil.py] => Learning on 2-4
+2024-12-25 05:18:52,992 [ranpac_simplecil.py] => Optimal lambda: 100000.0
+2024-12-25 05:18:59,681 [ranpac_simplecil.py] => Optimal lambda: 100000.0
+2024-12-25 05:19:07,784 [ranpac_simplecil.py] => Optimal lambda: 100000.0
+2024-12-25 05:19:16,360 [ranpac_simplecil.py] => Optimal lambda: 100000.0
+2024-12-25 05:19:25,046 [ranpac_simplecil.py] => Optimal lambda: 100000.0
+2024-12-25 05:19:32,929 [ranpac_simplecil.py] => Optimal lambda: 100000.0
+2024-12-25 05:20:55,418 [trainer.py] => No All accuracy.
+2024-12-25 05:20:55,418 [trainer.py] => Stage: {'total': 30000.0, '00-01': 29500.0, '02-03': 29650.0, 'old': 29500.0, 'new': 29650.0}
+2024-12-25 05:20:55,418 [trainer.py] => 
+Accuracy per class: 
+{'human': 1.0, 'gpt2': 0.9666666666666667, 
+'gpt3': 0.9033333333333333, 'cohere': 0.8733333333333333}
+2024-12-25 05:20:55,418 [trainer.py] => Stage Acc and Err per class: {'human': {'human': 1.0, 'gpt2': 0.0, 'gpt3': 0.0, 'cohere': 0.0}, 'gpt2': {'human': 0.0, 'gpt2': 0.9666666666666667, 'gpt3': 0.006666666666666667, 'cohere': 0.02666666666666667}, 'gpt3': {'human': 0.01, 'gpt2': 0.0, 'gpt3': 0.9033333333333333, 'cohere': 0.08666666666666667}, 'cohere': {'human': 0.01, 'gpt2': 0.0033333333333333335, 'gpt3': 0.11333333333333333, 'cohere': 0.8733333333333333}}
+2024-12-25 05:20:55,418 [trainer.py] => CNN top1 curve: [100.0, 93.58]
+2024-12-25 05:20:55,419 [trainer.py] => Average Accuracy (CNN): 96.78999999999999
+2024-12-25 05:20:55,419 [trainer.py] => All params: 1235978503
+2024-12-25 05:20:55,420 [trainer.py] => Trainable params: 1235978503
+2024-12-25 05:20:55,424 [ranpac_simplecil.py] => Learning on 4-6
+2024-12-25 05:24:23,667 [ranpac_simplecil.py] => Optimal lambda: 100000.0
+2024-12-25 05:24:30,832 [ranpac_simplecil.py] => Optimal lambda: 100000.0
+2024-12-25 05:24:38,427 [ranpac_simplecil.py] => Optimal lambda: 100000.0
+2024-12-25 05:24:46,466 [ranpac_simplecil.py] => Optimal lambda: 100000.0
+2024-12-25 05:24:54,171 [ranpac_simplecil.py] => Optimal lambda: 100000.0
+2024-12-25 05:25:01,681 [ranpac_simplecil.py] => Optimal lambda: 100000.0
+2024-12-25 05:25:09,070 [ranpac_simplecil.py] => Optimal lambda: 100000.0
+2024-12-25 05:25:17,163 [ranpac_simplecil.py] => Optimal lambda: 100000.0
+2024-12-25 05:25:26,132 [ranpac_simplecil.py] => Optimal lambda: 100000.0
+2024-12-25 05:25:40,950 [ranpac_simplecil.py] => Optimal lambda: 100000.0
+2024-12-25 05:27:43,746 [trainer.py] => No All accuracy.
+2024-12-25 05:27:43,746 [trainer.py] => Stage: {'total': 30000.0, '00-01': 29450.0, '02-03': 27450.0, '04-05': 25300.0, 'old': 28850.0, 'new': 25300.0}
+2024-12-25 05:27:43,746 [trainer.py] => 
+Accuracy per class: 
+{'human': 1.0, 'gpt2': 0.9633333333333334, 
+'gpt3': 0.88, 'cohere': 0.78, 
+'chatgpt': 0.9466666666666667, 'cohere-chat': 0.6133333333333333}
+2024-12-25 05:27:43,746 [trainer.py] => Stage Acc and Err per class: {'human': {'human': 1.0, 'gpt2': 0.0, 'gpt3': 0.0, 'cohere': 0.0, 'chatgpt': 0.0, 'cohere-chat': 0.0}, 'gpt2': {'human': 0.0, 'gpt2': 0.9633333333333334, 'gpt3': 0.0033333333333333335, 'cohere': 0.02666666666666667, 'chatgpt': 0.0, 'cohere-chat': 0.006666666666666667}, 'gpt3': {'human': 0.01, 'gpt2': 0.0, 'gpt3': 0.88, 'cohere': 0.06333333333333334, 'chatgpt': 0.006666666666666667, 'cohere-chat': 0.04}, 'cohere': {'human': 0.01, 'gpt2': 0.0033333333333333335, 'gpt3': 0.10666666666666667, 'cohere': 0.78, 'chatgpt': 0.006666666666666667, 'cohere-chat': 0.09333333333333334}, 'chatgpt': {'human': 0.0, 'gpt2': 0.0, 'gpt3': 0.02, 'cohere': 0.0033333333333333335, 'chatgpt': 0.9466666666666667, 'cohere-chat': 0.03}, 'cohere-chat': {'human': 0.0, 'gpt2': 0.01, 'gpt3': 0.12, 'cohere': 0.16, 'chatgpt': 0.09666666666666666, 'cohere-chat': 0.6133333333333333}}
+2024-12-25 05:27:43,747 [trainer.py] => CNN top1 curve: [100.0, 93.58, 86.39]
+2024-12-25 05:27:43,747 [trainer.py] => Average Accuracy (CNN): 93.32333333333332
+2024-12-25 05:27:43,747 [trainer.py] => All params: 1236178512
+2024-12-25 05:27:43,748 [trainer.py] => Trainable params: 1236178512
+2024-12-25 05:27:43,753 [ranpac_simplecil.py] => Learning on 6-8
+2024-12-25 05:31:14,177 [ranpac_simplecil.py] => Optimal lambda: 100000.0
+2024-12-25 05:31:21,224 [ranpac_simplecil.py] => Optimal lambda: 100000.0
+2024-12-25 05:31:29,014 [ranpac_simplecil.py] => Optimal lambda: 100000.0
+2024-12-25 05:31:36,826 [ranpac_simplecil.py] => Optimal lambda: 100000.0
+2024-12-25 05:31:43,834 [ranpac_simplecil.py] => Optimal lambda: 100000.0
+2024-12-25 05:31:51,970 [ranpac_simplecil.py] => Optimal lambda: 100000.0
+2024-12-25 05:31:58,961 [ranpac_simplecil.py] => Optimal lambda: 100000.0
+2024-12-25 05:32:06,809 [ranpac_simplecil.py] => Optimal lambda: 100000.0
+2024-12-25 05:32:13,417 [ranpac_simplecil.py] => Optimal lambda: 100000.0
+2024-12-25 05:32:21,092 [ranpac_simplecil.py] => Optimal lambda: 100000.0
+2024-12-25 05:32:28,303 [ranpac_simplecil.py] => Optimal lambda: 100000.0
+2024-12-25 05:32:36,110 [ranpac_simplecil.py] => Optimal lambda: 100000.0
+2024-12-25 05:32:43,415 [ranpac_simplecil.py] => Optimal lambda: 100000.0
+2024-12-25 05:32:50,995 [ranpac_simplecil.py] => Optimal lambda: 100000.0
+2024-12-25 05:35:34,035 [trainer.py] => No All accuracy.
+2024-12-25 05:35:34,035 [trainer.py] => Stage: {'total': 30000.0, '00-01': 29300.0, '02-03': 27200.0, '04-05': 25050.0, '06-07': 28300.0, 'old': 29800.0, 'new': 28300.0}
+2024-12-25 05:35:34,035 [trainer.py] => 
+Accuracy per class: {'human': 1.0, 'gpt2': 0.9533333333333334, 
+'gpt3': 0.87, 'cohere': 0.7733333333333333, 
+'chatgpt': 0.9366666666666666, 'cohere-chat': 0.6033333333333334, 
+'gpt4': 0.98, 'mpt': 0.9066666666666666}
+2024-12-25 05:35:34,035 [trainer.py] => Stage Acc and Err per class: {'human': {'human': 1.0, 'gpt2': 0.0, 'gpt3': 0.0, 'cohere': 0.0, 'chatgpt': 0.0, 'cohere-chat': 0.0, 'gpt4': 0.0, 'mpt': 0.0}, 'gpt2': {'human': 0.0, 'gpt2': 0.9533333333333334, 'gpt3': 0.006666666666666667, 'cohere': 0.023333333333333334, 'chatgpt': 0.0, 'cohere-chat': 0.006666666666666667, 'gpt4': 0.0, 'mpt': 0.01}, 'gpt3': {'human': 0.01, 'gpt2': 0.0, 'gpt3': 0.87, 'cohere': 0.07, 'chatgpt': 0.006666666666666667, 'cohere-chat': 0.04, 'gpt4': 0.0033333333333333335, 'mpt': 0.0}, 'cohere': {'human': 0.01, 'gpt2': 0.0033333333333333335, 'gpt3': 0.1, 'cohere': 0.7733333333333333, 'chatgpt': 0.006666666666666667, 'cohere-chat': 0.09666666666666666, 'gpt4': 0.0, 'mpt': 0.01}, 'chatgpt': {'human': 0.0, 'gpt2': 0.0, 'gpt3': 0.016666666666666666, 'cohere': 0.006666666666666667, 'chatgpt': 0.9366666666666666, 'cohere-chat': 0.03, 'gpt4': 0.01, 'mpt': 0.0}, 'cohere-chat': {'human': 0.0, 'gpt2': 0.006666666666666667, 'gpt3': 0.12, 'cohere': 0.16333333333333333, 'chatgpt': 0.1, 'cohere-chat': 0.6033333333333334, 'gpt4': 0.0033333333333333335, 'mpt': 0.0033333333333333335}, 'gpt4': {'human': 0.0, 'gpt2': 0.0, 'gpt3': 0.0, 'cohere': 0.0, 'chatgpt': 0.016666666666666666, 'cohere-chat': 0.0033333333333333335, 'gpt4': 0.98, 'mpt': 0.0}, 'mpt': {'human': 0.006666666666666667, 'gpt2': 0.05, 'gpt3': 0.01, 'cohere': 0.02666666666666667, 'chatgpt': 0.0, 'cohere-chat': 0.0, 'gpt4': 0.0, 'mpt': 0.9066666666666666}}
+2024-12-25 05:35:34,035 [trainer.py] => CNN top1 curve: [100.0, 93.58, 86.39, 87.79]
+2024-12-25 05:35:34,035 [trainer.py] => Average Accuracy (CNN): 91.94
+2024-12-25 05:35:34,036 [trainer.py] => All params: 1236458525
+2024-12-25 05:35:34,036 [trainer.py] => Trainable params: 1236458525
+2024-12-25 05:35:34,040 [ranpac_simplecil.py] => Learning on 8-10
+2024-12-25 05:39:03,911 [ranpac_simplecil.py] => Optimal lambda: 100000.0
+2024-12-25 05:39:10,595 [ranpac_simplecil.py] => Optimal lambda: 100000.0
+2024-12-25 05:39:18,371 [ranpac_simplecil.py] => Optimal lambda: 100000.0
+2024-12-25 05:39:26,420 [ranpac_simplecil.py] => Optimal lambda: 100000.0
+2024-12-25 05:39:33,321 [ranpac_simplecil.py] => Optimal lambda: 100000.0
+2024-12-25 05:39:40,821 [ranpac_simplecil.py] => Optimal lambda: 100000.0
+2024-12-25 05:39:48,095 [ranpac_simplecil.py] => Optimal lambda: 100000.0
+2024-12-25 05:39:55,591 [ranpac_simplecil.py] => Optimal lambda: 100000.0
+2024-12-25 05:40:02,938 [ranpac_simplecil.py] => Optimal lambda: 100000.0
+2024-12-25 05:40:10,641 [ranpac_simplecil.py] => Optimal lambda: 100000.0
+2024-12-25 05:40:18,215 [ranpac_simplecil.py] => Optimal lambda: 100000.0
+2024-12-25 05:40:26,141 [ranpac_simplecil.py] => Optimal lambda: 100000.0
+2024-12-25 05:40:32,861 [ranpac_simplecil.py] => Optimal lambda: 100000.0
+2024-12-25 05:40:40,371 [ranpac_simplecil.py] => Optimal lambda: 100000.0
+2024-12-25 05:40:48,063 [ranpac_simplecil.py] => Optimal lambda: 100000.0
+2024-12-25 05:40:55,720 [ranpac_simplecil.py] => Optimal lambda: 100000.0
+2024-12-25 05:41:04,006 [ranpac_simplecil.py] => Optimal lambda: 100000.0
+2024-12-25 05:41:11,349 [ranpac_simplecil.py] => Optimal lambda: 100000.0
+2024-12-25 05:44:35,205 [trainer.py] => No All accuracy.
+2024-12-25 05:44:35,205 [trainer.py] => Stage: {'total': 30000.0, '00-01': 29300.0, '02-03': 26800.0, '04-05': 22200.0, '06-07': 28400.0, '08-09': 27050.0, 'old': 29175.0, 'new': 27050.0}
+2024-12-25 05:44:35,205 [trainer.py] => 
+Accuracy per class: {'human': 1.0, 'gpt2': 0.9533333333333334, 
+'gpt3': 0.8733333333333333, 'cohere': 0.7633333333333333, 
+'chatgpt': 0.8566666666666667, 'cohere-chat': 0.5466666666666666, 
+'gpt4': 0.9833333333333333, 'mpt': 0.91, 
+'mpt-chat': 0.8666666666666667, 'llama-chat': 0.9333333333333333}
+2024-12-25 05:44:35,205 [trainer.py] => Stage Acc and Err per class: {'human': {'human': 1.0, 'gpt2': 0.0, 'gpt3': 0.0, 'cohere': 0.0, 'chatgpt': 0.0, 'cohere-chat': 0.0, 'gpt4': 0.0, 'mpt': 0.0, 'mpt-chat': 0.0, 'llama-chat': 0.0}, 'gpt2': {'human': 0.0, 'gpt2': 0.9533333333333334, 'gpt3': 0.01, 'cohere': 0.02, 'chatgpt': 0.0, 'cohere-chat': 0.006666666666666667, 'gpt4': 0.0, 'mpt': 0.01, 'mpt-chat': 0.0, 'llama-chat': 0.0}, 'gpt3': {'human': 0.01, 'gpt2': 0.0, 'gpt3': 0.8733333333333333, 'cohere': 0.05333333333333334, 'chatgpt': 0.006666666666666667, 'cohere-chat': 0.04, 'gpt4': 0.0033333333333333335, 'mpt': 0.0033333333333333335, 'mpt-chat': 0.0033333333333333335, 'llama-chat': 0.006666666666666667}, 'cohere': {'human': 0.01, 'gpt2': 0.0033333333333333335, 'gpt3': 0.09666666666666666, 'cohere': 0.7633333333333333, 'chatgpt': 0.01, 'cohere-chat': 0.09333333333333334, 'gpt4': 0.0, 'mpt': 0.01, 'mpt-chat': 0.0, 'llama-chat': 0.013333333333333334}, 'chatgpt': {'human': 0.0, 'gpt2': 0.0, 'gpt3': 0.016666666666666666, 'cohere': 0.006666666666666667, 'chatgpt': 0.8566666666666667, 'cohere-chat': 0.016666666666666666, 'gpt4': 0.013333333333333334, 'mpt': 0.0, 'mpt-chat': 0.09, 'llama-chat': 0.0}, 'cohere-chat': {'human': 0.0, 'gpt2': 0.006666666666666667, 'gpt3': 0.13666666666666666, 'cohere': 0.15, 'chatgpt': 0.06, 'cohere-chat': 0.5466666666666666, 'gpt4': 0.0033333333333333335, 'mpt': 0.0033333333333333335, 'mpt-chat': 0.056666666666666664, 'llama-chat': 0.03666666666666667}, 'gpt4': {'human': 0.0, 'gpt2': 0.0, 'gpt3': 0.0, 'cohere': 0.0, 'chatgpt': 0.01, 'cohere-chat': 0.0, 'gpt4': 0.9833333333333333, 'mpt': 0.0, 'mpt-chat': 0.006666666666666667, 'llama-chat': 0.0}, 'mpt': {'human': 0.006666666666666667, 'gpt2': 0.04666666666666667, 'gpt3': 0.006666666666666667, 'cohere': 0.023333333333333334, 'chatgpt': 0.0, 'cohere-chat': 0.0, 'gpt4': 0.0, 'mpt': 0.91, 'mpt-chat': 0.0033333333333333335, 'llama-chat': 0.0033333333333333335}, 'mpt-chat': {'human': 0.0, 'gpt2': 0.0, 'gpt3': 0.0033333333333333335, 'cohere': 0.006666666666666667, 'chatgpt': 0.08, 'cohere-chat': 0.02666666666666667, 'gpt4': 0.016666666666666666, 'mpt': 0.0, 'mpt-chat': 0.8666666666666667, 'llama-chat': 0.0}, 'llama-chat': {'human': 0.0, 'gpt2': 0.0, 'gpt3': 0.0, 'cohere': 0.0, 'chatgpt': 0.056666666666666664, 'cohere-chat': 0.006666666666666667, 'gpt4': 0.0, 'mpt': 0.0, 'mpt-chat': 0.0033333333333333335, 'llama-chat': 0.9333333333333333}}
+2024-12-25 05:44:35,205 [trainer.py] => CNN top1 curve: [100.0, 93.58, 86.39, 87.79, 86.87]
+2024-12-25 05:44:35,205 [trainer.py] => Average Accuracy (CNN): 90.926
+2024-12-25 05:44:35,207 [trainer.py] => All params: 1236818542
+2024-12-25 05:44:35,207 [trainer.py] => Trainable params: 1236818542
+2024-12-25 05:44:35,215 [ranpac_simplecil.py] => Learning on 10-12
+2024-12-25 05:48:05,150 [ranpac_simplecil.py] => Optimal lambda: 100000.0
+2024-12-25 05:48:12,729 [ranpac_simplecil.py] => Optimal lambda: 100000.0
+2024-12-25 05:48:20,298 [ranpac_simplecil.py] => Optimal lambda: 100000.0
+2024-12-25 05:48:27,258 [ranpac_simplecil.py] => Optimal lambda: 100000.0
+2024-12-25 05:48:34,074 [ranpac_simplecil.py] => Optimal lambda: 100000.0
+2024-12-25 05:48:41,323 [ranpac_simplecil.py] => Optimal lambda: 100000.0
+2024-12-25 05:48:48,741 [ranpac_simplecil.py] => Optimal lambda: 100000.0
+2024-12-25 05:48:56,365 [ranpac_simplecil.py] => Optimal lambda: 100000.0
+2024-12-25 05:49:03,930 [ranpac_simplecil.py] => Optimal lambda: 100000.0
+2024-12-25 05:49:11,349 [ranpac_simplecil.py] => Optimal lambda: 100000.0
+2024-12-25 05:49:19,271 [ranpac_simplecil.py] => Optimal lambda: 100000.0
+2024-12-25 05:49:28,014 [ranpac_simplecil.py] => Optimal lambda: 100000.0
+2024-12-25 05:49:35,030 [ranpac_simplecil.py] => Optimal lambda: 100000.0
+2024-12-25 05:49:43,621 [ranpac_simplecil.py] => Optimal lambda: 100000.0
+2024-12-25 05:49:52,042 [ranpac_simplecil.py] => Optimal lambda: 100000.0
+2024-12-25 05:49:59,055 [ranpac_simplecil.py] => Optimal lambda: 100000.0
+2024-12-25 05:50:06,611 [ranpac_simplecil.py] => Optimal lambda: 100000.0
+2024-12-25 05:50:14,786 [ranpac_simplecil.py] => Optimal lambda: 100000.0
+2024-12-25 05:50:21,863 [ranpac_simplecil.py] => Optimal lambda: 100000.0
+2024-12-25 05:50:28,803 [ranpac_simplecil.py] => Optimal lambda: 100000.0
+2024-12-25 05:50:36,420 [ranpac_simplecil.py] => Optimal lambda: 100000.0
+2024-12-25 05:50:44,459 [ranpac_simplecil.py] => Optimal lambda: 100000.0
+2024-12-25 05:54:49,395 [trainer.py] => No All accuracy.
+2024-12-25 05:54:49,396 [trainer.py] => Stage: {'total': 30000.0, '00-01': 29150.0, '02-03': 26600.0, '04-05': 20450.0, '06-07': 27500.0, '08-09': 26750.0, '10-11': 20350.0, 'old': 28680.0, 'new': 20350.0}
+2024-12-25 05:54:49,396 [trainer.py] => 
+Accuracy per class: {'human': 1.0, 'gpt2': 0.9433333333333334, 
+'gpt3': 0.88, 'cohere': 0.7333333333333333, 
+'chatgpt': 0.81, 'cohere-chat': 0.51, 
+'gpt4': 0.9833333333333333, 'mpt': 0.85, 
+'mpt-chat': 0.86, 'llama-chat': 0.92, 
+'mistral': 0.7466666666666667, 'mistral-chat': 0.6033333333333334}
+2024-12-25 05:54:49,396 [trainer.py] => Stage Acc and Err per class: {'human': {'human': 1.0, 'gpt2': 0.0, 'gpt3': 0.0, 'cohere': 0.0, 'chatgpt': 0.0, 'cohere-chat': 0.0, 'gpt4': 0.0, 'mpt': 0.0, 'mpt-chat': 0.0, 'llama-chat': 0.0, 'mistral': 0.0, 'mistral-chat': 0.0}, 'gpt2': {'human': 0.0, 'gpt2': 0.9433333333333334, 'gpt3': 0.006666666666666667, 'cohere': 0.013333333333333334, 'chatgpt': 0.0, 'cohere-chat': 0.0033333333333333335, 'gpt4': 0.0, 'mpt': 0.0033333333333333335, 'mpt-chat': 0.0, 'llama-chat': 0.0, 'mistral': 0.02666666666666667, 'mistral-chat': 0.0033333333333333335}, 'gpt3': {'human': 0.01, 'gpt2': 0.0, 'gpt3': 0.88, 'cohere': 0.056666666666666664, 'chatgpt': 0.006666666666666667, 'cohere-chat': 0.03, 'gpt4': 0.0033333333333333335, 'mpt': 0.0, 'mpt-chat': 0.0033333333333333335, 'llama-chat': 0.006666666666666667, 'mistral': 0.0033333333333333335, 'mistral-chat': 0.0}, 'cohere': {'human': 0.01, 'gpt2': 0.0, 'gpt3': 0.10333333333333333, 'cohere': 0.7333333333333333, 'chatgpt': 0.006666666666666667, 'cohere-chat': 0.08, 'gpt4': 0.0, 'mpt': 0.01, 'mpt-chat': 0.0, 'llama-chat': 0.013333333333333334, 'mistral': 0.023333333333333334, 'mistral-chat': 0.02}, 'chatgpt': {'human': 0.0, 'gpt2': 0.0, 'gpt3': 0.01, 'cohere': 0.0, 'chatgpt': 0.81, 'cohere-chat': 0.006666666666666667, 'gpt4': 0.016666666666666666, 'mpt': 0.0, 'mpt-chat': 0.08, 'llama-chat': 0.0, 'mistral': 0.0, 'mistral-chat': 0.07666666666666666}, 'cohere-chat': {'human': 0.0, 'gpt2': 0.0, 'gpt3': 0.10666666666666667, 'cohere': 0.15, 'chatgpt': 0.03666666666666667, 'cohere-chat': 0.51, 'gpt4': 0.0033333333333333335, 'mpt': 0.006666666666666667, 'mpt-chat': 0.043333333333333335, 'llama-chat': 0.03333333333333333, 'mistral': 0.02, 'mistral-chat': 0.09}, 'gpt4': {'human': 0.0, 'gpt2': 0.0, 'gpt3': 0.0, 'cohere': 0.0, 'chatgpt': 0.006666666666666667, 'cohere-chat': 0.0, 'gpt4': 0.9833333333333333, 'mpt': 0.0, 'mpt-chat': 0.006666666666666667, 'llama-chat': 0.0, 'mistral': 0.0, 'mistral-chat': 0.0033333333333333335}, 'mpt': {'human': 0.0033333333333333335, 'gpt2': 0.03, 'gpt3': 0.006666666666666667, 'cohere': 0.016666666666666666, 'chatgpt': 0.0, 'cohere-chat': 0.0, 'gpt4': 0.0, 'mpt': 0.85, 'mpt-chat': 0.0033333333333333335, 'llama-chat': 0.0033333333333333335, 'mistral': 0.08666666666666667, 'mistral-chat': 0.0}, 'mpt-chat': {'human': 0.0, 'gpt2': 0.0, 'gpt3': 0.0033333333333333335, 'cohere': 0.0, 'chatgpt': 0.06, 'cohere-chat': 0.016666666666666666, 'gpt4': 0.02, 'mpt': 0.0, 'mpt-chat': 0.86, 'llama-chat': 0.0, 'mistral': 0.0, 'mistral-chat': 0.04}, 'llama-chat': {'human': 0.0, 'gpt2': 0.0, 'gpt3': 0.0, 'cohere': 0.0, 'chatgpt': 0.023333333333333334, 'cohere-chat': 0.0033333333333333335, 'gpt4': 0.0, 'mpt': 0.0033333333333333335, 'mpt-chat': 0.0033333333333333335, 'llama-chat': 0.92, 'mistral': 0.0033333333333333335, 'mistral-chat': 0.043333333333333335}, 'mistral': {'human': 0.013333333333333334, 'gpt2': 0.07, 'gpt3': 0.01, 'cohere': 0.06, 'chatgpt': 0.0, 'cohere-chat': 0.016666666666666666, 'gpt4': 0.0033333333333333335, 'mpt': 0.07333333333333333, 'mpt-chat': 0.0, 'llama-chat': 0.0, 'mistral': 0.7466666666666667, 'mistral-chat': 0.006666666666666667}, 'mistral-chat': {'human': 0.0, 'gpt2': 0.0, 'gpt3': 0.03333333333333333, 'cohere': 0.03666666666666667, 'chatgpt': 0.13, 'cohere-chat': 0.06666666666666667, 'gpt4': 0.006666666666666667, 'mpt': 0.0, 'mpt-chat': 0.07666666666666666, 'llama-chat': 0.04666666666666667, 'mistral': 0.0, 'mistral-chat': 0.6033333333333334}}
+2024-12-25 05:54:49,396 [trainer.py] => CNN top1 curve: [100.0, 93.58, 86.39, 87.79, 86.87, 82.0]
+2024-12-25 05:54:49,396 [trainer.py] => Average Accuracy (CNN): 89.43833333333333
+2024-12-25 05:54:49,398 [trainer.py] => All params: 1237258563
+2024-12-25 05:54:49,399 [trainer.py] => Trainable params: 1237258563
+2024-12-25 05:54:49,408 [ranpac_simplecil.py] => Learning on 12-14
+2024-12-25 05:58:19,414 [ranpac_simplecil.py] => Optimal lambda: 100000.0
+2024-12-25 05:58:26,388 [ranpac_simplecil.py] => Optimal lambda: 100000.0
+2024-12-25 05:58:33,547 [ranpac_simplecil.py] => Optimal lambda: 100000.0
+2024-12-25 05:58:41,187 [ranpac_simplecil.py] => Optimal lambda: 100000.0
+2024-12-25 05:58:48,610 [ranpac_simplecil.py] => Optimal lambda: 100000.0
+2024-12-25 05:58:56,311 [ranpac_simplecil.py] => Optimal lambda: 100000.0
+2024-12-25 05:59:04,377 [ranpac_simplecil.py] => Optimal lambda: 100000.0
+2024-12-25 05:59:12,710 [ranpac_simplecil.py] => Optimal lambda: 100000.0
+2024-12-25 05:59:19,952 [ranpac_simplecil.py] => Optimal lambda: 100000.0
+2024-12-25 05:59:27,401 [ranpac_simplecil.py] => Optimal lambda: 100000.0
+2024-12-25 05:59:34,419 [ranpac_simplecil.py] => Optimal lambda: 100000.0
+2024-12-25 05:59:43,927 [ranpac_simplecil.py] => Optimal lambda: 100000.0
+2024-12-25 05:59:51,051 [ranpac_simplecil.py] => Optimal lambda: 100000.0
+2024-12-25 05:59:58,907 [ranpac_simplecil.py] => Optimal lambda: 100000.0
+2024-12-25 06:00:06,811 [ranpac_simplecil.py] => Optimal lambda: 100000.0
+2024-12-25 06:00:14,272 [ranpac_simplecil.py] => Optimal lambda: 100000.0
+2024-12-25 06:00:20,727 [ranpac_simplecil.py] => Optimal lambda: 100000.0
+2024-12-25 06:00:28,301 [ranpac_simplecil.py] => Optimal lambda: 100000.0
+2024-12-25 06:00:36,153 [ranpac_simplecil.py] => Optimal lambda: 100000.0
+2024-12-25 06:00:43,111 [ranpac_simplecil.py] => Optimal lambda: 100000.0
+2024-12-25 06:00:50,795 [ranpac_simplecil.py] => Optimal lambda: 100000.0
+2024-12-25 06:00:57,270 [ranpac_simplecil.py] => Optimal lambda: 100000.0
+2024-12-25 06:01:05,720 [ranpac_simplecil.py] => Optimal lambda: 100000.0
+2024-12-25 06:01:12,575 [ranpac_simplecil.py] => Optimal lambda: 100000.0
+2024-12-25 06:01:20,381 [ranpac_simplecil.py] => Optimal lambda: 100000.0
+2024-12-25 06:01:27,727 [ranpac_simplecil.py] => Optimal lambda: 100000.0
+2024-12-25 06:06:14,124 [trainer.py] => No All accuracy.
+2024-12-25 06:06:14,124 [trainer.py] => Stage: {'total': 30000.0, '00-01': 29100.0, '02-03': 26650.0, '04-05': 20100.0, '06-07': 27550.0, '08-09': 26400.0, '10-11': 20550.0, '12-13': 29800.0, 'old': 29975.0, 'new': 29800.0}
+2024-12-25 06:06:14,124 [trainer.py] => 
+Accuracy per class: {'human': 1.0, 'gpt2': 0.94, 
+'gpt3': 0.88, 'cohere': 0.7366666666666667, 
+'chatgpt': 0.81, 'cohere-chat': 0.4866666666666667, 
+'gpt4': 0.9866666666666667, 'mpt': 0.85, 
+'mpt-chat': 0.8466666666666667, 'llama-chat': 0.91, 
+'mistral': 0.74, 'mistral-chat': 0.6233333333333333, 
+'gemini-pro': 0.9966666666666667, 'glm-4-plus': 0.99}
+2024-12-25 06:06:14,125 [trainer.py] => Stage Acc and Err per class: {'human': {'human': 1.0, 'gpt2': 0.0, 'gpt3': 0.0, 'cohere': 0.0, 'chatgpt': 0.0, 'cohere-chat': 0.0, 'gpt4': 0.0, 'mpt': 0.0, 'mpt-chat': 0.0, 'llama-chat': 0.0, 'mistral': 0.0, 'mistral-chat': 0.0, 'gemini-pro': 0.0, 'glm-4-plus': 0.0}, 'gpt2': {'human': 0.0, 'gpt2': 0.94, 'gpt3': 0.006666666666666667, 'cohere': 0.016666666666666666, 'chatgpt': 0.0, 'cohere-chat': 0.0, 'gpt4': 0.0, 'mpt': 0.0033333333333333335, 'mpt-chat': 0.0, 'llama-chat': 0.0, 'mistral': 0.02666666666666667, 'mistral-chat': 0.006666666666666667, 'gemini-pro': 0.0, 'glm-4-plus': 0.0}, 'gpt3': {'human': 0.01, 'gpt2': 0.0, 'gpt3': 0.88, 'cohere': 0.06, 'chatgpt': 0.006666666666666667, 'cohere-chat': 0.02666666666666667, 'gpt4': 0.0033333333333333335, 'mpt': 0.0, 'mpt-chat': 0.0033333333333333335, 'llama-chat': 0.006666666666666667, 'mistral': 0.0033333333333333335, 'mistral-chat': 0.0, 'gemini-pro': 0.0, 'glm-4-plus': 0.0}, 'cohere': {'human': 0.01, 'gpt2': 0.0, 'gpt3': 0.1, 'cohere': 0.7366666666666667, 'chatgpt': 0.0033333333333333335, 'cohere-chat': 0.08, 'gpt4': 0.0, 'mpt': 0.01, 'mpt-chat': 0.0, 'llama-chat': 0.013333333333333334, 'mistral': 0.02, 'mistral-chat': 0.023333333333333334, 'gemini-pro': 0.0033333333333333335, 'glm-4-plus': 0.0}, 'chatgpt': {'human': 0.0, 'gpt2': 0.0, 'gpt3': 0.01, 'cohere': 0.0, 'chatgpt': 0.81, 'cohere-chat': 0.01, 'gpt4': 0.016666666666666666, 'mpt': 0.0, 'mpt-chat': 0.08, 'llama-chat': 0.0, 'mistral': 0.0, 'mistral-chat': 0.07, 'gemini-pro': 0.0033333333333333335, 'glm-4-plus': 0.0}, 'cohere-chat': {'human': 0.0, 'gpt2': 0.0, 'gpt3': 0.11, 'cohere': 0.16333333333333333, 'chatgpt': 0.03333333333333333, 'cohere-chat': 0.4866666666666667, 'gpt4': 0.0033333333333333335, 'mpt': 0.006666666666666667, 'mpt-chat': 0.05333333333333334, 'llama-chat': 0.03666666666666667, 'mistral': 0.016666666666666666, 'mistral-chat': 0.09, 'gemini-pro': 0.0, 'glm-4-plus': 0.0}, 'gpt4': {'human': 0.0, 'gpt2': 0.0, 'gpt3': 0.0, 'cohere': 0.0, 'chatgpt': 0.006666666666666667, 'cohere-chat': 0.0, 'gpt4': 0.9866666666666667, 'mpt': 0.0, 'mpt-chat': 0.006666666666666667, 'llama-chat': 0.0, 'mistral': 0.0, 'mistral-chat': 0.0, 'gemini-pro': 0.0, 'glm-4-plus': 0.0}, 'mpt': {'human': 0.0033333333333333335, 'gpt2': 0.03, 'gpt3': 0.006666666666666667, 'cohere': 0.016666666666666666, 'chatgpt': 0.0, 'cohere-chat': 0.0, 'gpt4': 0.0, 'mpt': 0.85, 'mpt-chat': 0.0033333333333333335, 'llama-chat': 0.0033333333333333335, 'mistral': 0.08666666666666667, 'mistral-chat': 0.0, 'gemini-pro': 0.0, 'glm-4-plus': 0.0}, 'mpt-chat': {'human': 0.0, 'gpt2': 0.0, 'gpt3': 0.0033333333333333335, 'cohere': 0.0, 'chatgpt': 0.06333333333333334, 'cohere-chat': 0.02, 'gpt4': 0.023333333333333334, 'mpt': 0.0, 'mpt-chat': 0.8466666666666667, 'llama-chat': 0.0, 'mistral': 0.0, 'mistral-chat': 0.043333333333333335, 'gemini-pro': 0.0, 'glm-4-plus': 0.0}, 'llama-chat': {'human': 0.0, 'gpt2': 0.0, 'gpt3': 0.0, 'cohere': 0.0, 'chatgpt': 0.023333333333333334, 'cohere-chat': 0.0033333333333333335, 'gpt4': 0.0033333333333333335, 'mpt': 0.0033333333333333335, 'mpt-chat': 0.0033333333333333335, 'llama-chat': 0.91, 'mistral': 0.0033333333333333335, 'mistral-chat': 0.04666666666666667, 'gemini-pro': 0.0, 'glm-4-plus': 0.0033333333333333335}, 'mistral': {'human': 0.013333333333333334, 'gpt2': 0.07, 'gpt3': 0.016666666666666666, 'cohere': 0.07, 'chatgpt': 0.0, 'cohere-chat': 0.01, 'gpt4': 0.0033333333333333335, 'mpt': 0.07, 'mpt-chat': 0.0, 'llama-chat': 0.0, 'mistral': 0.74, 'mistral-chat': 0.006666666666666667, 'gemini-pro': 0.0, 'glm-4-plus': 0.0}, 'mistral-chat': {'human': 0.0, 'gpt2': 0.0, 'gpt3': 0.03666666666666667, 'cohere': 0.02666666666666667, 'chatgpt': 0.11333333333333333, 'cohere-chat': 0.06666666666666667, 'gpt4': 0.006666666666666667, 'mpt': 0.0, 'mpt-chat': 0.08, 'llama-chat': 0.04666666666666667, 'mistral': 0.0, 'mistral-chat': 0.6233333333333333, 'gemini-pro': 0.0, 'glm-4-plus': 0.0}, 'gemini-pro': {'human': 0.0, 'gpt2': 0.0, 'gpt3': 0.0, 'cohere': 0.0, 'chatgpt': 0.0, 'cohere-chat': 0.0, 'gpt4': 0.0033333333333333335, 'mpt': 0.0, 'mpt-chat': 0.0, 'llama-chat': 0.0, 'mistral': 0.0, 'mistral-chat': 0.0, 'gemini-pro': 0.9966666666666667, 'glm-4-plus': 0.0}, 'glm-4-plus': {'human': 0.0, 'gpt2': 0.0, 'gpt3': 0.0033333333333333335, 'cohere': 0.0, 'chatgpt': 0.0, 'cohere-chat': 0.0, 'gpt4': 0.0033333333333333335, 'mpt': 0.0, 'mpt-chat': 0.0, 'llama-chat': 0.0033333333333333335, 'mistral': 0.0, 'mistral-chat': 0.0, 'gemini-pro': 0.0, 'glm-4-plus': 0.99}}
+2024-12-25 06:06:14,125 [trainer.py] => CNN top1 curve: [100.0, 93.58, 86.39, 87.79, 86.87, 82.0, 84.26]
+2024-12-25 06:06:14,125 [trainer.py] => Average Accuracy (CNN): 88.69857142857143
+2024-12-25 06:06:14,127 [trainer.py] => All params: 1237778588
+2024-12-25 06:06:14,128 [trainer.py] => Trainable params: 1237778588
+2024-12-25 06:06:14,138 [ranpac_simplecil.py] => Learning on 14-16
+2024-12-25 06:09:43,586 [ranpac_simplecil.py] => Optimal lambda: 100000.0
+2024-12-25 06:09:50,907 [ranpac_simplecil.py] => Optimal lambda: 100000.0
+2024-12-25 06:09:57,259 [ranpac_simplecil.py] => Optimal lambda: 100000.0
+2024-12-25 06:10:05,280 [ranpac_simplecil.py] => Optimal lambda: 100000.0
+2024-12-25 06:10:12,504 [ranpac_simplecil.py] => Optimal lambda: 100000.0
+2024-12-25 06:10:20,050 [ranpac_simplecil.py] => Optimal lambda: 100000.0
+2024-12-25 06:10:26,930 [ranpac_simplecil.py] => Optimal lambda: 100000.0
+2024-12-25 06:10:35,317 [ranpac_simplecil.py] => Optimal lambda: 100000.0
+2024-12-25 06:10:42,752 [ranpac_simplecil.py] => Optimal lambda: 100000.0
+2024-12-25 06:10:50,392 [ranpac_simplecil.py] => Optimal lambda: 100000.0
+2024-12-25 06:10:58,588 [ranpac_simplecil.py] => Optimal lambda: 100000.0
+2024-12-25 06:11:06,319 [ranpac_simplecil.py] => Optimal lambda: 100000.0
+2024-12-25 06:11:15,995 [ranpac_simplecil.py] => Optimal lambda: 100000.0
+2024-12-25 06:11:27,977 [ranpac_simplecil.py] => Optimal lambda: 100000.0
+2024-12-25 06:11:35,791 [ranpac_simplecil.py] => Optimal lambda: 100000.0
+2024-12-25 06:11:43,795 [ranpac_simplecil.py] => Optimal lambda: 100000.0
+2024-12-25 06:11:51,804 [ranpac_simplecil.py] => Optimal lambda: 100000.0
+2024-12-25 06:11:59,555 [ranpac_simplecil.py] => Optimal lambda: 100000.0
+2024-12-25 06:12:07,364 [ranpac_simplecil.py] => Optimal lambda: 100000.0
+2024-12-25 06:12:15,109 [ranpac_simplecil.py] => Optimal lambda: 100000.0
+2024-12-25 06:12:22,517 [ranpac_simplecil.py] => Optimal lambda: 100000.0
+2024-12-25 06:12:30,139 [ranpac_simplecil.py] => Optimal lambda: 100000.0
+2024-12-25 06:12:37,551 [ranpac_simplecil.py] => Optimal lambda: 100000.0
+2024-12-25 06:12:46,662 [ranpac_simplecil.py] => Optimal lambda: 100000.0
+2024-12-25 06:12:54,656 [ranpac_simplecil.py] => Optimal lambda: 100000.0
+2024-12-25 06:13:02,014 [ranpac_simplecil.py] => Optimal lambda: 100000.0
+2024-12-25 06:13:10,570 [ranpac_simplecil.py] => Optimal lambda: 100000.0
+2024-12-25 06:13:17,823 [ranpac_simplecil.py] => Optimal lambda: 100000.0
+2024-12-25 06:13:25,011 [ranpac_simplecil.py] => Optimal lambda: 100000.0
+2024-12-25 06:13:33,195 [ranpac_simplecil.py] => Optimal lambda: 100000.0
+2024-12-25 06:18:59,178 [trainer.py] => No All accuracy.
+2024-12-25 06:18:59,179 [trainer.py] => Stage: {'total': 30000.0, '00-01': 29100.0, '02-03': 26500.0, '04-05': 20150.0, '06-07': 27450.0, '08-09': 26550.0, '10-11': 20500.0, '12-13': 28950.0, '14-15': 26500.0, 'old': 29835.71, 'new': 26500.0}
+2024-12-25 06:18:59,179 [trainer.py] => 
+Accuracy per class: 
+{'human': 1.0, 'gpt2': 0.94, 
+'gpt3': 0.88, 'cohere': 0.7333333333333333, 
+'chatgpt': 0.7966666666666666, 'cohere-chat': 0.5, 
+'gpt4': 0.9833333333333333, 'mpt': 0.8466666666666667, 
+'mpt-chat': 0.85, 'llama-chat': 0.9166666666666666, 
+'mistral': 0.7433333333333333, 'mistral-chat': 0.6166666666666667, 
+'gemini-pro': 0.9966666666666667, 'glm-4-plus': 0.9333333333333333, 
+'gpt-4o': 0.85, 'spark-max': 0.78}
+2024-12-25 06:18:59,179 [trainer.py] => Stage Acc and Err per class: {'human': {'human': 1.0, 'gpt2': 0.0, 'gpt3': 0.0, 'cohere': 0.0, 'chatgpt': 0.0, 'cohere-chat': 0.0, 'gpt4': 0.0, 'mpt': 0.0, 'mpt-chat': 0.0, 'llama-chat': 0.0, 'mistral': 0.0, 'mistral-chat': 0.0, 'gemini-pro': 0.0, 'glm-4-plus': 0.0, 'gpt-4o': 0.0, 'spark-max': 0.0}, 'gpt2': {'human': 0.0, 'gpt2': 0.94, 'gpt3': 0.006666666666666667, 'cohere': 0.016666666666666666, 'chatgpt': 0.0, 'cohere-chat': 0.0, 'gpt4': 0.0, 'mpt': 0.0033333333333333335, 'mpt-chat': 0.0, 'llama-chat': 0.0, 'mistral': 0.023333333333333334, 'mistral-chat': 0.01, 'gemini-pro': 0.0, 'glm-4-plus': 0.0, 'gpt-4o': 0.0, 'spark-max': 0.0}, 'gpt3': {'human': 0.01, 'gpt2': 0.0, 'gpt3': 0.88, 'cohere': 0.06, 'chatgpt': 0.006666666666666667, 'cohere-chat': 0.023333333333333334, 'gpt4': 0.0033333333333333335, 'mpt': 0.0, 'mpt-chat': 0.0033333333333333335, 'llama-chat': 0.006666666666666667, 'mistral': 0.0033333333333333335, 'mistral-chat': 0.0033333333333333335, 'gemini-pro': 0.0, 'glm-4-plus': 0.0, 'gpt-4o': 0.0, 'spark-max': 0.0}, 'cohere': {'human': 0.01, 'gpt2': 0.0, 'gpt3': 0.09333333333333334, 'cohere': 0.7333333333333333, 'chatgpt': 0.0, 'cohere-chat': 0.08, 'gpt4': 0.0033333333333333335, 'mpt': 0.01, 'mpt-chat': 0.0, 'llama-chat': 0.013333333333333334, 'mistral': 0.023333333333333334, 'mistral-chat': 0.03, 'gemini-pro': 0.0033333333333333335, 'glm-4-plus': 0.0, 'gpt-4o': 0.0, 'spark-max': 0.0}, 'chatgpt': {'human': 0.0, 'gpt2': 0.0, 'gpt3': 0.013333333333333334, 'cohere': 0.0, 'chatgpt': 0.7966666666666666, 'cohere-chat': 0.013333333333333334, 'gpt4': 0.02, 'mpt': 0.0, 'mpt-chat': 0.08666666666666667, 'llama-chat': 0.0, 'mistral': 0.0, 'mistral-chat': 0.06666666666666667, 'gemini-pro': 0.0033333333333333335, 'glm-4-plus': 0.0, 'gpt-4o': 0.0, 'spark-max': 0.0}, 'cohere-chat': {'human': 0.0, 'gpt2': 0.0, 'gpt3': 0.10333333333333333, 'cohere': 0.15666666666666668, 'chatgpt': 0.03333333333333333, 'cohere-chat': 0.5, 'gpt4': 0.0033333333333333335, 'mpt': 0.0033333333333333335, 'mpt-chat': 0.05333333333333334, 'llama-chat': 0.04, 'mistral': 0.013333333333333334, 'mistral-chat': 0.08666666666666667, 'gemini-pro': 0.0, 'glm-4-plus': 0.0, 'gpt-4o': 0.0033333333333333335, 'spark-max': 0.0033333333333333335}, 'gpt4': {'human': 0.0, 'gpt2': 0.0, 'gpt3': 0.0, 'cohere': 0.0033333333333333335, 'chatgpt': 0.006666666666666667, 'cohere-chat': 0.0, 'gpt4': 0.9833333333333333, 'mpt': 0.0, 'mpt-chat': 0.006666666666666667, 'llama-chat': 0.0, 'mistral': 0.0, 'mistral-chat': 0.0, 'gemini-pro': 0.0, 'glm-4-plus': 0.0, 'gpt-4o': 0.0, 'spark-max': 0.0}, 'mpt': {'human': 0.0033333333333333335, 'gpt2': 0.03, 'gpt3': 0.006666666666666667, 'cohere': 0.016666666666666666, 'chatgpt': 0.0, 'cohere-chat': 0.0033333333333333335, 'gpt4': 0.0, 'mpt': 0.8466666666666667, 'mpt-chat': 0.0033333333333333335, 'llama-chat': 0.0, 'mistral': 0.09, 'mistral-chat': 0.0, 'gemini-pro': 0.0, 'glm-4-plus': 0.0, 'gpt-4o': 0.0, 'spark-max': 0.0}, 'mpt-chat': {'human': 0.0, 'gpt2': 0.0, 'gpt3': 0.0033333333333333335, 'cohere': 0.0, 'chatgpt': 0.06, 'cohere-chat': 0.013333333333333334, 'gpt4': 0.023333333333333334, 'mpt': 0.0, 'mpt-chat': 0.85, 'llama-chat': 0.0, 'mistral': 0.0, 'mistral-chat': 0.043333333333333335, 'gemini-pro': 0.0, 'glm-4-plus': 0.0, 'gpt-4o': 0.0, 'spark-max': 0.006666666666666667}, 'llama-chat': {'human': 0.0, 'gpt2': 0.0, 'gpt3': 0.0, 'cohere': 0.0, 'chatgpt': 0.023333333333333334, 'cohere-chat': 0.0033333333333333335, 'gpt4': 0.0033333333333333335, 'mpt': 0.0, 'mpt-chat': 0.0033333333333333335, 'llama-chat': 0.9166666666666666, 'mistral': 0.0033333333333333335, 'mistral-chat': 0.043333333333333335, 'gemini-pro': 0.0, 'glm-4-plus': 0.0033333333333333335, 'gpt-4o': 0.0, 'spark-max': 0.0}, 'mistral': {'human': 0.013333333333333334, 'gpt2': 0.06666666666666667, 'gpt3': 0.013333333333333334, 'cohere': 0.08, 'chatgpt': 0.0, 'cohere-chat': 0.01, 'gpt4': 0.0033333333333333335, 'mpt': 0.06333333333333334, 'mpt-chat': 0.0, 'llama-chat': 0.0, 'mistral': 0.7433333333333333, 'mistral-chat': 0.006666666666666667, 'gemini-pro': 0.0, 'glm-4-plus': 0.0, 'gpt-4o': 0.0, 'spark-max': 0.0}, 'mistral-chat': {'human': 0.0, 'gpt2': 0.0, 'gpt3': 0.03333333333333333, 'cohere': 0.03333333333333333, 'chatgpt': 0.09666666666666666, 'cohere-chat': 0.06666666666666667, 'gpt4': 0.013333333333333334, 'mpt': 0.0, 'mpt-chat': 0.08333333333333333, 'llama-chat': 0.04666666666666667, 'mistral': 0.0, 'mistral-chat': 0.6166666666666667, 'gemini-pro': 0.0, 'glm-4-plus': 0.0033333333333333335, 'gpt-4o': 0.0033333333333333335, 'spark-max': 0.0033333333333333335}, 'gemini-pro': {'human': 0.0, 'gpt2': 0.0, 'gpt3': 0.0, 'cohere': 0.0, 'chatgpt': 0.0, 'cohere-chat': 0.0, 'gpt4': 0.0033333333333333335, 'mpt': 0.0, 'mpt-chat': 0.0, 'llama-chat': 0.0, 'mistral': 0.0, 'mistral-chat': 0.0, 'gemini-pro': 0.9966666666666667, 'glm-4-plus': 0.0, 'gpt-4o': 0.0, 'spark-max': 0.0}, 'glm-4-plus': {'human': 0.0, 'gpt2': 0.0, 'gpt3': 0.0033333333333333335, 'cohere': 0.0, 'chatgpt': 0.0, 'cohere-chat': 0.0, 'gpt4': 0.0033333333333333335, 'mpt': 0.0, 'mpt-chat': 0.0, 'llama-chat': 0.0033333333333333335, 'mistral': 0.0, 'mistral-chat': 0.0, 'gemini-pro': 0.0, 'glm-4-plus': 0.9333333333333333, 'gpt-4o': 0.02666666666666667, 'spark-max': 0.03}, 'gpt-4o': {'human': 0.0, 'gpt2': 0.0, 'gpt3': 0.0, 'cohere': 0.0, 'chatgpt': 0.0, 'cohere-chat': 0.0, 'gpt4': 0.0033333333333333335, 'mpt': 0.0, 'mpt-chat': 0.0, 'llama-chat': 0.0, 'mistral': 0.0, 'mistral-chat': 0.0, 'gemini-pro': 0.0, 'glm-4-plus': 0.09666666666666666, 'gpt-4o': 0.85, 'spark-max': 0.05}, 'spark-max': {'human': 0.0, 'gpt2': 0.0, 'gpt3': 0.0033333333333333335, 'cohere': 0.0, 'chatgpt': 0.006666666666666667, 'cohere-chat': 0.0, 'gpt4': 0.006666666666666667, 'mpt': 0.0, 'mpt-chat': 0.0, 'llama-chat': 0.0, 'mistral': 0.0, 'mistral-chat': 0.0, 'gemini-pro': 0.0, 'glm-4-plus': 0.11666666666666667, 'gpt-4o': 0.08666666666666667, 'spark-max': 0.78}}
+2024-12-25 06:18:59,179 [trainer.py] => CNN top1 curve: [100.0, 93.58, 86.39, 87.79, 86.87, 82.0, 84.26, 83.54]
+2024-12-25 06:18:59,179 [trainer.py] => Average Accuracy (CNN): 88.05375
+2024-12-25 06:18:59,181 [trainer.py] => All params: 1238378617
+2024-12-25 06:18:59,183 [trainer.py] => Trainable params: 1238378617
+2024-12-25 06:18:59,194 [ranpac_simplecil.py] => Learning on 16-18
+2024-12-25 06:22:29,790 [ranpac_simplecil.py] => Optimal lambda: 100000.0
+2024-12-25 06:22:37,954 [ranpac_simplecil.py] => Optimal lambda: 100000.0
+2024-12-25 06:22:44,590 [ranpac_simplecil.py] => Optimal lambda: 100000.0
+2024-12-25 06:22:53,630 [ranpac_simplecil.py] => Optimal lambda: 100000.0
+2024-12-25 06:23:00,668 [ranpac_simplecil.py] => Optimal lambda: 100000.0
+2024-12-25 06:23:07,962 [ranpac_simplecil.py] => Optimal lambda: 100000.0
+2024-12-25 06:23:15,797 [ranpac_simplecil.py] => Optimal lambda: 100000.0
+2024-12-25 06:23:22,924 [ranpac_simplecil.py] => Optimal lambda: 100000.0
+2024-12-25 06:23:30,689 [ranpac_simplecil.py] => Optimal lambda: 100000.0
+2024-12-25 06:23:38,991 [ranpac_simplecil.py] => Optimal lambda: 100000.0
+2024-12-25 06:23:45,777 [ranpac_simplecil.py] => Optimal lambda: 100000.0
+2024-12-25 06:23:54,145 [ranpac_simplecil.py] => Optimal lambda: 100000.0
+2024-12-25 06:24:01,271 [ranpac_simplecil.py] => Optimal lambda: 100000.0
+2024-12-25 06:24:09,543 [ranpac_simplecil.py] => Optimal lambda: 100000.0
+2024-12-25 06:24:17,717 [ranpac_simplecil.py] => Optimal lambda: 100000.0
+2024-12-25 06:24:26,131 [ranpac_simplecil.py] => Optimal lambda: 100000.0
+2024-12-25 06:24:33,226 [ranpac_simplecil.py] => Optimal lambda: 100000.0
+2024-12-25 06:24:42,803 [ranpac_simplecil.py] => Optimal lambda: 100000.0
+2024-12-25 06:24:49,367 [ranpac_simplecil.py] => Optimal lambda: 100000.0
+2024-12-25 06:24:57,223 [ranpac_simplecil.py] => Optimal lambda: 100000.0
+2024-12-25 06:25:05,610 [ranpac_simplecil.py] => Optimal lambda: 100000.0
+2024-12-25 06:25:15,123 [ranpac_simplecil.py] => Optimal lambda: 100000.0
+2024-12-25 06:25:22,490 [ranpac_simplecil.py] => Optimal lambda: 100000.0
+2024-12-25 06:25:29,267 [ranpac_simplecil.py] => Optimal lambda: 100000.0
+2024-12-25 06:25:37,600 [ranpac_simplecil.py] => Optimal lambda: 100000.0
+2024-12-25 06:25:47,020 [ranpac_simplecil.py] => Optimal lambda: 100000.0
+2024-12-25 06:25:54,434 [ranpac_simplecil.py] => Optimal lambda: 100000.0
+2024-12-25 06:26:02,352 [ranpac_simplecil.py] => Optimal lambda: 100000.0
+2024-12-25 06:26:10,270 [ranpac_simplecil.py] => Optimal lambda: 100000.0
+2024-12-25 06:26:19,026 [ranpac_simplecil.py] => Optimal lambda: 100000.0
+2024-12-25 06:26:26,979 [ranpac_simplecil.py] => Optimal lambda: 100000.0
+2024-12-25 06:26:34,130 [ranpac_simplecil.py] => Optimal lambda: 100000.0
+2024-12-25 06:26:41,818 [ranpac_simplecil.py] => Optimal lambda: 100000.0
+2024-12-25 06:26:49,242 [ranpac_simplecil.py] => Optimal lambda: 100000.0
+2024-12-25 06:32:57,286 [trainer.py] => No All accuracy.
+2024-12-25 06:32:57,286 [trainer.py] => Stage: {'total': 30000.0, '00-01': 29100.0, '02-03': 26450.0, '04-05': 19700.0, '06-07': 27050.0, '08-09': 26300.0, '10-11': 20350.0, '12-13': 28650.0, '14-15': 25400.0, '16-17': 27550.0, 'old': 29512.5, 'new': 27550.0}
+2024-12-25 06:32:57,287 [trainer.py] => 
+Accuracy per class: {'human': 1.0, 'gpt2': 0.94, 
+'gpt3': 0.8833333333333333, 'cohere': 0.7333333333333333, 
+'chatgpt': 0.77, 'cohere-chat': 0.5033333333333333, 
+'gpt4': 0.9566666666666667, 'mpt': 0.8466666666666667, 
+'mpt-chat': 0.84, 'llama-chat': 0.91, 
+'mistral': 0.7433333333333333, 'mistral-chat': 0.6066666666666667, 
+'gemini-pro': 0.9966666666666667, 'glm-4-plus': 0.9133333333333333, 
+'gpt-4o': 0.85, 'spark-max': 0.7233333333333334, 
+'ernie-4.0-turbo': 0.8433333333333334, 'doubao-pro': 0.9933333333333333}
+2024-12-25 06:32:57,287 [trainer.py] => Stage Acc and Err per class: {'human': {'human': 1.0, 'gpt2': 0.0, 'gpt3': 0.0, 'cohere': 0.0, 'chatgpt': 0.0, 'cohere-chat': 0.0, 'gpt4': 0.0, 'mpt': 0.0, 'mpt-chat': 0.0, 'llama-chat': 0.0, 'mistral': 0.0, 'mistral-chat': 0.0, 'gemini-pro': 0.0, 'glm-4-plus': 0.0, 'gpt-4o': 0.0, 'spark-max': 0.0, 'ernie-4.0-turbo': 0.0, 'doubao-pro': 0.0}, 'gpt2': {'human': 0.0, 'gpt2': 0.94, 'gpt3': 0.006666666666666667, 'cohere': 0.016666666666666666, 'chatgpt': 0.0, 'cohere-chat': 0.0, 'gpt4': 0.0, 'mpt': 0.0033333333333333335, 'mpt-chat': 0.0, 'llama-chat': 0.0, 'mistral': 0.023333333333333334, 'mistral-chat': 0.01, 'gemini-pro': 0.0, 'glm-4-plus': 0.0, 'gpt-4o': 0.0, 'spark-max': 0.0, 'ernie-4.0-turbo': 0.0, 'doubao-pro': 0.0}, 'gpt3': {'human': 0.01, 'gpt2': 0.0, 'gpt3': 0.8833333333333333, 'cohere': 0.056666666666666664, 'chatgpt': 0.0033333333333333335, 'cohere-chat': 0.02666666666666667, 'gpt4': 0.0, 'mpt': 0.0, 'mpt-chat': 0.0033333333333333335, 'llama-chat': 0.006666666666666667, 'mistral': 0.006666666666666667, 'mistral-chat': 0.0, 'gemini-pro': 0.0, 'glm-4-plus': 0.0, 'gpt-4o': 0.0, 'spark-max': 0.0, 'ernie-4.0-turbo': 0.0033333333333333335, 'doubao-pro': 0.0}, 'cohere': {'human': 0.01, 'gpt2': 0.0, 'gpt3': 0.09, 'cohere': 0.7333333333333333, 'chatgpt': 0.006666666666666667, 'cohere-chat': 0.07333333333333333, 'gpt4': 0.0033333333333333335, 'mpt': 0.013333333333333334, 'mpt-chat': 0.0, 'llama-chat': 0.013333333333333334, 'mistral': 0.02666666666666667, 'mistral-chat': 0.02666666666666667, 'gemini-pro': 0.0033333333333333335, 'glm-4-plus': 0.0, 'gpt-4o': 0.0, 'spark-max': 0.0, 'ernie-4.0-turbo': 0.0, 'doubao-pro': 0.0}, 'chatgpt': {'human': 0.0, 'gpt2': 0.0, 'gpt3': 0.01, 'cohere': 0.0, 'chatgpt': 0.77, 'cohere-chat': 0.01, 'gpt4': 0.013333333333333334, 'mpt': 0.0, 'mpt-chat': 0.07333333333333333, 'llama-chat': 0.0, 'mistral': 0.0, 'mistral-chat': 0.07, 'gemini-pro': 0.0033333333333333335, 'glm-4-plus': 0.0033333333333333335, 'gpt-4o': 0.0, 'spark-max': 0.0033333333333333335, 'ernie-4.0-turbo': 0.043333333333333335, 'doubao-pro': 0.0}, 'cohere-chat': {'human': 0.0, 'gpt2': 0.0, 'gpt3': 0.11, 'cohere': 0.15, 'chatgpt': 0.03, 'cohere-chat': 0.5033333333333333, 'gpt4': 0.0033333333333333335, 'mpt': 0.0033333333333333335, 'mpt-chat': 0.05, 'llama-chat': 0.04, 'mistral': 0.016666666666666666, 'mistral-chat': 0.07666666666666666, 'gemini-pro': 0.0, 'glm-4-plus': 0.0, 'gpt-4o': 0.0033333333333333335, 'spark-max': 0.0033333333333333335, 'ernie-4.0-turbo': 0.01, 'doubao-pro': 0.0}, 'gpt4': {'human': 0.0, 'gpt2': 0.0, 'gpt3': 0.0, 'cohere': 0.0, 'chatgpt': 0.0033333333333333335, 'cohere-chat': 0.0, 'gpt4': 0.9566666666666667, 'mpt': 0.0, 'mpt-chat': 0.006666666666666667, 'llama-chat': 0.0, 'mistral': 0.0, 'mistral-chat': 0.0033333333333333335, 'gemini-pro': 0.0, 'glm-4-plus': 0.0, 'gpt-4o': 0.0, 'spark-max': 0.0, 'ernie-4.0-turbo': 0.03, 'doubao-pro': 0.0}, 'mpt': {'human': 0.0033333333333333335, 'gpt2': 0.03, 'gpt3': 0.006666666666666667, 'cohere': 0.016666666666666666, 'chatgpt': 0.0, 'cohere-chat': 0.0033333333333333335, 'gpt4': 0.0, 'mpt': 0.8466666666666667, 'mpt-chat': 0.0033333333333333335, 'llama-chat': 0.0, 'mistral': 0.09, 'mistral-chat': 0.0, 'gemini-pro': 0.0, 'glm-4-plus': 0.0, 'gpt-4o': 0.0, 'spark-max': 0.0, 'ernie-4.0-turbo': 0.0, 'doubao-pro': 0.0}, 'mpt-chat': {'human': 0.0, 'gpt2': 0.0, 'gpt3': 0.006666666666666667, 'cohere': 0.0033333333333333335, 'chatgpt': 0.056666666666666664, 'cohere-chat': 0.01, 'gpt4': 0.02, 'mpt': 0.0, 'mpt-chat': 0.84, 'llama-chat': 0.0, 'mistral': 0.0, 'mistral-chat': 0.04, 'gemini-pro': 0.0, 'glm-4-plus': 0.0, 'gpt-4o': 0.0, 'spark-max': 0.0, 'ernie-4.0-turbo': 0.023333333333333334, 'doubao-pro': 0.0}, 'llama-chat': {'human': 0.0, 'gpt2': 0.0, 'gpt3': 0.0, 'cohere': 0.0, 'chatgpt': 0.016666666666666666, 'cohere-chat': 0.0033333333333333335, 'gpt4': 0.0, 'mpt': 0.0, 'mpt-chat': 0.0033333333333333335, 'llama-chat': 0.91, 'mistral': 0.0033333333333333335, 'mistral-chat': 0.043333333333333335, 'gemini-pro': 0.0, 'glm-4-plus': 0.0033333333333333335, 'gpt-4o': 0.0, 'spark-max': 0.0, 'ernie-4.0-turbo': 0.016666666666666666, 'doubao-pro': 0.0}, 'mistral': {'human': 0.013333333333333334, 'gpt2': 0.06666666666666667, 'gpt3': 0.013333333333333334, 'cohere': 0.08333333333333333, 'chatgpt': 0.0, 'cohere-chat': 0.006666666666666667, 'gpt4': 0.0033333333333333335, 'mpt': 0.06333333333333334, 'mpt-chat': 0.0, 'llama-chat': 0.0, 'mistral': 0.7433333333333333, 'mistral-chat': 0.006666666666666667, 'gemini-pro': 0.0, 'glm-4-plus': 0.0, 'gpt-4o': 0.0, 'spark-max': 0.0, 'ernie-4.0-turbo': 0.0, 'doubao-pro': 0.0}, 'mistral-chat': {'human': 0.0, 'gpt2': 0.0, 'gpt3': 0.03333333333333333, 'cohere': 0.03333333333333333, 'chatgpt': 0.09333333333333334, 'cohere-chat': 0.07, 'gpt4': 0.01, 'mpt': 0.0, 'mpt-chat': 0.08, 'llama-chat': 0.04666666666666667, 'mistral': 0.0, 'mistral-chat': 0.6066666666666667, 'gemini-pro': 0.0, 'glm-4-plus': 0.0033333333333333335, 'gpt-4o': 0.0033333333333333335, 'spark-max': 0.0033333333333333335, 'ernie-4.0-turbo': 0.016666666666666666, 'doubao-pro': 0.0}, 'gemini-pro': {'human': 0.0, 'gpt2': 0.0, 'gpt3': 0.0, 'cohere': 0.0, 'chatgpt': 0.0, 'cohere-chat': 0.0, 'gpt4': 0.0033333333333333335, 'mpt': 0.0, 'mpt-chat': 0.0, 'llama-chat': 0.0, 'mistral': 0.0, 'mistral-chat': 0.0, 'gemini-pro': 0.9966666666666667, 'glm-4-plus': 0.0, 'gpt-4o': 0.0, 'spark-max': 0.0, 'ernie-4.0-turbo': 0.0, 'doubao-pro': 0.0}, 'glm-4-plus': {'human': 0.0, 'gpt2': 0.0, 'gpt3': 0.0033333333333333335, 'cohere': 0.0, 'chatgpt': 0.0, 'cohere-chat': 0.0, 'gpt4': 0.0, 'mpt': 0.0, 'mpt-chat': 0.0, 'llama-chat': 0.0033333333333333335, 'mistral': 0.0, 'mistral-chat': 0.0, 'gemini-pro': 0.0, 'glm-4-plus': 0.9133333333333333, 'gpt-4o': 0.02666666666666667, 'spark-max': 0.02, 'ernie-4.0-turbo': 0.03333333333333333, 'doubao-pro': 0.0}, 'gpt-4o': {'human': 0.0, 'gpt2': 0.0, 'gpt3': 0.0, 'cohere': 0.0, 'chatgpt': 0.0, 'cohere-chat': 0.0, 'gpt4': 0.0, 'mpt': 0.0, 'mpt-chat': 0.0, 'llama-chat': 0.0, 'mistral': 0.0, 'mistral-chat': 0.0, 'gemini-pro': 0.0, 'glm-4-plus': 0.09666666666666666, 'gpt-4o': 0.85, 'spark-max': 0.043333333333333335, 'ernie-4.0-turbo': 0.01, 'doubao-pro': 0.0}, 'spark-max': {'human': 0.0, 'gpt2': 0.0, 'gpt3': 0.0033333333333333335, 'cohere': 0.0, 'chatgpt': 0.0033333333333333335, 'cohere-chat': 0.0, 'gpt4': 0.006666666666666667, 'mpt': 0.0, 'mpt-chat': 0.0, 'llama-chat': 0.0, 'mistral': 0.0, 'mistral-chat': 0.0, 'gemini-pro': 0.0, 'glm-4-plus': 0.11333333333333333, 'gpt-4o': 0.07666666666666666, 'spark-max': 0.7233333333333334, 'ernie-4.0-turbo': 0.07333333333333333, 'doubao-pro': 0.0}, 'ernie-4.0-turbo': {'human': 0.0, 'gpt2': 0.0, 'gpt3': 0.0, 'cohere': 0.0, 'chatgpt': 0.06333333333333334, 'cohere-chat': 0.0, 'gpt4': 0.02, 'mpt': 0.0, 'mpt-chat': 0.013333333333333334, 'llama-chat': 0.0, 'mistral': 0.0033333333333333335, 'mistral-chat': 0.01, 'gemini-pro': 0.0, 'glm-4-plus': 0.016666666666666666, 'gpt-4o': 0.0, 'spark-max': 0.03, 'ernie-4.0-turbo': 0.8433333333333334, 'doubao-pro': 0.0}, 'doubao-pro': {'human': 0.0, 'gpt2': 0.0, 'gpt3': 0.0, 'cohere': 0.0, 'chatgpt': 0.0, 'cohere-chat': 0.0, 'gpt4': 0.0033333333333333335, 'mpt': 0.0, 'mpt-chat': 0.0, 'llama-chat': 0.0, 'mistral': 0.0, 'mistral-chat': 0.0, 'gemini-pro': 0.0, 'glm-4-plus': 0.0, 'gpt-4o': 0.0, 'spark-max': 0.0033333333333333335, 'ernie-4.0-turbo': 0.0, 'doubao-pro': 0.9933333333333333}}
+2024-12-25 06:32:57,287 [trainer.py] => CNN top1 curve: [100.0, 93.58, 86.39, 87.79, 86.87, 82.0, 84.26, 83.54, 83.63]
+2024-12-25 06:32:57,287 [trainer.py] => Average Accuracy (CNN): 87.56222222222222
+2024-12-25 06:32:57,288 [trainer.py] => All params: 1239058650
+2024-12-25 06:32:57,289 [trainer.py] => Trainable params: 1239058650
+2024-12-25 06:32:57,297 [ranpac_simplecil.py] => Learning on 18-20
+2024-12-25 06:36:27,673 [ranpac_simplecil.py] => Optimal lambda: 100000.0
+2024-12-25 06:36:36,581 [ranpac_simplecil.py] => Optimal lambda: 100000.0
+2024-12-25 06:36:44,847 [ranpac_simplecil.py] => Optimal lambda: 100000.0
+2024-12-25 06:36:52,340 [ranpac_simplecil.py] => Optimal lambda: 100000.0
+2024-12-25 06:36:59,655 [ranpac_simplecil.py] => Optimal lambda: 100000.0
+2024-12-25 06:37:08,311 [ranpac_simplecil.py] => Optimal lambda: 100000.0
+2024-12-25 06:37:16,561 [ranpac_simplecil.py] => Optimal lambda: 100000.0
+2024-12-25 06:37:24,552 [ranpac_simplecil.py] => Optimal lambda: 100000.0
+2024-12-25 06:37:32,882 [ranpac_simplecil.py] => Optimal lambda: 100000.0
+2024-12-25 06:37:40,658 [ranpac_simplecil.py] => Optimal lambda: 100000.0
+2024-12-25 06:37:47,348 [ranpac_simplecil.py] => Optimal lambda: 100000.0
+2024-12-25 06:37:55,306 [ranpac_simplecil.py] => Optimal lambda: 100000.0
+2024-12-25 06:38:03,274 [ranpac_simplecil.py] => Optimal lambda: 100000.0
+2024-12-25 06:38:11,245 [ranpac_simplecil.py] => Optimal lambda: 100000.0
+2024-12-25 06:38:18,482 [ranpac_simplecil.py] => Optimal lambda: 100000.0
+2024-12-25 06:38:25,971 [ranpac_simplecil.py] => Optimal lambda: 100000.0
+2024-12-25 06:38:33,703 [ranpac_simplecil.py] => Optimal lambda: 100000.0
+2024-12-25 06:38:40,354 [ranpac_simplecil.py] => Optimal lambda: 100000.0
+2024-12-25 06:38:47,938 [ranpac_simplecil.py] => Optimal lambda: 100000.0
+2024-12-25 06:38:55,504 [ranpac_simplecil.py] => Optimal lambda: 100000.0
+2024-12-25 06:39:03,341 [ranpac_simplecil.py] => Optimal lambda: 100000.0
+2024-12-25 06:39:10,247 [ranpac_simplecil.py] => Optimal lambda: 100000.0
+2024-12-25 06:39:18,860 [ranpac_simplecil.py] => Optimal lambda: 100000.0
+2024-12-25 06:39:27,555 [ranpac_simplecil.py] => Optimal lambda: 100000.0
+2024-12-25 06:39:35,811 [ranpac_simplecil.py] => Optimal lambda: 100000.0
+2024-12-25 06:39:43,684 [ranpac_simplecil.py] => Optimal lambda: 100000.0
+2024-12-25 06:39:50,804 [ranpac_simplecil.py] => Optimal lambda: 100000.0
+2024-12-25 06:39:58,488 [ranpac_simplecil.py] => Optimal lambda: 100000.0
+2024-12-25 06:40:05,921 [ranpac_simplecil.py] => Optimal lambda: 100000.0
+2024-12-25 06:40:13,121 [ranpac_simplecil.py] => Optimal lambda: 100000.0
+2024-12-25 06:40:20,715 [ranpac_simplecil.py] => Optimal lambda: 100000.0
+2024-12-25 06:40:28,770 [ranpac_simplecil.py] => Optimal lambda: 100000.0
+2024-12-25 06:40:35,438 [ranpac_simplecil.py] => Optimal lambda: 100000.0
+2024-12-25 06:40:43,291 [ranpac_simplecil.py] => Optimal lambda: 100000.0
+2024-12-25 06:40:51,990 [ranpac_simplecil.py] => Optimal lambda: 100000.0
+2024-12-25 06:40:59,463 [ranpac_simplecil.py] => Optimal lambda: 100000.0
+2024-12-25 06:41:06,827 [ranpac_simplecil.py] => Optimal lambda: 100000.0
+2024-12-25 06:41:15,087 [ranpac_simplecil.py] => Optimal lambda: 100000.0
+2024-12-25 06:48:04,660 [trainer.py] => No All accuracy.
+2024-12-25 06:48:04,660 [trainer.py] => Stage: {'total': 30000.0, '00-01': 29150.0, '02-03': 26600.0, '04-05': 19500.0, '06-07': 27100.0, '08-09': 26000.0, '10-11': 20050.0, '12-13': 26900.0, '14-15': 23950.0, '16-17': 26650.0, '18-19': 26450.0, 'old': 29311.11, 'new': 26450.0}
+2024-12-25 06:48:04,660 [trainer.py] => 
+Accuracy per class: 
+{
+'human': 1.0, 'gpt2': 0.9433333333333334, 
+'gpt3': 0.8866666666666667, 'cohere': 0.74, 
+'chatgpt': 0.7633333333333333, 'cohere-chat': 0.49666666666666665, 
+'gpt4': 0.96, 'mpt': 0.8466666666666667, 
+'mpt-chat': 0.8333333333333334, 'llama-chat': 0.9, 
+'mistral': 0.74, 'mistral-chat': 0.59, 
+'gemini-pro': 0.9966666666666667, 'glm-4-plus': 0.7966666666666666, 
+'gpt-4o': 0.8233333333333334, 'spark-max': 0.6633333333333333, 
+'ernie-4.0-turbo': 0.7833333333333333, 'doubao-pro': 0.9933333333333333, 
+'qwen-plus': 0.8166666666666667, 'deepseek-chat': 0.87
+}
+2024-12-25 06:48:04,661 [trainer.py] => Stage Acc and Err per class: {'human': {'human': 1.0, 'gpt2': 0.0, 'gpt3': 0.0, 'cohere': 0.0, 'chatgpt': 0.0, 'cohere-chat': 0.0, 'gpt4': 0.0, 'mpt': 0.0, 'mpt-chat': 0.0, 'llama-chat': 0.0, 'mistral': 0.0, 'mistral-chat': 0.0, 'gemini-pro': 0.0, 'glm-4-plus': 0.0, 'gpt-4o': 0.0, 'spark-max': 0.0, 'ernie-4.0-turbo': 0.0, 'doubao-pro': 0.0, 'qwen-plus': 0.0, 'deepseek-chat': 0.0}, 'gpt2': {'human': 0.0, 'gpt2': 0.9433333333333334, 'gpt3': 0.006666666666666667, 'cohere': 0.016666666666666666, 'chatgpt': 0.0, 'cohere-chat': 0.0, 'gpt4': 0.0, 'mpt': 0.0033333333333333335, 'mpt-chat': 0.0, 'llama-chat': 0.0, 'mistral': 0.02, 'mistral-chat': 0.01, 'gemini-pro': 0.0, 'glm-4-plus': 0.0, 'gpt-4o': 0.0, 'spark-max': 0.0, 'ernie-4.0-turbo': 0.0, 'doubao-pro': 0.0, 'qwen-plus': 0.0, 'deepseek-chat': 0.0}, 'gpt3': {'human': 0.01, 'gpt2': 0.0, 'gpt3': 0.8866666666666667, 'cohere': 0.05333333333333334, 'chatgpt': 0.0033333333333333335, 'cohere-chat': 0.02666666666666667, 'gpt4': 0.0, 'mpt': 0.0, 'mpt-chat': 0.0033333333333333335, 'llama-chat': 0.006666666666666667, 'mistral': 0.006666666666666667, 'mistral-chat': 0.0, 'gemini-pro': 0.0, 'glm-4-plus': 0.0, 'gpt-4o': 0.0, 'spark-max': 0.0, 'ernie-4.0-turbo': 0.0033333333333333335, 'doubao-pro': 0.0, 'qwen-plus': 0.0, 'deepseek-chat': 0.0}, 'cohere': {'human': 0.01, 'gpt2': 0.0, 'gpt3': 0.09333333333333334, 'cohere': 0.74, 'chatgpt': 0.006666666666666667, 'cohere-chat': 0.06666666666666667, 'gpt4': 0.006666666666666667, 'mpt': 0.01, 'mpt-chat': 0.0, 'llama-chat': 0.013333333333333334, 'mistral': 0.023333333333333334, 'mistral-chat': 0.023333333333333334, 'gemini-pro': 0.0033333333333333335, 'glm-4-plus': 0.0, 'gpt-4o': 0.0033333333333333335, 'spark-max': 0.0, 'ernie-4.0-turbo': 0.0, 'doubao-pro': 0.0, 'qwen-plus': 0.0, 'deepseek-chat': 0.0}, 'chatgpt': {'human': 0.0, 'gpt2': 0.0, 'gpt3': 0.01, 'cohere': 0.0, 'chatgpt': 0.7633333333333333, 'cohere-chat': 0.01, 'gpt4': 0.013333333333333334, 'mpt': 0.0, 'mpt-chat': 0.07333333333333333, 'llama-chat': 0.0, 'mistral': 0.0, 'mistral-chat': 0.07666666666666666, 'gemini-pro': 0.0033333333333333335, 'glm-4-plus': 0.0, 'gpt-4o': 0.0, 'spark-max': 0.0033333333333333335, 'ernie-4.0-turbo': 0.04, 'doubao-pro': 0.0, 'qwen-plus': 0.006666666666666667, 'deepseek-chat': 0.0}, 'cohere-chat': {'human': 0.0, 'gpt2': 0.0033333333333333335, 'gpt3': 0.10666666666666667, 'cohere': 0.14666666666666667, 'chatgpt': 0.03, 'cohere-chat': 0.49666666666666665, 'gpt4': 0.0033333333333333335, 'mpt': 0.0, 'mpt-chat': 0.056666666666666664, 'llama-chat': 0.03333333333333333, 'mistral': 0.016666666666666666, 'mistral-chat': 0.08666666666666667, 'gemini-pro': 0.0, 'glm-4-plus': 0.0, 'gpt-4o': 0.0033333333333333335, 'spark-max': 0.0033333333333333335, 'ernie-4.0-turbo': 0.01, 'doubao-pro': 0.0, 'qwen-plus': 0.0, 'deepseek-chat': 0.0033333333333333335}, 'gpt4': {'human': 0.0, 'gpt2': 0.0, 'gpt3': 0.0, 'cohere': 0.0, 'chatgpt': 0.006666666666666667, 'cohere-chat': 0.0, 'gpt4': 0.96, 'mpt': 0.0, 'mpt-chat': 0.006666666666666667, 'llama-chat': 0.0, 'mistral': 0.0, 'mistral-chat': 0.0, 'gemini-pro': 0.0, 'glm-4-plus': 0.0, 'gpt-4o': 0.0, 'spark-max': 0.0, 'ernie-4.0-turbo': 0.02666666666666667, 'doubao-pro': 0.0, 'qwen-plus': 0.0, 'deepseek-chat': 0.0}, 'mpt': {'human': 0.0033333333333333335, 'gpt2': 0.03, 'gpt3': 0.006666666666666667, 'cohere': 0.016666666666666666, 'chatgpt': 0.0, 'cohere-chat': 0.006666666666666667, 'gpt4': 0.0, 'mpt': 0.8466666666666667, 'mpt-chat': 0.0033333333333333335, 'llama-chat': 0.0, 'mistral': 0.08666666666666667, 'mistral-chat': 0.0, 'gemini-pro': 0.0, 'glm-4-plus': 0.0, 'gpt-4o': 0.0, 'spark-max': 0.0, 'ernie-4.0-turbo': 0.0, 'doubao-pro': 0.0, 'qwen-plus': 0.0, 'deepseek-chat': 0.0}, 'mpt-chat': {'human': 0.0, 'gpt2': 0.0, 'gpt3': 0.006666666666666667, 'cohere': 0.0, 'chatgpt': 0.06, 'cohere-chat': 0.01, 'gpt4': 0.023333333333333334, 'mpt': 0.0, 'mpt-chat': 0.8333333333333334, 'llama-chat': 0.0, 'mistral': 0.0, 'mistral-chat': 0.03666666666666667, 'gemini-pro': 0.0, 'glm-4-plus': 0.0, 'gpt-4o': 0.0, 'spark-max': 0.0, 'ernie-4.0-turbo': 0.023333333333333334, 'doubao-pro': 0.0, 'qwen-plus': 0.006666666666666667, 'deepseek-chat': 0.0}, 'llama-chat': {'human': 0.0, 'gpt2': 0.0, 'gpt3': 0.0, 'cohere': 0.0, 'chatgpt': 0.016666666666666666, 'cohere-chat': 0.0033333333333333335, 'gpt4': 0.0, 'mpt': 0.0, 'mpt-chat': 0.0, 'llama-chat': 0.9, 'mistral': 0.0033333333333333335, 'mistral-chat': 0.05, 'gemini-pro': 0.0, 'glm-4-plus': 0.0033333333333333335, 'gpt-4o': 0.0, 'spark-max': 0.0, 'ernie-4.0-turbo': 0.016666666666666666, 'doubao-pro': 0.0, 'qwen-plus': 0.0, 'deepseek-chat': 0.006666666666666667}, 'mistral': {'human': 0.013333333333333334, 'gpt2': 0.07, 'gpt3': 0.013333333333333334, 'cohere': 0.08, 'chatgpt': 0.0, 'cohere-chat': 0.006666666666666667, 'gpt4': 0.0033333333333333335, 'mpt': 0.06666666666666667, 'mpt-chat': 0.0, 'llama-chat': 0.0, 'mistral': 0.74, 'mistral-chat': 0.006666666666666667, 'gemini-pro': 0.0, 'glm-4-plus': 0.0, 'gpt-4o': 0.0, 'spark-max': 0.0, 'ernie-4.0-turbo': 0.0, 'doubao-pro': 0.0, 'qwen-plus': 0.0, 'deepseek-chat': 0.0}, 'mistral-chat': {'human': 0.0, 'gpt2': 0.0, 'gpt3': 0.043333333333333335, 'cohere': 0.04, 'chatgpt': 0.09, 'cohere-chat': 0.07, 'gpt4': 0.006666666666666667, 'mpt': 0.0, 'mpt-chat': 0.08333333333333333, 'llama-chat': 0.04666666666666667, 'mistral': 0.0, 'mistral-chat': 0.59, 'gemini-pro': 0.0, 'glm-4-plus': 0.0, 'gpt-4o': 0.0033333333333333335, 'spark-max': 0.0, 'ernie-4.0-turbo': 0.016666666666666666, 'doubao-pro': 0.0, 'qwen-plus': 0.0033333333333333335, 'deepseek-chat': 0.006666666666666667}, 'gemini-pro': {'human': 0.0, 'gpt2': 0.0, 'gpt3': 0.0, 'cohere': 0.0, 'chatgpt': 0.0, 'cohere-chat': 0.0, 'gpt4': 0.0033333333333333335, 'mpt': 0.0, 'mpt-chat': 0.0, 'llama-chat': 0.0, 'mistral': 0.0, 'mistral-chat': 0.0, 'gemini-pro': 0.9966666666666667, 'glm-4-plus': 0.0, 'gpt-4o': 0.0, 'spark-max': 0.0, 'ernie-4.0-turbo': 0.0, 'doubao-pro': 0.0, 'qwen-plus': 0.0, 'deepseek-chat': 0.0}, 'glm-4-plus': {'human': 0.0, 'gpt2': 0.0, 'gpt3': 0.0033333333333333335, 'cohere': 0.0, 'chatgpt': 0.0, 'cohere-chat': 0.0, 'gpt4': 0.0, 'mpt': 0.0, 'mpt-chat': 0.0, 'llama-chat': 0.0, 'mistral': 0.0, 'mistral-chat': 0.0, 'gemini-pro': 0.0, 'glm-4-plus': 0.7966666666666666, 'gpt-4o': 0.02, 'spark-max': 0.02, 'ernie-4.0-turbo': 0.03, 'doubao-pro': 0.0, 'qwen-plus': 0.07, 'deepseek-chat': 0.06}, 'gpt-4o': {'human': 0.0, 'gpt2': 0.0, 'gpt3': 0.0, 'cohere': 0.0, 'chatgpt': 0.0, 'cohere-chat': 0.0, 'gpt4': 0.0033333333333333335, 'mpt': 0.0, 'mpt-chat': 0.0, 'llama-chat': 0.0, 'mistral': 0.0, 'mistral-chat': 0.0, 'gemini-pro': 0.0, 'glm-4-plus': 0.09, 'gpt-4o': 0.8233333333333334, 'spark-max': 0.04, 'ernie-4.0-turbo': 0.006666666666666667, 'doubao-pro': 0.0, 'qwen-plus': 0.02666666666666667, 'deepseek-chat': 0.01}, 'spark-max': {'human': 0.0, 'gpt2': 0.0, 'gpt3': 0.0033333333333333335, 'cohere': 0.0, 'chatgpt': 0.0, 'cohere-chat': 0.0, 'gpt4': 0.0033333333333333335, 'mpt': 0.0, 'mpt-chat': 0.0, 'llama-chat': 0.0, 'mistral': 0.0, 'mistral-chat': 0.0033333333333333335, 'gemini-pro': 0.0, 'glm-4-plus': 0.056666666666666664, 'gpt-4o': 0.07, 'spark-max': 0.6633333333333333, 'ernie-4.0-turbo': 0.06666666666666667, 'doubao-pro': 0.0, 'qwen-plus': 0.09333333333333334, 'deepseek-chat': 0.04}, 'ernie-4.0-turbo': {'human': 0.0, 'gpt2': 0.0, 'gpt3': 0.0, 'cohere': 0.0, 'chatgpt': 0.06333333333333334, 'cohere-chat': 0.0, 'gpt4': 0.016666666666666666, 'mpt': 0.0, 'mpt-chat': 0.016666666666666666, 'llama-chat': 0.0, 'mistral': 0.0033333333333333335, 'mistral-chat': 0.0033333333333333335, 'gemini-pro': 0.0, 'glm-4-plus': 0.013333333333333334, 'gpt-4o': 0.0, 'spark-max': 0.02, 'ernie-4.0-turbo': 0.7833333333333333, 'doubao-pro': 0.0, 'qwen-plus': 0.056666666666666664, 'deepseek-chat': 0.023333333333333334}, 'doubao-pro': {'human': 0.0, 'gpt2': 0.0, 'gpt3': 0.0, 'cohere': 0.0, 'chatgpt': 0.0, 'cohere-chat': 0.0, 'gpt4': 0.0033333333333333335, 'mpt': 0.0, 'mpt-chat': 0.0, 'llama-chat': 0.0, 'mistral': 0.0, 'mistral-chat': 0.0, 'gemini-pro': 0.0, 'glm-4-plus': 0.0, 'gpt-4o': 0.0, 'spark-max': 0.0033333333333333335, 'ernie-4.0-turbo': 0.0, 'doubao-pro': 0.9933333333333333, 'qwen-plus': 0.0, 'deepseek-chat': 0.0}, 'qwen-plus': {'human': 0.0, 'gpt2': 0.0, 'gpt3': 0.0, 'cohere': 0.0033333333333333335, 'chatgpt': 0.0, 'cohere-chat': 0.0, 'gpt4': 0.0033333333333333335, 'mpt': 0.0, 'mpt-chat': 0.0, 'llama-chat': 0.0, 'mistral': 0.0, 'mistral-chat': 0.0, 'gemini-pro': 0.0, 'glm-4-plus': 0.043333333333333335, 'gpt-4o': 0.006666666666666667, 'spark-max': 0.016666666666666666, 'ernie-4.0-turbo': 0.08666666666666667, 'doubao-pro': 0.0, 'qwen-plus': 0.8166666666666667, 'deepseek-chat': 0.023333333333333334}, 'deepseek-chat': {'human': 0.0, 'gpt2': 0.0, 'gpt3': 0.0, 'cohere': 0.0, 'chatgpt': 0.0, 'cohere-chat': 0.0, 'gpt4': 0.0, 'mpt': 0.0, 'mpt-chat': 0.0, 'llama-chat': 0.0, 'mistral': 0.0, 'mistral-chat': 0.0, 'gemini-pro': 0.0, 'glm-4-plus': 0.03333333333333333, 'gpt-4o': 0.006666666666666667, 'spark-max': 0.016666666666666666, 'ernie-4.0-turbo': 0.02, 'doubao-pro': 0.0, 'qwen-plus': 0.05333333333333334, 'deepseek-chat': 0.87}}
+2024-12-25 06:48:04,661 [trainer.py] => CNN top1 curve: [100.0, 93.58, 86.39, 87.79, 86.87, 82.0, 84.26, 83.54, 83.63, 82.22]
+2024-12-25 06:48:04,661 [trainer.py] => Average Accuracy (CNN): 87.02799999999999

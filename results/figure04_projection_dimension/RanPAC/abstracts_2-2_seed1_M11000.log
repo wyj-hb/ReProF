@@ -1,0 +1,71 @@
+2026-05-13 05:58:46,700 [merge.py] [joint_name=16] => 输出日志路径：/home/wangyujie/code/mutil_ranpac/logs/merge/Abstracts/11000-ReLU.log
+2026-05-13 05:58:46,887 [merge.py] [joint_name=16] => stage 0, training !!!
+2026-05-13 05:58:49,288 [merge.py] [joint_name=16] => Optimal lambda: 100000.0
+2026-05-13 05:58:49,842 [merge.py] [joint_name=16] => No NME accuracy.
+2026-05-13 05:58:49,842 [merge.py] [joint_name=16] => CNN: {'total': 100.0, '00-01': 100.0, 'old': 0, 'new': 100.0}
+2026-05-13 05:58:49,842 [merge.py] [joint_name=16] => Accuracy per class: {}
+2026-05-13 05:58:49,842 [merge.py] [joint_name=16] => CNN top1 curve: [100.0]
+2026-05-13 05:58:49,842 [merge.py] [joint_name=16] => Average Accuracy (CNN): 100.0
+2026-05-13 05:58:49,842 [merge.py] [joint_name=16] => stage 1, training !!!
+2026-05-13 05:58:51,407 [merge.py] [joint_name=16] => Optimal lambda: 100000.0
+2026-05-13 05:58:51,931 [merge.py] [joint_name=16] => No NME accuracy.
+2026-05-13 05:58:51,931 [merge.py] [joint_name=16] => CNN: {'total': 94.17, '00-01': 98.17, '02-03': 90.17, 'old': 98.17, 'new': 90.17}
+2026-05-13 05:58:51,931 [merge.py] [joint_name=16] => Accuracy per class: {}
+2026-05-13 05:58:51,931 [merge.py] [joint_name=16] => CNN top1 curve: [100.0, 94.17]
+2026-05-13 05:58:51,931 [merge.py] [joint_name=16] => Average Accuracy (CNN): 97.08500000000001
+2026-05-13 05:58:51,931 [merge.py] [joint_name=16] => stage 2, training !!!
+2026-05-13 05:58:53,465 [merge.py] [joint_name=16] => Optimal lambda: 100000.0
+2026-05-13 05:58:53,979 [merge.py] [joint_name=16] => No NME accuracy.
+2026-05-13 05:58:53,979 [merge.py] [joint_name=16] => CNN: {'total': 86.72, '00-01': 97.83, '02-03': 84.5, '04-05': 77.83, 'old': 91.17, 'new': 77.83}
+2026-05-13 05:58:53,979 [merge.py] [joint_name=16] => Accuracy per class: {}
+2026-05-13 05:58:53,979 [merge.py] [joint_name=16] => CNN top1 curve: [100.0, 94.17, 86.72]
+2026-05-13 05:58:53,979 [merge.py] [joint_name=16] => Average Accuracy (CNN): 93.63
+2026-05-13 05:58:53,979 [merge.py] [joint_name=16] => stage 3, training !!!
+2026-05-13 05:58:55,523 [merge.py] [joint_name=16] => Optimal lambda: 100000.0
+2026-05-13 05:58:56,045 [merge.py] [joint_name=16] => No NME accuracy.
+2026-05-13 05:58:56,046 [merge.py] [joint_name=16] => CNN: {'total': 88.17, '00-01': 96.83, '02-03': 84.5, '04-05': 76.17, '06-07': 95.17, 'old': 85.83, 'new': 95.17}
+2026-05-13 05:58:56,046 [merge.py] [joint_name=16] => Accuracy per class: {}
+2026-05-13 05:58:56,046 [merge.py] [joint_name=16] => CNN top1 curve: [100.0, 94.17, 86.72, 88.17]
+2026-05-13 05:58:56,046 [merge.py] [joint_name=16] => Average Accuracy (CNN): 92.265
+2026-05-13 05:58:56,046 [merge.py] [joint_name=16] => stage 4, training !!!
+2026-05-13 05:58:57,603 [merge.py] [joint_name=16] => Optimal lambda: 100000.0
+2026-05-13 05:58:58,117 [merge.py] [joint_name=16] => No NME accuracy.
+2026-05-13 05:58:58,117 [merge.py] [joint_name=16] => CNN: {'total': 87.2, '00-01': 97.33, '02-03': 84.0, '04-05': 70.0, '06-07': 95.33, '08-09': 89.33, 'old': 86.67, 'new': 89.33}
+2026-05-13 05:58:58,117 [merge.py] [joint_name=16] => Accuracy per class: {}
+2026-05-13 05:58:58,117 [merge.py] [joint_name=16] => CNN top1 curve: [100.0, 94.17, 86.72, 88.17, 87.2]
+2026-05-13 05:58:58,117 [merge.py] [joint_name=16] => Average Accuracy (CNN): 91.252
+2026-05-13 05:58:58,117 [merge.py] [joint_name=16] => stage 5, training !!!
+2026-05-13 05:58:59,628 [merge.py] [joint_name=16] => Optimal lambda: 100000.0
+2026-05-13 05:59:00,149 [merge.py] [joint_name=16] => No NME accuracy.
+2026-05-13 05:59:00,150 [merge.py] [joint_name=16] => CNN: {'total': 81.44, '00-01': 95.67, '02-03': 81.33, '04-05': 66.17, '06-07': 92.67, '08-09': 88.83, '10-11': 64.0, 'old': 84.93, 'new': 64.0}
+2026-05-13 05:59:00,150 [merge.py] [joint_name=16] => Accuracy per class: {}
+2026-05-13 05:59:00,150 [merge.py] [joint_name=16] => CNN top1 curve: [100.0, 94.17, 86.72, 88.17, 87.2, 81.44]
+2026-05-13 05:59:00,150 [merge.py] [joint_name=16] => Average Accuracy (CNN): 89.61666666666667
+2026-05-13 05:59:00,150 [merge.py] [joint_name=16] => stage 6, training !!!
+2026-05-13 05:59:01,670 [merge.py] [joint_name=16] => Optimal lambda: 10000.0
+2026-05-13 05:59:02,186 [merge.py] [joint_name=16] => No NME accuracy.
+2026-05-13 05:59:02,187 [merge.py] [joint_name=16] => CNN: {'total': 82.1, '00-01': 91.83, '02-03': 79.67, '04-05': 66.5, '06-07': 88.0, '08-09': 87.17, '10-11': 61.83, '12-13': 99.67, 'old': 79.17, 'new': 99.67}
+2026-05-13 05:59:02,187 [merge.py] [joint_name=16] => Accuracy per class: {}
+2026-05-13 05:59:02,187 [merge.py] [joint_name=16] => CNN top1 curve: [100.0, 94.17, 86.72, 88.17, 87.2, 81.44, 82.1]
+2026-05-13 05:59:02,187 [merge.py] [joint_name=16] => Average Accuracy (CNN): 88.54285714285716
+2026-05-13 05:59:02,187 [merge.py] [joint_name=16] => stage 7, training !!!
+2026-05-13 05:59:03,735 [merge.py] [joint_name=16] => Optimal lambda: 100000.0
+2026-05-13 05:59:04,304 [merge.py] [joint_name=16] => No NME accuracy.
+2026-05-13 05:59:04,304 [merge.py] [joint_name=16] => CNN: {'total': 82.4, '00-01': 95.5, '02-03': 81.67, '04-05': 64.67, '06-07': 92.67, '08-09': 88.33, '10-11': 62.67, '12-13': 96.67, '14-15': 77.0, 'old': 83.17, 'new': 77.0}
+2026-05-13 05:59:04,305 [merge.py] [joint_name=16] => Accuracy per class: {}
+2026-05-13 05:59:04,305 [merge.py] [joint_name=16] => CNN top1 curve: [100.0, 94.17, 86.72, 88.17, 87.2, 81.44, 82.1, 82.4]
+2026-05-13 05:59:04,305 [merge.py] [joint_name=16] => Average Accuracy (CNN): 87.775
+2026-05-13 05:59:04,305 [merge.py] [joint_name=16] => stage 8, training !!!
+2026-05-13 05:59:05,856 [merge.py] [joint_name=16] => Optimal lambda: 100000.0
+2026-05-13 05:59:06,392 [merge.py] [joint_name=16] => No NME accuracy.
+2026-05-13 05:59:06,393 [merge.py] [joint_name=16] => CNN: {'total': 82.35, '00-01': 95.17, '02-03': 82.0, '04-05': 59.83, '06-07': 92.17, '08-09': 88.0, '10-11': 62.17, '12-13': 95.67, '14-15': 73.5, '16-17': 92.67, 'old': 81.06, 'new': 92.67}
+2026-05-13 05:59:06,393 [merge.py] [joint_name=16] => Accuracy per class: {}
+2026-05-13 05:59:06,393 [merge.py] [joint_name=16] => CNN top1 curve: [100.0, 94.17, 86.72, 88.17, 87.2, 81.44, 82.1, 82.4, 82.35]
+2026-05-13 05:59:06,393 [merge.py] [joint_name=16] => Average Accuracy (CNN): 87.17222222222223
+2026-05-13 05:59:06,393 [merge.py] [joint_name=16] => stage 9, training !!!
+2026-05-13 05:59:07,930 [merge.py] [joint_name=16] => Optimal lambda: 100000.0
+2026-05-13 05:59:08,480 [merge.py] [joint_name=16] => No NME accuracy.
+2026-05-13 05:59:08,480 [merge.py] [joint_name=16] => CNN: {'total': 80.87, '00-01': 95.33, '02-03': 81.33, '04-05': 59.67, '06-07': 92.33, '08-09': 88.17, '10-11': 61.83, '12-13': 89.83, '14-15': 70.83, '16-17': 89.67, '18-19': 79.67, 'old': 81.0, 'new': 79.67}
+2026-05-13 05:59:08,480 [merge.py] [joint_name=16] => Accuracy per class: {}
+2026-05-13 05:59:08,480 [merge.py] [joint_name=16] => CNN top1 curve: [100.0, 94.17, 86.72, 88.17, 87.2, 81.44, 82.1, 82.4, 82.35, 80.87]
+2026-05-13 05:59:08,480 [merge.py] [joint_name=16] => Average Accuracy (CNN): 86.542

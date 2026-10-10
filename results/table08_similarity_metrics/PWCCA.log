@@ -1,0 +1,1173 @@
+nohup: ignoring input
+2026-05-18 07:35:10,423 [trainer.py] => config: ./exps/ReProf.json
+2026-05-18 07:35:10,423 [trainer.py] => prefix:  
+2026-05-18 07:35:10,423 [trainer.py] => dataset: /home/wangyujie/code/Baselines/data/COT-Bench/abstracts
+2026-05-18 07:35:10,423 [trainer.py] => memory_size: 0
+2026-05-18 07:35:10,423 [trainer.py] => memory_per_class: 0
+2026-05-18 07:35:10,423 [trainer.py] => fixed_memory: False
+2026-05-18 07:35:10,423 [trainer.py] => shuffle: False
+2026-05-18 07:35:10,423 [trainer.py] => init_cls: 2
+2026-05-18 07:35:10,423 [trainer.py] => increment: 2
+2026-05-18 07:35:10,423 [trainer.py] => model_name: ReProf
+2026-05-18 07:35:10,423 [trainer.py] => convnet_type: Llama-3.2-1B
+2026-05-18 07:35:10,423 [trainer.py] => device: [device(type='cuda', index=3)]
+2026-05-18 07:35:10,423 [trainer.py] => seed: 42
+2026-05-18 07:35:10,423 [trainer.py] => tuned_epoch: [0]
+2026-05-18 07:35:10,423 [trainer.py] => init_lr: 0.01
+2026-05-18 07:35:10,423 [trainer.py] => batch_size: 16
+2026-05-18 07:35:10,423 [trainer.py] => weight_decay: 0.05
+2026-05-18 07:35:10,423 [trainer.py] => group_Num: 2
+2026-05-18 07:35:10,423 [trainer.py] => min_lr: 1e-08
+2026-05-18 07:35:10,423 [trainer.py] => use_RP: True
+2026-05-18 07:35:10,424 [trainer.py] => M: 10000
+2026-05-18 07:35:10,424 [trainer.py] => K: [2]
+2026-05-18 07:35:10,424 [trainer.py] => fusion_type_list: ['M-F']
+2026-05-18 07:35:10,424 [trainer.py] => type: origin
+2026-05-18 07:35:10,424 [trainer.py] => method: pwcca
+2026-05-18 07:35:10,424 [trainer.py] => recalculate: False
+2026-05-18 07:35:10,424 [trainer.py] => merge_type: M-F
+2026-05-18 07:35:10,424 [trainer.py] => dataset_name: abstracts
+2026-05-18 07:35:10,901 [data_manager.py] => [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]
+Some weights of LlamaForSimple were not initialized from the model checkpoint at ../../model/Llama-3.2-1B and are newly initialized: ['score.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+This is for the BaseNet initialization.
+After BaseNet initialization.
+2026-05-18 07:35:15,339 [trainer.py] => All params: 1235818496
+2026-05-18 07:35:15,340 [trainer.py] => Trainable params: 1235818496
+2026-05-18 07:35:15,340 [ReProf.py] => Learning on 0-2
+2026-05-18 07:35:24,083 [ReProf.py] => Stage 1 分组.....
+2026-05-18 07:41:41,201 [ReProf.py] => [[15, 14], [13], [12], [11], [10], [9], [8], [7], [6], [5], [4], [3], [2], [1], [0]]
+2026-05-18 07:41:41,202 [ReProf.py] => groups: [[14], [16, 15]] K: 2
+2026-05-18 07:43:08,827 [ReProf.py] => Optimal lambda: 1000.0
+2026-05-18 07:43:12,950 [ReProf.py] => Optimal lambda: 100000.0
+2026-05-18 07:44:44,746 [trainer.py] => No NME accuracy.
+2026-05-18 07:44:44,747 [trainer.py] => CNN: {'total': 100.0, '00-01': 100.0, 'old': 0, 'new': 100.0}
+2026-05-18 07:44:44,747 [trainer.py] => Accuracy per class: {'human': 1.0, 'gpt2': 1.0}
+2026-05-18 07:44:44,747 [trainer.py] => CNN top1 curve: [100.0]
+Average Accuracy (CNN): 100.0
+2026-05-18 07:44:44,747 [trainer.py] => Average Accuracy (CNN): 100.0
+2026-05-18 07:44:44,747 [trainer.py] => All params: 1235818496
+2026-05-18 07:44:44,748 [trainer.py] => Trainable params: 1235818496
+2026-05-18 07:44:44,757 [ReProf.py] => Learning on 2-4
+2026-05-18 07:52:08,484 [ReProf.py] => Optimal lambda: 10000.0
+2026-05-18 07:52:12,852 [ReProf.py] => Optimal lambda: 100000.0
+2026-05-18 07:55:16,545 [trainer.py] => No NME accuracy.
+2026-05-18 07:55:16,545 [trainer.py] => CNN: {'total': 94.42, '00-01': 97.83, '02-03': 91.0, 'old': 97.83, 'new': 91.0}
+2026-05-18 07:55:16,545 [trainer.py] => Accuracy per class: {'human': 1.0, 'gpt2': 0.9566666666666667, 'gpt3': 0.92, 'cohere': 0.9}
+2026-05-18 07:55:16,545 [trainer.py] => CNN top1 curve: [100.0, 94.42]
+Average Accuracy (CNN): 97.21000000000001
+2026-05-18 07:55:16,545 [trainer.py] => Average Accuracy (CNN): 97.21000000000001
+2026-05-18 07:55:16,546 [trainer.py] => All params: 1235818496
+2026-05-18 07:55:16,546 [trainer.py] => Trainable params: 1235818496
+2026-05-18 07:55:16,556 [ReProf.py] => Learning on 4-6
+2026-05-18 08:02:42,880 [ReProf.py] => Optimal lambda: 1000.0
+2026-05-18 08:02:46,623 [ReProf.py] => Optimal lambda: 100000.0
+2026-05-18 08:07:11,912 [trainer.py] => No NME accuracy.
+2026-05-18 08:07:11,912 [trainer.py] => CNN: {'total': 87.33, '00-01': 97.5, '02-03': 84.0, '04-05': 80.5, 'old': 90.75, 'new': 80.5}
+2026-05-18 08:07:11,912 [trainer.py] => Accuracy per class: {'human': 1.0, 'gpt2': 0.95, 'gpt3': 0.9066666666666666, 'cohere': 0.7733333333333333, 'chatgpt': 0.97, 'cohere-chat': 0.64}
+2026-05-18 08:07:11,912 [trainer.py] => CNN top1 curve: [100.0, 94.42, 87.33]
+Average Accuracy (CNN): 93.91666666666667
+2026-05-18 08:07:11,912 [trainer.py] => Average Accuracy (CNN): 93.91666666666667
+2026-05-18 08:07:11,913 [trainer.py] => All params: 1235818496
+2026-05-18 08:07:11,913 [trainer.py] => Trainable params: 1235818496
+2026-05-18 08:07:11,923 [ReProf.py] => Learning on 6-8
+2026-05-18 08:14:47,293 [ReProf.py] => Optimal lambda: 10000.0
+2026-05-18 08:14:52,407 [ReProf.py] => Optimal lambda: 100000.0
+2026-05-18 08:20:49,594 [trainer.py] => No NME accuracy.
+2026-05-18 08:20:49,598 [trainer.py] => CNN: {'total': 88.75, '00-01': 96.83, '02-03': 84.67, '04-05': 76.5, '06-07': 97.0, 'old': 86.0, 'new': 97.0}
+2026-05-18 08:20:49,598 [trainer.py] => Accuracy per class: {'human': 1.0, 'gpt2': 0.9366666666666666, 'gpt3': 0.91, 'cohere': 0.7833333333333333, 'chatgpt': 0.9566666666666667, 'cohere-chat': 0.5733333333333334, 'gpt4': 1.0, 'mpt': 0.94}
+2026-05-18 08:20:49,598 [trainer.py] => CNN top1 curve: [100.0, 94.42, 87.33, 88.75]
+Average Accuracy (CNN): 92.625
+2026-05-18 08:20:49,598 [trainer.py] => Average Accuracy (CNN): 92.625
+2026-05-18 08:20:49,599 [trainer.py] => All params: 1235818496
+2026-05-18 08:20:49,599 [trainer.py] => Trainable params: 1235818496
+2026-05-18 08:20:49,603 [ReProf.py] => Learning on 8-10
+2026-05-18 08:28:16,528 [ReProf.py] => Optimal lambda: 10000.0
+2026-05-18 08:28:20,639 [ReProf.py] => Optimal lambda: 100000.0
+2026-05-18 08:35:58,336 [trainer.py] => No NME accuracy.
+2026-05-18 08:35:58,336 [trainer.py] => CNN: {'total': 87.1, '00-01': 96.5, '02-03': 84.17, '04-05': 64.83, '06-07': 96.83, '08-09': 93.17, 'old': 85.58, 'new': 93.17}
+2026-05-18 08:35:58,336 [trainer.py] => Accuracy per class: {'human': 1.0, 'gpt2': 0.93, 'gpt3': 0.9033333333333333, 'cohere': 0.78, 'chatgpt': 0.7766666666666666, 'cohere-chat': 0.52, 'gpt4': 1.0, 'mpt': 0.9366666666666666, 'mpt-chat': 0.9166666666666666, 'llama-chat': 0.9466666666666667}
+2026-05-18 08:35:58,336 [trainer.py] => CNN top1 curve: [100.0, 94.42, 87.33, 88.75, 87.1]
+Average Accuracy (CNN): 91.52000000000001
+2026-05-18 08:35:58,336 [trainer.py] => Average Accuracy (CNN): 91.52000000000001
+2026-05-18 08:35:58,337 [trainer.py] => All params: 1235818496
+2026-05-18 08:35:58,337 [trainer.py] => Trainable params: 1235818496
+2026-05-18 08:35:58,341 [ReProf.py] => Learning on 10-12
+2026-05-18 08:45:39,105 [ReProf.py] => Optimal lambda: 10000.0
+2026-05-18 08:45:43,454 [ReProf.py] => Optimal lambda: 100000.0
+2026-05-18 08:57:13,641 [trainer.py] => No NME accuracy.
+2026-05-18 08:57:13,641 [trainer.py] => CNN: {'total': 81.39, '00-01': 94.67, '02-03': 79.5, '04-05': 54.5, '06-07': 93.0, '08-09': 91.0, '10-11': 75.67, 'old': 82.53, 'new': 75.67}
+2026-05-18 08:57:13,641 [trainer.py] => Accuracy per class: {'human': 0.9966666666666667, 'gpt2': 0.8966666666666666, 'gpt3': 0.8733333333333333, 'cohere': 0.7166666666666667, 'chatgpt': 0.6433333333333333, 'cohere-chat': 0.44666666666666666, 'gpt4': 0.9966666666666667, 'mpt': 0.8633333333333333, 'mpt-chat': 0.9066666666666666, 'llama-chat': 0.9133333333333333, 'mistral': 0.8366666666666667, 'mistral-chat': 0.6766666666666666}
+2026-05-18 08:57:13,641 [trainer.py] => CNN top1 curve: [100.0, 94.42, 87.33, 88.75, 87.1, 81.39]
+Average Accuracy (CNN): 89.83166666666666
+2026-05-18 08:57:13,641 [trainer.py] => Average Accuracy (CNN): 89.83166666666666
+2026-05-18 08:57:13,642 [trainer.py] => All params: 1235818496
+2026-05-18 08:57:13,643 [trainer.py] => Trainable params: 1235818496
+2026-05-18 08:57:13,649 [ReProf.py] => Learning on 12-14
+2026-05-18 09:04:41,711 [ReProf.py] => Optimal lambda: 100.0
+2026-05-18 09:04:46,131 [ReProf.py] => Optimal lambda: 10000.0
+2026-05-18 09:15:16,172 [trainer.py] => No NME accuracy.
+2026-05-18 09:15:16,173 [trainer.py] => CNN: {'total': 81.74, '00-01': 87.67, '02-03': 78.33, '04-05': 61.5, '06-07': 84.17, '08-09': 89.0, '10-11': 71.83, '12-13': 99.67, 'old': 78.75, 'new': 99.67}
+2026-05-18 09:15:16,173 [trainer.py] => Accuracy per class: {'human': 0.9833333333333333, 'gpt2': 0.77, 'gpt3': 0.8733333333333333, 'cohere': 0.6933333333333334, 'chatgpt': 0.7333333333333333, 'cohere-chat': 0.49666666666666665, 'gpt4': 0.99, 'mpt': 0.6933333333333334, 'mpt-chat': 0.8866666666666667, 'llama-chat': 0.8933333333333333, 'mistral': 0.7333333333333333, 'mistral-chat': 0.7033333333333334, 'gemini-pro': 1.0, 'glm-4-plus': 0.9933333333333333}
+2026-05-18 09:15:16,173 [trainer.py] => CNN top1 curve: [100.0, 94.42, 87.33, 88.75, 87.1, 81.39, 81.74]
+Average Accuracy (CNN): 88.67571428571429
+2026-05-18 09:15:16,173 [trainer.py] => Average Accuracy (CNN): 88.67571428571429
+2026-05-18 09:15:16,173 [trainer.py] => All params: 1235818496
+2026-05-18 09:15:16,174 [trainer.py] => Trainable params: 1235818496
+2026-05-18 09:15:16,178 [ReProf.py] => Learning on 14-16
+2026-05-18 09:22:52,177 [ReProf.py] => Optimal lambda: 1000.0
+2026-05-18 09:22:56,547 [ReProf.py] => Optimal lambda: 100000.0
+2026-05-18 09:34:30,783 [trainer.py] => No NME accuracy.
+2026-05-18 09:34:30,784 [trainer.py] => CNN: {'total': 83.33, '00-01': 92.33, '02-03': 80.33, '04-05': 57.67, '06-07': 93.17, '08-09': 89.83, '10-11': 75.5, '12-13': 95.5, '14-15': 82.33, 'old': 83.48, 'new': 82.33}
+2026-05-18 09:34:30,784 [trainer.py] => Accuracy per class: {'human': 0.9933333333333333, 'gpt2': 0.8533333333333334, 'gpt3': 0.88, 'cohere': 0.7266666666666667, 'chatgpt': 0.6866666666666666, 'cohere-chat': 0.4666666666666667, 'gpt4': 0.99, 'mpt': 0.8733333333333333, 'mpt-chat': 0.8933333333333333, 'llama-chat': 0.9033333333333333, 'mistral': 0.8133333333333334, 'mistral-chat': 0.6966666666666667, 'gemini-pro': 1.0, 'glm-4-plus': 0.91, 'gpt-4o': 0.8366666666666667, 'spark-max': 0.81}
+2026-05-18 09:34:30,784 [trainer.py] => CNN top1 curve: [100.0, 94.42, 87.33, 88.75, 87.1, 81.39, 81.74, 83.33]
+Average Accuracy (CNN): 88.00750000000001
+2026-05-18 09:34:30,784 [trainer.py] => Average Accuracy (CNN): 88.00750000000001
+2026-05-18 09:34:30,785 [trainer.py] => All params: 1235818496
+2026-05-18 09:34:30,785 [trainer.py] => Trainable params: 1235818496
+2026-05-18 09:34:30,787 [ReProf.py] => Learning on 16-18
+2026-05-18 09:43:08,322 [ReProf.py] => Optimal lambda: 1000.0
+2026-05-18 09:43:12,484 [ReProf.py] => Optimal lambda: 10000.0
+2026-05-18 09:57:56,303 [trainer.py] => No NME accuracy.
+2026-05-18 09:57:56,304 [trainer.py] => CNN: {'total': 82.85, '00-01': 91.67, '02-03': 78.83, '04-05': 51.83, '06-07': 91.67, '08-09': 89.17, '10-11': 76.0, '12-13': 92.33, '14-15': 78.5, '16-17': 95.67, 'old': 81.25, 'new': 95.67}
+2026-05-18 09:57:56,304 [trainer.py] => Accuracy per class: {'human': 0.99, 'gpt2': 0.8433333333333334, 'gpt3': 0.8733333333333333, 'cohere': 0.7033333333333334, 'chatgpt': 0.5633333333333334, 'cohere-chat': 0.47333333333333333, 'gpt4': 0.9666666666666667, 'mpt': 0.8666666666666667, 'mpt-chat': 0.8733333333333333, 'llama-chat': 0.91, 'mistral': 0.8066666666666666, 'mistral-chat': 0.7133333333333334, 'gemini-pro': 1.0, 'glm-4-plus': 0.8466666666666667, 'gpt-4o': 0.84, 'spark-max': 0.73, 'ernie-4.0-turbo': 0.9166666666666666, 'doubao-pro': 0.9966666666666667}
+2026-05-18 09:57:56,304 [trainer.py] => CNN top1 curve: [100.0, 94.42, 87.33, 88.75, 87.1, 81.39, 81.74, 83.33, 82.85]
+Average Accuracy (CNN): 87.43444444444445
+2026-05-18 09:57:56,304 [trainer.py] => Average Accuracy (CNN): 87.43444444444445
+2026-05-18 09:57:56,305 [trainer.py] => All params: 1235818496
+2026-05-18 09:57:56,305 [trainer.py] => Trainable params: 1235818496
+2026-05-18 09:57:56,312 [ReProf.py] => Learning on 18-20
+2026-05-18 10:06:07,888 [ReProf.py] => Optimal lambda: 10000.0
+2026-05-18 10:06:12,138 [ReProf.py] => Optimal lambda: 100000.0
+2026-05-18 10:22:42,292 [trainer.py] => No NME accuracy.
+2026-05-18 10:22:42,292 [trainer.py] => CNN: {'total': 80.13, '00-01': 94.5, '02-03': 79.67, '04-05': 44.67, '06-07': 91.67, '08-09': 89.33, '10-11': 73.0, '12-13': 81.0, '14-15': 68.83, '16-17': 91.83, '18-19': 86.83, 'old': 79.39, 'new': 86.83}
+2026-05-18 10:22:42,292 [trainer.py] => Accuracy per class: {'human': 0.9966666666666667, 'gpt2': 0.8933333333333333, 'gpt3': 0.8766666666666667, 'cohere': 0.7166666666666667, 'chatgpt': 0.44666666666666666, 'cohere-chat': 0.44666666666666666, 'gpt4': 0.97, 'mpt': 0.8633333333333333, 'mpt-chat': 0.8866666666666667, 'llama-chat': 0.9, 'mistral': 0.8333333333333334, 'mistral-chat': 0.6266666666666667, 'gemini-pro': 1.0, 'glm-4-plus': 0.62, 'gpt-4o': 0.7833333333333333, 'spark-max': 0.5933333333333334, 'ernie-4.0-turbo': 0.8466666666666667, 'doubao-pro': 0.99, 'qwen-plus': 0.85, 'deepseek-chat': 0.8866666666666667}
+2026-05-18 10:22:42,292 [trainer.py] => CNN top1 curve: [100.0, 94.42, 87.33, 88.75, 87.1, 81.39, 81.74, 83.33, 82.85, 80.13]
+Average Accuracy (CNN): 86.70400000000001
+2026-05-18 10:22:42,292 [trainer.py] => Average Accuracy (CNN): 86.70400000000001
+2026-05-18 10:22:42,531 [trainer.py] => config: ./exps/ReProf.json
+2026-05-18 10:22:42,532 [trainer.py] => prefix:  
+2026-05-18 10:22:42,532 [trainer.py] => dataset: /home/wangyujie/code/Baselines/data/COT-Bench/books
+2026-05-18 10:22:42,532 [trainer.py] => memory_size: 0
+2026-05-18 10:22:42,532 [trainer.py] => memory_per_class: 0
+2026-05-18 10:22:42,532 [trainer.py] => fixed_memory: False
+2026-05-18 10:22:42,532 [trainer.py] => shuffle: False
+2026-05-18 10:22:42,532 [trainer.py] => init_cls: 2
+2026-05-18 10:22:42,533 [trainer.py] => increment: 2
+2026-05-18 10:22:42,533 [trainer.py] => model_name: ReProf
+2026-05-18 10:22:42,533 [trainer.py] => convnet_type: Llama-3.2-1B
+2026-05-18 10:22:42,533 [trainer.py] => device: [device(type='cuda', index=3)]
+2026-05-18 10:22:42,533 [trainer.py] => seed: 42
+2026-05-18 10:22:42,533 [trainer.py] => tuned_epoch: [0]
+2026-05-18 10:22:42,533 [trainer.py] => init_lr: 0.01
+2026-05-18 10:22:42,533 [trainer.py] => batch_size: 16
+2026-05-18 10:22:42,533 [trainer.py] => weight_decay: 0.05
+2026-05-18 10:22:42,533 [trainer.py] => group_Num: 2
+2026-05-18 10:22:42,533 [trainer.py] => min_lr: 1e-08
+2026-05-18 10:22:42,533 [trainer.py] => use_RP: True
+2026-05-18 10:22:42,533 [trainer.py] => M: 10000
+2026-05-18 10:22:42,533 [trainer.py] => K: [2]
+2026-05-18 10:22:42,533 [trainer.py] => fusion_type_list: ['M-F']
+2026-05-18 10:22:42,533 [trainer.py] => type: origin
+2026-05-18 10:22:42,533 [trainer.py] => method: pwcca
+2026-05-18 10:22:42,533 [trainer.py] => recalculate: False
+2026-05-18 10:22:42,533 [trainer.py] => merge_type: M-F
+2026-05-18 10:22:42,533 [trainer.py] => dataset_name: books
+2026-05-18 10:22:42,533 [trainer.py] => nb_classes: 20
+2026-05-18 10:22:42,533 [trainer.py] => nb_tasks: 10
+2026-05-18 10:22:43,644 [data_manager.py] => [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]
+Some weights of LlamaForSimple were not initialized from the model checkpoint at ../../model/Llama-3.2-1B and are newly initialized: ['score.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+This is for the BaseNet initialization.
+After BaseNet initialization.
+2026-05-18 10:22:49,658 [trainer.py] => All params: 1235818496
+2026-05-18 10:22:49,658 [trainer.py] => Trainable params: 1235818496
+2026-05-18 10:22:49,658 [ReProf.py] => Learning on 0-2
+2026-05-18 10:22:59,028 [ReProf.py] => Stage 1 分组.....
+2026-05-18 10:30:05,490 [ReProf.py] => [[15], [14], [13], [12], [11], [10], [9], [8], [7], [6], [5], [4], [3], [2], [1], [0]]
+2026-05-18 10:30:05,490 [ReProf.py] => groups: [[15], [16]] K: 2
+2026-05-18 10:31:53,645 [ReProf.py] => Optimal lambda: 10000.0
+2026-05-18 10:31:57,819 [ReProf.py] => Optimal lambda: 100000.0
+2026-05-18 10:33:46,528 [trainer.py] => No NME accuracy.
+2026-05-18 10:33:46,528 [trainer.py] => CNN: {'total': 99.0, '00-01': 99.0, 'old': 0, 'new': 99.0}
+2026-05-18 10:33:46,528 [trainer.py] => Accuracy per class: {'human': 0.9933333333333333, 'gpt2': 0.9866666666666667}
+2026-05-18 10:33:46,528 [trainer.py] => CNN top1 curve: [99.0]
+Average Accuracy (CNN): 99.0
+2026-05-18 10:33:46,528 [trainer.py] => Average Accuracy (CNN): 99.0
+2026-05-18 10:33:46,529 [trainer.py] => All params: 1235818496
+2026-05-18 10:33:46,529 [trainer.py] => Trainable params: 1235818496
+2026-05-18 10:33:46,538 [ReProf.py] => Learning on 2-4
+2026-05-18 10:41:15,029 [ReProf.py] => Optimal lambda: 10000.0
+2026-05-18 10:41:19,460 [ReProf.py] => Optimal lambda: 100000.0
+2026-05-18 10:44:40,784 [trainer.py] => No NME accuracy.
+2026-05-18 10:44:40,784 [trainer.py] => CNN: {'total': 93.33, '00-01': 95.5, '02-03': 91.17, 'old': 95.5, 'new': 91.17}
+2026-05-18 10:44:40,784 [trainer.py] => Accuracy per class: {'human': 0.9533333333333334, 'gpt2': 0.9566666666666667, 'gpt3': 0.95, 'cohere': 0.8733333333333333}
+2026-05-18 10:44:40,784 [trainer.py] => CNN top1 curve: [99.0, 93.33]
+Average Accuracy (CNN): 96.16499999999999
+2026-05-18 10:44:40,784 [trainer.py] => Average Accuracy (CNN): 96.16499999999999
+2026-05-18 10:44:40,785 [trainer.py] => All params: 1235818496
+2026-05-18 10:44:40,785 [trainer.py] => Trainable params: 1235818496
+2026-05-18 10:44:40,793 [ReProf.py] => Learning on 4-6
+2026-05-18 10:53:26,687 [ReProf.py] => Optimal lambda: 10000.0
+2026-05-18 10:53:30,892 [ReProf.py] => Optimal lambda: 100000.0
+2026-05-18 10:57:55,818 [trainer.py] => No NME accuracy.
+2026-05-18 10:57:55,818 [trainer.py] => CNN: {'total': 89.83, '00-01': 95.67, '02-03': 79.83, '04-05': 94.0, 'old': 87.75, 'new': 94.0}
+2026-05-18 10:57:55,818 [trainer.py] => Accuracy per class: {'human': 0.9666666666666667, 'gpt2': 0.9466666666666667, 'gpt3': 0.9066666666666666, 'cohere': 0.69, 'chatgpt': 0.9833333333333333, 'cohere-chat': 0.8966666666666666}
+2026-05-18 10:57:55,818 [trainer.py] => CNN top1 curve: [99.0, 93.33, 89.83]
+Average Accuracy (CNN): 94.05333333333333
+2026-05-18 10:57:55,818 [trainer.py] => Average Accuracy (CNN): 94.05333333333333
+2026-05-18 10:57:55,819 [trainer.py] => All params: 1235818496
+2026-05-18 10:57:55,820 [trainer.py] => Trainable params: 1235818496
+2026-05-18 10:57:55,830 [ReProf.py] => Learning on 6-8
+2026-05-18 11:05:48,859 [ReProf.py] => Optimal lambda: 10000.0
+2026-05-18 11:06:00,387 [ReProf.py] => Optimal lambda: 100000.0
+2026-05-18 11:11:56,266 [trainer.py] => No NME accuracy.
+2026-05-18 11:11:56,266 [trainer.py] => CNN: {'total': 89.92, '00-01': 92.83, '02-03': 78.83, '04-05': 93.17, '06-07': 94.83, 'old': 88.28, 'new': 94.83}
+2026-05-18 11:11:56,266 [trainer.py] => Accuracy per class: {'human': 0.96, 'gpt2': 0.8966666666666666, 'gpt3': 0.9066666666666666, 'cohere': 0.67, 'chatgpt': 0.9733333333333334, 'cohere-chat': 0.89, 'gpt4': 0.9966666666666667, 'mpt': 0.9}
+2026-05-18 11:11:56,266 [trainer.py] => CNN top1 curve: [99.0, 93.33, 89.83, 89.92]
+Average Accuracy (CNN): 93.02
+2026-05-18 11:11:56,266 [trainer.py] => Average Accuracy (CNN): 93.02
+2026-05-18 11:11:56,267 [trainer.py] => All params: 1235818496
+2026-05-18 11:11:56,267 [trainer.py] => Trainable params: 1235818496
+2026-05-18 11:11:56,272 [ReProf.py] => Learning on 8-10
+2026-05-18 11:19:24,651 [ReProf.py] => Optimal lambda: 10000.0
+2026-05-18 11:19:29,134 [ReProf.py] => Optimal lambda: 100000.0
+2026-05-18 11:27:06,542 [trainer.py] => No NME accuracy.
+2026-05-18 11:27:06,543 [trainer.py] => CNN: {'total': 88.43, '00-01': 93.0, '02-03': 79.0, '04-05': 81.5, '06-07': 94.17, '08-09': 94.5, 'old': 86.92, 'new': 94.5}
+2026-05-18 11:27:06,543 [trainer.py] => Accuracy per class: {'human': 0.97, 'gpt2': 0.89, 'gpt3': 0.9166666666666666, 'cohere': 0.6633333333333333, 'chatgpt': 0.89, 'cohere-chat': 0.74, 'gpt4': 0.9966666666666667, 'mpt': 0.8866666666666667, 'mpt-chat': 0.93, 'llama-chat': 0.96}
+2026-05-18 11:27:06,543 [trainer.py] => CNN top1 curve: [99.0, 93.33, 89.83, 89.92, 88.43]
+Average Accuracy (CNN): 92.102
+2026-05-18 11:27:06,543 [trainer.py] => Average Accuracy (CNN): 92.102
+2026-05-18 11:27:06,543 [trainer.py] => All params: 1235818496
+2026-05-18 11:27:06,544 [trainer.py] => Trainable params: 1235818496
+2026-05-18 11:27:06,548 [ReProf.py] => Learning on 10-12
+2026-05-18 11:34:45,612 [ReProf.py] => Optimal lambda: 10000.0
+2026-05-18 11:34:56,839 [ReProf.py] => Optimal lambda: 100000.0
+2026-05-18 11:44:02,089 [trainer.py] => No NME accuracy.
+2026-05-18 11:44:02,089 [trainer.py] => CNN: {'total': 83.67, '00-01': 87.17, '02-03': 77.0, '04-05': 77.83, '06-07': 89.33, '08-09': 86.5, '10-11': 84.17, 'old': 83.57, 'new': 84.17}
+2026-05-18 11:44:02,089 [trainer.py] => Accuracy per class: {'human': 0.9666666666666667, 'gpt2': 0.7766666666666666, 'gpt3': 0.9033333333333333, 'cohere': 0.6366666666666667, 'chatgpt': 0.8833333333333333, 'cohere-chat': 0.6733333333333333, 'gpt4': 0.9966666666666667, 'mpt': 0.79, 'mpt-chat': 0.8266666666666667, 'llama-chat': 0.9033333333333333, 'mistral': 0.88, 'mistral-chat': 0.8033333333333333}
+2026-05-18 11:44:02,089 [trainer.py] => CNN top1 curve: [99.0, 93.33, 89.83, 89.92, 88.43, 83.67]
+Average Accuracy (CNN): 90.69666666666666
+2026-05-18 11:44:02,089 [trainer.py] => Average Accuracy (CNN): 90.69666666666666
+2026-05-18 11:44:02,090 [trainer.py] => All params: 1235818496
+2026-05-18 11:44:02,091 [trainer.py] => Trainable params: 1235818496
+2026-05-18 11:44:02,095 [ReProf.py] => Learning on 12-14
+2026-05-18 11:51:32,146 [ReProf.py] => Optimal lambda: 10000.0
+2026-05-18 11:51:36,181 [ReProf.py] => Optimal lambda: 100000.0
+2026-05-18 12:02:06,683 [trainer.py] => No NME accuracy.
+2026-05-18 12:02:06,684 [trainer.py] => CNN: {'total': 85.52, '00-01': 87.67, '02-03': 76.83, '04-05': 75.67, '06-07': 88.5, '08-09': 86.0, '10-11': 84.17, '12-13': 99.83, 'old': 83.14, 'new': 99.83}
+2026-05-18 12:02:06,684 [trainer.py] => Accuracy per class: {'human': 0.9633333333333334, 'gpt2': 0.79, 'gpt3': 0.9, 'cohere': 0.6366666666666667, 'chatgpt': 0.8433333333333334, 'cohere-chat': 0.67, 'gpt4': 0.9966666666666667, 'mpt': 0.7733333333333333, 'mpt-chat': 0.82, 'llama-chat': 0.9, 'mistral': 0.8766666666666667, 'mistral-chat': 0.8066666666666666, 'gemini-pro': 0.9966666666666667, 'glm-4-plus': 1.0}
+2026-05-18 12:02:06,684 [trainer.py] => CNN top1 curve: [99.0, 93.33, 89.83, 89.92, 88.43, 83.67, 85.52]
+Average Accuracy (CNN): 89.95714285714284
+2026-05-18 12:02:06,684 [trainer.py] => Average Accuracy (CNN): 89.95714285714284
+2026-05-18 12:02:06,684 [trainer.py] => All params: 1235818496
+2026-05-18 12:02:06,685 [trainer.py] => Trainable params: 1235818496
+2026-05-18 12:02:06,690 [ReProf.py] => Learning on 14-16
+2026-05-18 12:09:56,643 [ReProf.py] => Optimal lambda: 10000.0
+2026-05-18 12:10:09,295 [ReProf.py] => Optimal lambda: 100000.0
+2026-05-18 12:20:55,928 [trainer.py] => No NME accuracy.
+2026-05-18 12:20:55,928 [trainer.py] => CNN: {'total': 87.0, '00-01': 87.67, '02-03': 76.5, '04-05': 75.67, '06-07': 88.33, '08-09': 85.83, '10-11': 84.33, '12-13': 99.33, '14-15': 98.33, 'old': 85.38, 'new': 98.33}
+2026-05-18 12:20:55,928 [trainer.py] => Accuracy per class: {'human': 0.97, 'gpt2': 0.7833333333333333, 'gpt3': 0.8933333333333333, 'cohere': 0.6366666666666667, 'chatgpt': 0.8433333333333334, 'cohere-chat': 0.67, 'gpt4': 0.99, 'mpt': 0.7766666666666666, 'mpt-chat': 0.8133333333333334, 'llama-chat': 0.9033333333333333, 'mistral': 0.88, 'mistral-chat': 0.8066666666666666, 'gemini-pro': 0.9966666666666667, 'glm-4-plus': 0.99, 'gpt-4o': 0.98, 'spark-max': 0.9866666666666667}
+2026-05-18 12:20:55,928 [trainer.py] => CNN top1 curve: [99.0, 93.33, 89.83, 89.92, 88.43, 83.67, 85.52, 87.0]
+Average Accuracy (CNN): 89.58749999999999
+2026-05-18 12:20:55,928 [trainer.py] => Average Accuracy (CNN): 89.58749999999999
+2026-05-18 12:20:55,929 [trainer.py] => All params: 1235818496
+2026-05-18 12:20:55,930 [trainer.py] => Trainable params: 1235818496
+2026-05-18 12:20:55,934 [ReProf.py] => Learning on 16-18
+2026-05-18 12:28:39,734 [ReProf.py] => Optimal lambda: 1000.0
+2026-05-18 12:28:45,940 [ReProf.py] => Optimal lambda: 100000.0
+2026-05-18 12:42:12,488 [trainer.py] => No NME accuracy.
+2026-05-18 12:42:12,488 [trainer.py] => CNN: {'total': 87.2, '00-01': 85.33, '02-03': 76.33, '04-05': 75.67, '06-07': 88.67, '08-09': 86.5, '10-11': 82.33, '12-13': 99.17, '14-15': 96.67, '16-17': 94.17, 'old': 86.33, 'new': 94.17}
+2026-05-18 12:42:12,488 [trainer.py] => Accuracy per class: {'human': 0.9466666666666667, 'gpt2': 0.76, 'gpt3': 0.8666666666666667, 'cohere': 0.66, 'chatgpt': 0.8233333333333334, 'cohere-chat': 0.69, 'gpt4': 0.9866666666666667, 'mpt': 0.7866666666666666, 'mpt-chat': 0.8166666666666667, 'llama-chat': 0.9133333333333333, 'mistral': 0.8566666666666667, 'mistral-chat': 0.79, 'gemini-pro': 0.9966666666666667, 'glm-4-plus': 0.9866666666666667, 'gpt-4o': 0.95, 'spark-max': 0.9833333333333333, 'ernie-4.0-turbo': 0.89, 'doubao-pro': 0.9933333333333333}
+2026-05-18 12:42:12,488 [trainer.py] => CNN top1 curve: [99.0, 93.33, 89.83, 89.92, 88.43, 83.67, 85.52, 87.0, 87.2]
+Average Accuracy (CNN): 89.32222222222222
+2026-05-18 12:42:12,488 [trainer.py] => Average Accuracy (CNN): 89.32222222222222
+2026-05-18 12:42:12,489 [trainer.py] => All params: 1235818496
+2026-05-18 12:42:12,489 [trainer.py] => Trainable params: 1235818496
+2026-05-18 12:42:12,495 [ReProf.py] => Learning on 18-20
+2026-05-18 12:49:50,311 [ReProf.py] => Optimal lambda: 10000.0
+2026-05-18 12:49:54,975 [ReProf.py] => Optimal lambda: 100000.0
+2026-05-18 13:04:50,803 [trainer.py] => No NME accuracy.
+2026-05-18 13:04:50,804 [trainer.py] => CNN: {'total': 86.97, '00-01': 87.83, '02-03': 76.5, '04-05': 72.67, '06-07': 88.33, '08-09': 85.0, '10-11': 83.0, '12-13': 99.5, '14-15': 93.67, '16-17': 91.0, '18-19': 92.17, 'old': 86.39, 'new': 92.17}
+2026-05-18 13:04:50,804 [trainer.py] => Accuracy per class: {'human': 0.97, 'gpt2': 0.7866666666666666, 'gpt3': 0.9, 'cohere': 0.63, 'chatgpt': 0.81, 'cohere-chat': 0.6433333333333333, 'gpt4': 0.99, 'mpt': 0.7766666666666666, 'mpt-chat': 0.8033333333333333, 'llama-chat': 0.8966666666666666, 'mistral': 0.8733333333333333, 'mistral-chat': 0.7866666666666666, 'gemini-pro': 0.9966666666666667, 'glm-4-plus': 0.9933333333333333, 'gpt-4o': 0.92, 'spark-max': 0.9533333333333334, 'ernie-4.0-turbo': 0.8233333333333334, 'doubao-pro': 0.9966666666666667, 'qwen-plus': 0.9633333333333334, 'deepseek-chat': 0.88}
+2026-05-18 13:04:50,804 [trainer.py] => CNN top1 curve: [99.0, 93.33, 89.83, 89.92, 88.43, 83.67, 85.52, 87.0, 87.2, 86.97]
+Average Accuracy (CNN): 89.087
+2026-05-18 13:04:50,804 [trainer.py] => Average Accuracy (CNN): 89.087
+2026-05-18 13:04:51,046 [trainer.py] => config: ./exps/ReProf.json
+2026-05-18 13:04:51,067 [trainer.py] => prefix:  
+2026-05-18 13:04:51,068 [trainer.py] => dataset: /home/wangyujie/code/Baselines/data/COT-Bench/news
+2026-05-18 13:04:51,068 [trainer.py] => memory_size: 0
+2026-05-18 13:04:51,068 [trainer.py] => memory_per_class: 0
+2026-05-18 13:04:51,068 [trainer.py] => fixed_memory: False
+2026-05-18 13:04:51,068 [trainer.py] => shuffle: False
+2026-05-18 13:04:51,068 [trainer.py] => init_cls: 2
+2026-05-18 13:04:51,068 [trainer.py] => increment: 2
+2026-05-18 13:04:51,068 [trainer.py] => model_name: ReProf
+2026-05-18 13:04:51,068 [trainer.py] => convnet_type: Llama-3.2-1B
+2026-05-18 13:04:51,068 [trainer.py] => device: [device(type='cuda', index=3)]
+2026-05-18 13:04:51,068 [trainer.py] => seed: 42
+2026-05-18 13:04:51,068 [trainer.py] => tuned_epoch: [0]
+2026-05-18 13:04:51,068 [trainer.py] => init_lr: 0.01
+2026-05-18 13:04:51,069 [trainer.py] => batch_size: 16
+2026-05-18 13:04:51,069 [trainer.py] => weight_decay: 0.05
+2026-05-18 13:04:51,069 [trainer.py] => group_Num: 2
+2026-05-18 13:04:51,069 [trainer.py] => min_lr: 1e-08
+2026-05-18 13:04:51,069 [trainer.py] => use_RP: True
+2026-05-18 13:04:51,069 [trainer.py] => M: 10000
+2026-05-18 13:04:51,069 [trainer.py] => K: [2]
+2026-05-18 13:04:51,069 [trainer.py] => fusion_type_list: ['M-F']
+2026-05-18 13:04:51,069 [trainer.py] => type: origin
+2026-05-18 13:04:51,069 [trainer.py] => method: pwcca
+2026-05-18 13:04:51,069 [trainer.py] => recalculate: False
+2026-05-18 13:04:51,069 [trainer.py] => merge_type: M-F
+2026-05-18 13:04:51,069 [trainer.py] => dataset_name: news
+2026-05-18 13:04:51,069 [trainer.py] => nb_classes: 20
+2026-05-18 13:04:51,069 [trainer.py] => nb_tasks: 10
+2026-05-18 13:04:52,112 [data_manager.py] => [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]
+Some weights of LlamaForSimple were not initialized from the model checkpoint at ../../model/Llama-3.2-1B and are newly initialized: ['score.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+This is for the BaseNet initialization.
+After BaseNet initialization.
+2026-05-18 13:04:56,236 [trainer.py] => All params: 1235818496
+2026-05-18 13:04:56,237 [trainer.py] => Trainable params: 1235818496
+2026-05-18 13:04:56,237 [ReProf.py] => Learning on 0-2
+2026-05-18 13:05:03,804 [ReProf.py] => Stage 1 分组.....
+2026-05-18 13:11:25,085 [ReProf.py] => [[15], [14], [13], [12], [11], [10], [9], [8], [7], [6], [5], [4], [3], [2], [1], [0]]
+2026-05-18 13:11:25,085 [ReProf.py] => groups: [[15], [16]] K: 2
+2026-05-18 13:12:53,217 [ReProf.py] => Optimal lambda: 10000.0
+2026-05-18 13:12:57,262 [ReProf.py] => Optimal lambda: 100000.0
+2026-05-18 13:14:28,908 [trainer.py] => No NME accuracy.
+2026-05-18 13:14:28,908 [trainer.py] => CNN: {'total': 99.83, '00-01': 99.83, 'old': 0, 'new': 99.83}
+2026-05-18 13:14:28,908 [trainer.py] => Accuracy per class: {'human': 1.0, 'gpt2': 0.9966666666666667}
+2026-05-18 13:14:28,908 [trainer.py] => CNN top1 curve: [99.83]
+Average Accuracy (CNN): 99.83
+2026-05-18 13:14:28,909 [trainer.py] => Average Accuracy (CNN): 99.83
+2026-05-18 13:14:28,909 [trainer.py] => All params: 1235818496
+2026-05-18 13:14:28,910 [trainer.py] => Trainable params: 1235818496
+2026-05-18 13:14:28,918 [ReProf.py] => Learning on 2-4
+2026-05-18 13:21:53,827 [ReProf.py] => Optimal lambda: 10000.0
+2026-05-18 13:21:59,663 [ReProf.py] => Optimal lambda: 100000.0
+2026-05-18 13:25:02,924 [trainer.py] => No NME accuracy.
+2026-05-18 13:25:02,924 [trainer.py] => CNN: {'total': 89.42, '00-01': 95.5, '02-03': 83.33, 'old': 95.5, 'new': 83.33}
+2026-05-18 13:25:02,924 [trainer.py] => Accuracy per class: {'human': 0.9933333333333333, 'gpt2': 0.9166666666666666, 'gpt3': 0.8766666666666667, 'cohere': 0.79}
+2026-05-18 13:25:02,924 [trainer.py] => CNN top1 curve: [99.83, 89.42]
+Average Accuracy (CNN): 94.625
+2026-05-18 13:25:02,924 [trainer.py] => Average Accuracy (CNN): 94.625
+2026-05-18 13:25:02,925 [trainer.py] => All params: 1235818496
+2026-05-18 13:25:02,925 [trainer.py] => Trainable params: 1235818496
+2026-05-18 13:25:02,935 [ReProf.py] => Learning on 4-6
+2026-05-18 13:32:34,786 [ReProf.py] => Optimal lambda: 10000.0
+2026-05-18 13:32:38,964 [ReProf.py] => Optimal lambda: 100000.0
+2026-05-18 13:37:03,937 [trainer.py] => No NME accuracy.
+2026-05-18 13:37:03,938 [trainer.py] => CNN: {'total': 84.94, '00-01': 95.33, '02-03': 72.67, '04-05': 86.83, 'old': 84.0, 'new': 86.83}
+2026-05-18 13:37:03,938 [trainer.py] => Accuracy per class: {'human': 0.9966666666666667, 'gpt2': 0.91, 'gpt3': 0.8366666666666667, 'cohere': 0.6166666666666667, 'chatgpt': 0.9933333333333333, 'cohere-chat': 0.7433333333333333}
+2026-05-18 13:37:03,938 [trainer.py] => CNN top1 curve: [99.83, 89.42, 84.94]
+Average Accuracy (CNN): 91.39666666666666
+2026-05-18 13:37:03,938 [trainer.py] => Average Accuracy (CNN): 91.39666666666666
+2026-05-18 13:37:03,938 [trainer.py] => All params: 1235818496
+2026-05-18 13:37:03,939 [trainer.py] => Trainable params: 1235818496
+2026-05-18 13:37:03,948 [ReProf.py] => Learning on 6-8
+2026-05-18 13:44:44,431 [ReProf.py] => Optimal lambda: 10000.0
+2026-05-18 13:44:48,420 [ReProf.py] => Optimal lambda: 100000.0
+2026-05-18 13:50:45,730 [trainer.py] => No NME accuracy.
+2026-05-18 13:50:45,731 [trainer.py] => CNN: {'total': 85.92, '00-01': 92.83, '02-03': 72.5, '04-05': 85.17, '06-07': 93.17, 'old': 83.5, 'new': 93.17}
+2026-05-18 13:50:45,731 [trainer.py] => Accuracy per class: {'human': 0.9733333333333334, 'gpt2': 0.8833333333333333, 'gpt3': 0.83, 'cohere': 0.62, 'chatgpt': 0.9766666666666667, 'cohere-chat': 0.7266666666666667, 'gpt4': 1.0, 'mpt': 0.8633333333333333}
+2026-05-18 13:50:45,731 [trainer.py] => CNN top1 curve: [99.83, 89.42, 84.94, 85.92]
+Average Accuracy (CNN): 90.0275
+2026-05-18 13:50:45,731 [trainer.py] => Average Accuracy (CNN): 90.0275
+2026-05-18 13:50:45,732 [trainer.py] => All params: 1235818496
+2026-05-18 13:50:45,732 [trainer.py] => Trainable params: 1235818496
+2026-05-18 13:50:45,736 [ReProf.py] => Learning on 8-10
+2026-05-18 13:58:16,280 [ReProf.py] => Optimal lambda: 10000.0
+2026-05-18 13:58:20,389 [ReProf.py] => Optimal lambda: 100000.0
+2026-05-18 14:05:53,668 [trainer.py] => No NME accuracy.
+2026-05-18 14:05:53,668 [trainer.py] => CNN: {'total': 85.83, '00-01': 93.17, '02-03': 72.33, '04-05': 77.17, '06-07': 92.67, '08-09': 93.83, 'old': 83.83, 'new': 93.83}
+2026-05-18 14:05:53,668 [trainer.py] => Accuracy per class: {'human': 0.98, 'gpt2': 0.8833333333333333, 'gpt3': 0.8166666666666667, 'cohere': 0.63, 'chatgpt': 0.9166666666666666, 'cohere-chat': 0.6266666666666667, 'gpt4': 0.9966666666666667, 'mpt': 0.8566666666666667, 'mpt-chat': 0.9, 'llama-chat': 0.9766666666666667}
+2026-05-18 14:05:53,668 [trainer.py] => CNN top1 curve: [99.83, 89.42, 84.94, 85.92, 85.83]
+Average Accuracy (CNN): 89.188
+2026-05-18 14:05:53,668 [trainer.py] => Average Accuracy (CNN): 89.188
+2026-05-18 14:05:53,669 [trainer.py] => All params: 1235818496
+2026-05-18 14:05:53,669 [trainer.py] => Trainable params: 1235818496
+2026-05-18 14:05:53,670 [ReProf.py] => Learning on 10-12
+2026-05-18 14:13:32,890 [ReProf.py] => Optimal lambda: 10000.0
+2026-05-18 14:13:38,555 [ReProf.py] => Optimal lambda: 100000.0
+2026-05-18 14:22:46,143 [trainer.py] => No NME accuracy.
+2026-05-18 14:22:46,144 [trainer.py] => CNN: {'total': 79.36, '00-01': 86.17, '02-03': 64.33, '04-05': 75.5, '06-07': 92.0, '08-09': 85.83, '10-11': 72.33, 'old': 80.77, 'new': 72.33}
+2026-05-18 14:22:46,144 [trainer.py] => Accuracy per class: {'human': 0.98, 'gpt2': 0.7433333333333333, 'gpt3': 0.8066666666666666, 'cohere': 0.48, 'chatgpt': 0.91, 'cohere-chat': 0.6, 'gpt4': 0.9966666666666667, 'mpt': 0.8433333333333334, 'mpt-chat': 0.7633333333333333, 'llama-chat': 0.9533333333333334, 'mistral': 0.7666666666666667, 'mistral-chat': 0.68}
+2026-05-18 14:22:46,144 [trainer.py] => CNN top1 curve: [99.83, 89.42, 84.94, 85.92, 85.83, 79.36]
+Average Accuracy (CNN): 87.55
+2026-05-18 14:22:46,144 [trainer.py] => Average Accuracy (CNN): 87.55
+2026-05-18 14:22:46,145 [trainer.py] => All params: 1235818496
+2026-05-18 14:22:46,146 [trainer.py] => Trainable params: 1235818496
+2026-05-18 14:22:46,150 [ReProf.py] => Learning on 12-14
+2026-05-18 14:30:18,069 [ReProf.py] => Optimal lambda: 10000.0
+2026-05-18 14:30:22,106 [ReProf.py] => Optimal lambda: 100000.0
+2026-05-18 14:40:48,559 [trainer.py] => No NME accuracy.
+2026-05-18 14:40:48,559 [trainer.py] => CNN: {'total': 82.14, '00-01': 86.33, '02-03': 63.83, '04-05': 74.17, '06-07': 92.0, '08-09': 85.5, '10-11': 73.17, '12-13': 100.0, 'old': 79.17, 'new': 100.0}
+2026-05-18 14:40:48,559 [trainer.py] => Accuracy per class: {'human': 0.9766666666666667, 'gpt2': 0.75, 'gpt3': 0.7933333333333333, 'cohere': 0.48333333333333334, 'chatgpt': 0.9033333333333333, 'cohere-chat': 0.58, 'gpt4': 0.9966666666666667, 'mpt': 0.8433333333333334, 'mpt-chat': 0.7533333333333333, 'llama-chat': 0.9566666666666667, 'mistral': 0.7766666666666666, 'mistral-chat': 0.6866666666666666, 'gemini-pro': 1.0, 'glm-4-plus': 1.0}
+2026-05-18 14:40:48,559 [trainer.py] => CNN top1 curve: [99.83, 89.42, 84.94, 85.92, 85.83, 79.36, 82.14]
+Average Accuracy (CNN): 86.77714285714285
+2026-05-18 14:40:48,559 [trainer.py] => Average Accuracy (CNN): 86.77714285714285
+2026-05-18 14:40:48,560 [trainer.py] => All params: 1235818496
+2026-05-18 14:40:48,561 [trainer.py] => Trainable params: 1235818496
+2026-05-18 14:40:48,567 [ReProf.py] => Learning on 14-16
+2026-05-18 14:48:30,893 [ReProf.py] => Optimal lambda: 10000.0
+2026-05-18 14:48:34,956 [ReProf.py] => Optimal lambda: 100000.0
+2026-05-18 15:00:15,968 [trainer.py] => No NME accuracy.
+2026-05-18 15:00:15,968 [trainer.py] => CNN: {'total': 83.04, '00-01': 86.0, '02-03': 64.0, '04-05': 74.5, '06-07': 91.5, '08-09': 85.5, '10-11': 72.5, '12-13': 92.83, '14-15': 97.5, 'old': 80.98, 'new': 97.5}
+2026-05-18 15:00:15,968 [trainer.py] => Accuracy per class: {'human': 0.98, 'gpt2': 0.74, 'gpt3': 0.8, 'cohere': 0.48, 'chatgpt': 0.9033333333333333, 'cohere-chat': 0.5866666666666667, 'gpt4': 0.9966666666666667, 'mpt': 0.8333333333333334, 'mpt-chat': 0.7533333333333333, 'llama-chat': 0.9566666666666667, 'mistral': 0.7733333333333333, 'mistral-chat': 0.6766666666666666, 'gemini-pro': 1.0, 'glm-4-plus': 0.8566666666666667, 'gpt-4o': 0.99, 'spark-max': 0.96}
+2026-05-18 15:00:15,968 [trainer.py] => CNN top1 curve: [99.83, 89.42, 84.94, 85.92, 85.83, 79.36, 82.14, 83.04]
+Average Accuracy (CNN): 86.30999999999999
+2026-05-18 15:00:15,968 [trainer.py] => Average Accuracy (CNN): 86.30999999999999
+2026-05-18 15:00:15,969 [trainer.py] => All params: 1235818496
+2026-05-18 15:00:15,969 [trainer.py] => Trainable params: 1235818496
+2026-05-18 15:00:15,973 [ReProf.py] => Learning on 16-18
+2026-05-18 15:07:46,104 [ReProf.py] => Optimal lambda: 10000.0
+2026-05-18 15:07:50,934 [ReProf.py] => Optimal lambda: 100000.0
+2026-05-18 15:21:15,455 [trainer.py] => No NME accuracy.
+2026-05-18 15:21:15,455 [trainer.py] => CNN: {'total': 84.2, '00-01': 85.83, '02-03': 63.5, '04-05': 72.83, '06-07': 91.67, '08-09': 84.67, '10-11': 72.33, '12-13': 92.67, '14-15': 95.83, '16-17': 98.5, 'old': 82.42, 'new': 98.5}
+2026-05-18 15:21:15,455 [trainer.py] => Accuracy per class: {'human': 0.9766666666666667, 'gpt2': 0.74, 'gpt3': 0.79, 'cohere': 0.48, 'chatgpt': 0.87, 'cohere-chat': 0.5866666666666667, 'gpt4': 0.9933333333333333, 'mpt': 0.84, 'mpt-chat': 0.7366666666666667, 'llama-chat': 0.9566666666666667, 'mistral': 0.78, 'mistral-chat': 0.6666666666666666, 'gemini-pro': 0.9966666666666667, 'glm-4-plus': 0.8566666666666667, 'gpt-4o': 0.9666666666666667, 'spark-max': 0.95, 'ernie-4.0-turbo': 0.97, 'doubao-pro': 1.0}
+2026-05-18 15:21:15,455 [trainer.py] => CNN top1 curve: [99.83, 89.42, 84.94, 85.92, 85.83, 79.36, 82.14, 83.04, 84.2]
+Average Accuracy (CNN): 86.07555555555555
+2026-05-18 15:21:15,455 [trainer.py] => Average Accuracy (CNN): 86.07555555555555
+2026-05-18 15:21:15,456 [trainer.py] => All params: 1235818496
+2026-05-18 15:21:15,456 [trainer.py] => Trainable params: 1235818496
+2026-05-18 15:21:15,458 [ReProf.py] => Learning on 18-20
+2026-05-18 15:29:25,731 [ReProf.py] => Optimal lambda: 10000.0
+2026-05-18 15:29:33,567 [ReProf.py] => Optimal lambda: 100000.0
+2026-05-18 15:48:00,845 [trainer.py] => No NME accuracy.
+2026-05-18 15:48:00,846 [trainer.py] => CNN: {'total': 83.27, '00-01': 85.5, '02-03': 63.83, '04-05': 73.0, '06-07': 91.33, '08-09': 84.0, '10-11': 73.17, '12-13': 87.33, '14-15': 93.0, '16-17': 85.17, '18-19': 96.33, 'old': 81.81, 'new': 96.33}
+2026-05-18 15:48:00,846 [trainer.py] => Accuracy per class: {'human': 0.9766666666666667, 'gpt2': 0.7333333333333333, 'gpt3': 0.7933333333333333, 'cohere': 0.48333333333333334, 'chatgpt': 0.8733333333333333, 'cohere-chat': 0.5866666666666667, 'gpt4': 0.9933333333333333, 'mpt': 0.8333333333333334, 'mpt-chat': 0.7266666666666667, 'llama-chat': 0.9533333333333334, 'mistral': 0.79, 'mistral-chat': 0.6733333333333333, 'gemini-pro': 1.0, 'glm-4-plus': 0.7466666666666667, 'gpt-4o': 0.9, 'spark-max': 0.96, 'ernie-4.0-turbo': 0.7033333333333334, 'doubao-pro': 1.0, 'qwen-plus': 0.9466666666666667, 'deepseek-chat': 0.98}
+2026-05-18 15:48:00,846 [trainer.py] => CNN top1 curve: [99.83, 89.42, 84.94, 85.92, 85.83, 79.36, 82.14, 83.04, 84.2, 83.27]
+Average Accuracy (CNN): 85.79499999999999
+2026-05-18 15:48:00,846 [trainer.py] => Average Accuracy (CNN): 85.79499999999999
+2026-05-18 15:48:01,058 [trainer.py] => config: ./exps/ReProf.json
+2026-05-18 15:48:01,059 [trainer.py] => prefix:  
+2026-05-18 15:48:01,060 [trainer.py] => dataset: /home/wangyujie/code/Baselines/data/COT-Bench/poetry
+2026-05-18 15:48:01,060 [trainer.py] => memory_size: 0
+2026-05-18 15:48:01,060 [trainer.py] => memory_per_class: 0
+2026-05-18 15:48:01,061 [trainer.py] => fixed_memory: False
+2026-05-18 15:48:01,061 [trainer.py] => shuffle: False
+2026-05-18 15:48:01,061 [trainer.py] => init_cls: 2
+2026-05-18 15:48:01,061 [trainer.py] => increment: 2
+2026-05-18 15:48:01,061 [trainer.py] => model_name: ReProf
+2026-05-18 15:48:01,061 [trainer.py] => convnet_type: Llama-3.2-1B
+2026-05-18 15:48:01,061 [trainer.py] => device: [device(type='cuda', index=3)]
+2026-05-18 15:48:01,061 [trainer.py] => seed: 42
+2026-05-18 15:48:01,061 [trainer.py] => tuned_epoch: [0]
+2026-05-18 15:48:01,061 [trainer.py] => init_lr: 0.01
+2026-05-18 15:48:01,061 [trainer.py] => batch_size: 16
+2026-05-18 15:48:01,061 [trainer.py] => weight_decay: 0.05
+2026-05-18 15:48:01,061 [trainer.py] => group_Num: 2
+2026-05-18 15:48:01,061 [trainer.py] => min_lr: 1e-08
+2026-05-18 15:48:01,061 [trainer.py] => use_RP: True
+2026-05-18 15:48:01,061 [trainer.py] => M: 10000
+2026-05-18 15:48:01,061 [trainer.py] => K: [2]
+2026-05-18 15:48:01,061 [trainer.py] => fusion_type_list: ['M-F']
+2026-05-18 15:48:01,061 [trainer.py] => type: origin
+2026-05-18 15:48:01,061 [trainer.py] => method: pwcca
+2026-05-18 15:48:01,061 [trainer.py] => recalculate: False
+2026-05-18 15:48:01,061 [trainer.py] => merge_type: M-F
+2026-05-18 15:48:01,061 [trainer.py] => dataset_name: poetry
+2026-05-18 15:48:01,061 [trainer.py] => nb_classes: 20
+2026-05-18 15:48:01,061 [trainer.py] => nb_tasks: 10
+2026-05-18 15:48:01,665 [data_manager.py] => [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]
+Some weights of LlamaForSimple were not initialized from the model checkpoint at ../../model/Llama-3.2-1B and are newly initialized: ['score.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+This is for the BaseNet initialization.
+After BaseNet initialization.
+2026-05-18 15:48:03,248 [trainer.py] => All params: 1235818496
+2026-05-18 15:48:03,249 [trainer.py] => Trainable params: 1235818496
+2026-05-18 15:48:03,249 [ReProf.py] => Learning on 0-2
+2026-05-18 15:48:08,554 [ReProf.py] => Stage 1 分组.....
+2026-05-18 15:56:36,903 [ReProf.py] => [[15, 14], [13], [12], [11], [10], [9], [8], [7], [6], [5], [4], [3], [2], [1], [0]]
+2026-05-18 15:56:36,903 [ReProf.py] => groups: [[14], [16, 15]] K: 2
+2026-05-18 15:58:38,905 [ReProf.py] => Optimal lambda: 10000.0
+2026-05-18 15:58:44,322 [ReProf.py] => Optimal lambda: 100000.0
+2026-05-18 16:00:43,593 [trainer.py] => No NME accuracy.
+2026-05-18 16:00:43,594 [trainer.py] => CNN: {'total': 99.33, '00-01': 99.33, 'old': 0, 'new': 99.33}
+2026-05-18 16:00:43,594 [trainer.py] => Accuracy per class: {'human': 0.9933333333333333, 'gpt2': 0.9933333333333333}
+2026-05-18 16:00:43,594 [trainer.py] => CNN top1 curve: [99.33]
+Average Accuracy (CNN): 99.33
+2026-05-18 16:00:43,594 [trainer.py] => Average Accuracy (CNN): 99.33
+2026-05-18 16:00:43,594 [trainer.py] => All params: 1235818496
+2026-05-18 16:00:43,595 [trainer.py] => Trainable params: 1235818496
+2026-05-18 16:00:43,611 [ReProf.py] => Learning on 2-4
+2026-05-18 16:09:06,297 [ReProf.py] => Optimal lambda: 10000.0
+2026-05-18 16:09:12,623 [ReProf.py] => Optimal lambda: 100000.0
+2026-05-18 16:12:43,969 [trainer.py] => No NME accuracy.
+2026-05-18 16:12:43,969 [trainer.py] => CNN: {'total': 96.67, '00-01': 97.5, '02-03': 95.83, 'old': 97.5, 'new': 95.83}
+2026-05-18 16:12:43,969 [trainer.py] => Accuracy per class: {'human': 0.9833333333333333, 'gpt2': 0.9666666666666667, 'gpt3': 0.9766666666666667, 'cohere': 0.94}
+2026-05-18 16:12:43,969 [trainer.py] => CNN top1 curve: [99.33, 96.67]
+Average Accuracy (CNN): 98.0
+2026-05-18 16:12:43,969 [trainer.py] => Average Accuracy (CNN): 98.0
+2026-05-18 16:12:43,970 [trainer.py] => All params: 1235818496
+2026-05-18 16:12:43,970 [trainer.py] => Trainable params: 1235818496
+2026-05-18 16:12:43,989 [ReProf.py] => Learning on 4-6
+2026-05-18 16:21:52,297 [ReProf.py] => Optimal lambda: 10000.0
+2026-05-18 16:21:57,854 [ReProf.py] => Optimal lambda: 100000.0
+2026-05-18 16:27:27,251 [trainer.py] => No NME accuracy.
+2026-05-18 16:27:27,251 [trainer.py] => CNN: {'total': 91.61, '00-01': 97.5, '02-03': 85.67, '04-05': 91.67, 'old': 91.58, 'new': 91.67}
+2026-05-18 16:27:27,251 [trainer.py] => Accuracy per class: {'human': 0.9833333333333333, 'gpt2': 0.9666666666666667, 'gpt3': 0.8833333333333333, 'cohere': 0.83, 'chatgpt': 0.9466666666666667, 'cohere-chat': 0.8866666666666667}
+2026-05-18 16:27:27,251 [trainer.py] => CNN top1 curve: [99.33, 96.67, 91.61]
+Average Accuracy (CNN): 95.87
+2026-05-18 16:27:27,251 [trainer.py] => Average Accuracy (CNN): 95.87
+2026-05-18 16:27:27,252 [trainer.py] => All params: 1235818496
+2026-05-18 16:27:27,252 [trainer.py] => Trainable params: 1235818496
+2026-05-18 16:27:27,270 [ReProf.py] => Learning on 6-8
+2026-05-18 16:34:55,166 [ReProf.py] => Optimal lambda: 10000.0
+2026-05-18 16:35:00,011 [ReProf.py] => Optimal lambda: 10000.0
+2026-05-18 16:41:02,717 [trainer.py] => No NME accuracy.
+2026-05-18 16:41:02,717 [trainer.py] => CNN: {'total': 90.46, '00-01': 92.83, '02-03': 83.83, '04-05': 91.5, '06-07': 93.67, 'old': 89.39, 'new': 93.67}
+2026-05-18 16:41:02,717 [trainer.py] => Accuracy per class: {'human': 0.98, 'gpt2': 0.8766666666666667, 'gpt3': 0.87, 'cohere': 0.8066666666666666, 'chatgpt': 0.9366666666666666, 'cohere-chat': 0.8933333333333333, 'gpt4': 0.9933333333333333, 'mpt': 0.88}
+2026-05-18 16:41:02,717 [trainer.py] => CNN top1 curve: [99.33, 96.67, 91.61, 90.46]
+Average Accuracy (CNN): 94.5175
+2026-05-18 16:41:02,717 [trainer.py] => Average Accuracy (CNN): 94.5175
+2026-05-18 16:41:02,718 [trainer.py] => All params: 1235818496
+2026-05-18 16:41:02,719 [trainer.py] => Trainable params: 1235818496
+2026-05-18 16:41:02,723 [ReProf.py] => Learning on 8-10
+2026-05-18 16:48:21,621 [ReProf.py] => Optimal lambda: 10000.0
+2026-05-18 16:48:25,764 [ReProf.py] => Optimal lambda: 100000.0
+2026-05-18 16:56:40,139 [trainer.py] => No NME accuracy.
+2026-05-18 16:56:40,139 [trainer.py] => CNN: {'total': 87.9, '00-01': 94.17, '02-03': 84.67, '04-05': 79.0, '06-07': 93.5, '08-09': 88.17, 'old': 87.83, 'new': 88.17}
+2026-05-18 16:56:40,139 [trainer.py] => Accuracy per class: {'human': 0.98, 'gpt2': 0.9033333333333333, 'gpt3': 0.8933333333333333, 'cohere': 0.8, 'chatgpt': 0.8733333333333333, 'cohere-chat': 0.7066666666666667, 'gpt4': 0.9933333333333333, 'mpt': 0.8766666666666667, 'mpt-chat': 0.8233333333333334, 'llama-chat': 0.94}
+2026-05-18 16:56:40,139 [trainer.py] => CNN top1 curve: [99.33, 96.67, 91.61, 90.46, 87.9]
+Average Accuracy (CNN): 93.194
+2026-05-18 16:56:40,139 [trainer.py] => Average Accuracy (CNN): 93.194
+2026-05-18 16:56:40,140 [trainer.py] => All params: 1235818496
+2026-05-18 16:56:40,141 [trainer.py] => Trainable params: 1235818496
+2026-05-18 16:56:40,144 [ReProf.py] => Learning on 10-12
+2026-05-18 17:04:03,089 [ReProf.py] => Optimal lambda: 10000.0
+2026-05-18 17:04:07,295 [ReProf.py] => Optimal lambda: 100000.0
+2026-05-18 17:13:12,239 [trainer.py] => No NME accuracy.
+2026-05-18 17:13:12,240 [trainer.py] => CNN: {'total': 82.39, '00-01': 90.5, '02-03': 81.67, '04-05': 76.17, '06-07': 90.83, '08-09': 74.17, '10-11': 81.0, 'old': 82.67, 'new': 81.0}
+2026-05-18 17:13:12,240 [trainer.py] => Accuracy per class: {'human': 0.9733333333333334, 'gpt2': 0.8366666666666667, 'gpt3': 0.8866666666666667, 'cohere': 0.7466666666666667, 'chatgpt': 0.8733333333333333, 'cohere-chat': 0.65, 'gpt4': 0.9933333333333333, 'mpt': 0.8233333333333334, 'mpt-chat': 0.5733333333333334, 'llama-chat': 0.91, 'mistral': 0.83, 'mistral-chat': 0.79}
+2026-05-18 17:13:12,240 [trainer.py] => CNN top1 curve: [99.33, 96.67, 91.61, 90.46, 87.9, 82.39]
+Average Accuracy (CNN): 91.39333333333333
+2026-05-18 17:13:12,240 [trainer.py] => Average Accuracy (CNN): 91.39333333333333
+2026-05-18 17:13:12,240 [trainer.py] => All params: 1235818496
+2026-05-18 17:13:12,241 [trainer.py] => Trainable params: 1235818496
+2026-05-18 17:13:12,246 [ReProf.py] => Learning on 12-14
+2026-05-18 17:20:35,846 [ReProf.py] => Optimal lambda: 1000.0
+2026-05-18 17:20:40,682 [ReProf.py] => Optimal lambda: 10000.0
+2026-05-18 17:31:05,327 [trainer.py] => No NME accuracy.
+2026-05-18 17:31:05,327 [trainer.py] => CNN: {'total': 84.31, '00-01': 87.5, '02-03': 80.83, '04-05': 77.0, '06-07': 89.67, '08-09': 76.83, '10-11': 79.17, '12-13': 99.17, 'old': 81.83, 'new': 99.17}
+2026-05-18 17:31:05,328 [trainer.py] => Accuracy per class: {'human': 0.9633333333333334, 'gpt2': 0.7866666666666666, 'gpt3': 0.8833333333333333, 'cohere': 0.7333333333333333, 'chatgpt': 0.8933333333333333, 'cohere-chat': 0.6466666666666666, 'gpt4': 0.9933333333333333, 'mpt': 0.8, 'mpt-chat': 0.63, 'llama-chat': 0.9066666666666666, 'mistral': 0.81, 'mistral-chat': 0.7733333333333333, 'gemini-pro': 0.9833333333333333, 'glm-4-plus': 1.0}
+2026-05-18 17:31:05,328 [trainer.py] => CNN top1 curve: [99.33, 96.67, 91.61, 90.46, 87.9, 82.39, 84.31]
+Average Accuracy (CNN): 90.38142857142859
+2026-05-18 17:31:05,328 [trainer.py] => Average Accuracy (CNN): 90.38142857142859
+2026-05-18 17:31:05,328 [trainer.py] => All params: 1235818496
+2026-05-18 17:31:05,329 [trainer.py] => Trainable params: 1235818496
+2026-05-18 17:31:05,333 [ReProf.py] => Learning on 14-16
+2026-05-18 17:38:33,532 [ReProf.py] => Optimal lambda: 1000.0
+2026-05-18 17:38:37,774 [ReProf.py] => Optimal lambda: 10000.0
+2026-05-18 17:50:26,397 [trainer.py] => No NME accuracy.
+2026-05-18 17:50:26,397 [trainer.py] => CNN: {'total': 85.85, '00-01': 87.5, '02-03': 80.67, '04-05': 77.0, '06-07': 89.5, '08-09': 75.83, '10-11': 78.83, '12-13': 98.5, '14-15': 99.0, 'old': 83.98, 'new': 99.0}
+2026-05-18 17:50:26,398 [trainer.py] => Accuracy per class: {'human': 0.9633333333333334, 'gpt2': 0.7866666666666666, 'gpt3': 0.8833333333333333, 'cohere': 0.73, 'chatgpt': 0.8866666666666667, 'cohere-chat': 0.6533333333333333, 'gpt4': 0.9933333333333333, 'mpt': 0.7966666666666666, 'mpt-chat': 0.6066666666666667, 'llama-chat': 0.91, 'mistral': 0.8033333333333333, 'mistral-chat': 0.7733333333333333, 'gemini-pro': 0.9833333333333333, 'glm-4-plus': 0.9866666666666667, 'gpt-4o': 1.0, 'spark-max': 0.98}
+2026-05-18 17:50:26,398 [trainer.py] => CNN top1 curve: [99.33, 96.67, 91.61, 90.46, 87.9, 82.39, 84.31, 85.85]
+Average Accuracy (CNN): 89.81500000000001
+2026-05-18 17:50:26,398 [trainer.py] => Average Accuracy (CNN): 89.81500000000001
+2026-05-18 17:50:26,398 [trainer.py] => All params: 1235818496
+2026-05-18 17:50:26,399 [trainer.py] => Trainable params: 1235818496
+2026-05-18 17:50:26,402 [ReProf.py] => Learning on 16-18
+2026-05-18 17:57:58,604 [ReProf.py] => Optimal lambda: 1000.0
+2026-05-18 17:58:03,312 [ReProf.py] => Optimal lambda: 100000.0
+2026-05-18 18:11:27,516 [trainer.py] => No NME accuracy.
+2026-05-18 18:11:27,516 [trainer.py] => CNN: {'total': 86.98, '00-01': 88.0, '02-03': 82.0, '04-05': 76.5, '06-07': 89.83, '08-09': 75.17, '10-11': 78.17, '12-13': 98.67, '14-15': 97.67, '16-17': 96.83, 'old': 85.75, 'new': 96.83}
+2026-05-18 18:11:27,516 [trainer.py] => Accuracy per class: {'human': 0.96, 'gpt2': 0.8, 'gpt3': 0.8866666666666667, 'cohere': 0.7533333333333333, 'chatgpt': 0.8766666666666667, 'cohere-chat': 0.6533333333333333, 'gpt4': 0.9933333333333333, 'mpt': 0.8033333333333333, 'mpt-chat': 0.5966666666666667, 'llama-chat': 0.9066666666666666, 'mistral': 0.7766666666666666, 'mistral-chat': 0.7866666666666666, 'gemini-pro': 0.9833333333333333, 'glm-4-plus': 0.99, 'gpt-4o': 0.9866666666666667, 'spark-max': 0.9666666666666667, 'ernie-4.0-turbo': 0.9366666666666666, 'doubao-pro': 1.0}
+2026-05-18 18:11:27,516 [trainer.py] => CNN top1 curve: [99.33, 96.67, 91.61, 90.46, 87.9, 82.39, 84.31, 85.85, 86.98]
+Average Accuracy (CNN): 89.50000000000001
+2026-05-18 18:11:27,516 [trainer.py] => Average Accuracy (CNN): 89.50000000000001
+2026-05-18 18:11:27,517 [trainer.py] => All params: 1235818496
+2026-05-18 18:11:27,517 [trainer.py] => Trainable params: 1235818496
+2026-05-18 18:11:27,521 [ReProf.py] => Learning on 18-20
+2026-05-18 18:19:01,029 [ReProf.py] => Optimal lambda: 1000.0
+2026-05-18 18:19:04,788 [ReProf.py] => Optimal lambda: 100000.0
+2026-05-18 18:34:17,899 [trainer.py] => No NME accuracy.
+2026-05-18 18:34:17,899 [trainer.py] => CNN: {'total': 87.12, '00-01': 87.83, '02-03': 81.5, '04-05': 76.0, '06-07': 89.83, '08-09': 74.67, '10-11': 79.0, '12-13': 98.5, '14-15': 97.33, '16-17': 92.83, '18-19': 93.67, 'old': 86.39, 'new': 93.67}
+2026-05-18 18:34:17,899 [trainer.py] => Accuracy per class: {'human': 0.96, 'gpt2': 0.7966666666666666, 'gpt3': 0.8833333333333333, 'cohere': 0.7466666666666667, 'chatgpt': 0.87, 'cohere-chat': 0.65, 'gpt4': 0.9933333333333333, 'mpt': 0.8033333333333333, 'mpt-chat': 0.59, 'llama-chat': 0.9033333333333333, 'mistral': 0.7933333333333333, 'mistral-chat': 0.7866666666666666, 'gemini-pro': 0.9833333333333333, 'glm-4-plus': 0.9866666666666667, 'gpt-4o': 0.9866666666666667, 'spark-max': 0.96, 'ernie-4.0-turbo': 0.8566666666666667, 'doubao-pro': 1.0, 'qwen-plus': 0.94, 'deepseek-chat': 0.9333333333333333}
+2026-05-18 18:34:17,899 [trainer.py] => CNN top1 curve: [99.33, 96.67, 91.61, 90.46, 87.9, 82.39, 84.31, 85.85, 86.98, 87.12]
+Average Accuracy (CNN): 89.26200000000001
+2026-05-18 18:34:17,899 [trainer.py] => Average Accuracy (CNN): 89.26200000000001
+2026-05-18 18:34:18,083 [trainer.py] => config: ./exps/ReProf.json
+2026-05-18 18:34:18,083 [trainer.py] => prefix:  
+2026-05-18 18:34:18,083 [trainer.py] => dataset: /home/wangyujie/code/Baselines/data/COT-Bench/recipes
+2026-05-18 18:34:18,083 [trainer.py] => memory_size: 0
+2026-05-18 18:34:18,084 [trainer.py] => memory_per_class: 0
+2026-05-18 18:34:18,085 [trainer.py] => fixed_memory: False
+2026-05-18 18:34:18,086 [trainer.py] => shuffle: False
+2026-05-18 18:34:18,086 [trainer.py] => init_cls: 2
+2026-05-18 18:34:18,086 [trainer.py] => increment: 2
+2026-05-18 18:34:18,086 [trainer.py] => model_name: ReProf
+2026-05-18 18:34:18,086 [trainer.py] => convnet_type: Llama-3.2-1B
+2026-05-18 18:34:18,086 [trainer.py] => device: [device(type='cuda', index=3)]
+2026-05-18 18:34:18,086 [trainer.py] => seed: 42
+2026-05-18 18:34:18,086 [trainer.py] => tuned_epoch: [0]
+2026-05-18 18:34:18,086 [trainer.py] => init_lr: 0.01
+2026-05-18 18:34:18,086 [trainer.py] => batch_size: 16
+2026-05-18 18:34:18,086 [trainer.py] => weight_decay: 0.05
+2026-05-18 18:34:18,086 [trainer.py] => group_Num: 2
+2026-05-18 18:34:18,086 [trainer.py] => min_lr: 1e-08
+2026-05-18 18:34:18,086 [trainer.py] => use_RP: True
+2026-05-18 18:34:18,086 [trainer.py] => M: 10000
+2026-05-18 18:34:18,086 [trainer.py] => K: [2]
+2026-05-18 18:34:18,086 [trainer.py] => fusion_type_list: ['M-F']
+2026-05-18 18:34:18,086 [trainer.py] => type: origin
+2026-05-18 18:34:18,086 [trainer.py] => method: pwcca
+2026-05-18 18:34:18,086 [trainer.py] => recalculate: False
+2026-05-18 18:34:18,086 [trainer.py] => merge_type: M-F
+2026-05-18 18:34:18,086 [trainer.py] => dataset_name: recipes
+2026-05-18 18:34:18,086 [trainer.py] => nb_classes: 20
+2026-05-18 18:34:18,086 [trainer.py] => nb_tasks: 10
+2026-05-18 18:34:18,737 [data_manager.py] => [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]
+Some weights of LlamaForSimple were not initialized from the model checkpoint at ../../model/Llama-3.2-1B and are newly initialized: ['score.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+This is for the BaseNet initialization.
+After BaseNet initialization.
+2026-05-18 18:34:23,914 [trainer.py] => All params: 1235818496
+2026-05-18 18:34:23,914 [trainer.py] => Trainable params: 1235818496
+2026-05-18 18:34:23,914 [ReProf.py] => Learning on 0-2
+2026-05-18 18:34:29,690 [ReProf.py] => Stage 1 分组.....
+2026-05-18 18:40:37,009 [ReProf.py] => [[15], [14], [13], [12], [11], [10], [9], [8], [7], [6], [5], [4], [3], [2], [1], [0]]
+2026-05-18 18:40:37,009 [ReProf.py] => groups: [[15], [16]] K: 2
+2026-05-18 18:42:15,919 [ReProf.py] => Optimal lambda: 10000.0
+2026-05-18 18:42:20,013 [ReProf.py] => Optimal lambda: 100000.0
+2026-05-18 18:44:06,933 [trainer.py] => No NME accuracy.
+2026-05-18 18:44:06,933 [trainer.py] => CNN: {'total': 99.67, '00-01': 99.67, 'old': 0, 'new': 99.67}
+2026-05-18 18:44:06,933 [trainer.py] => Accuracy per class: {'human': 1.0, 'gpt2': 0.9933333333333333}
+2026-05-18 18:44:06,933 [trainer.py] => CNN top1 curve: [99.67]
+Average Accuracy (CNN): 99.67
+2026-05-18 18:44:06,933 [trainer.py] => Average Accuracy (CNN): 99.67
+2026-05-18 18:44:06,934 [trainer.py] => All params: 1235818496
+2026-05-18 18:44:06,935 [trainer.py] => Trainable params: 1235818496
+2026-05-18 18:44:06,944 [ReProf.py] => Learning on 2-4
+2026-05-18 18:52:34,046 [ReProf.py] => Optimal lambda: 1000.0
+2026-05-18 18:52:37,937 [ReProf.py] => Optimal lambda: 100000.0
+2026-05-18 18:56:11,580 [trainer.py] => No NME accuracy.
+2026-05-18 18:56:11,580 [trainer.py] => CNN: {'total': 98.83, '00-01': 99.33, '02-03': 98.33, 'old': 99.33, 'new': 98.33}
+2026-05-18 18:56:11,580 [trainer.py] => Accuracy per class: {'human': 1.0, 'gpt2': 0.9866666666666667, 'gpt3': 0.9966666666666667, 'cohere': 0.97}
+2026-05-18 18:56:11,580 [trainer.py] => CNN top1 curve: [99.67, 98.83]
+Average Accuracy (CNN): 99.25
+2026-05-18 18:56:11,580 [trainer.py] => Average Accuracy (CNN): 99.25
+2026-05-18 18:56:11,581 [trainer.py] => All params: 1235818496
+2026-05-18 18:56:11,582 [trainer.py] => Trainable params: 1235818496
+2026-05-18 18:56:11,591 [ReProf.py] => Learning on 4-6
+2026-05-18 19:04:57,959 [ReProf.py] => Optimal lambda: 1000.0
+2026-05-18 19:05:02,076 [ReProf.py] => Optimal lambda: 100000.0
+2026-05-18 19:11:04,720 [trainer.py] => No NME accuracy.
+2026-05-18 19:11:04,721 [trainer.py] => CNN: {'total': 95.5, '00-01': 99.17, '02-03': 91.33, '04-05': 96.0, 'old': 95.25, 'new': 96.0}
+2026-05-18 19:11:04,721 [trainer.py] => Accuracy per class: {'human': 1.0, 'gpt2': 0.9833333333333333, 'gpt3': 0.96, 'cohere': 0.8666666666666667, 'chatgpt': 0.9966666666666667, 'cohere-chat': 0.9233333333333333}
+2026-05-18 19:11:04,721 [trainer.py] => CNN top1 curve: [99.67, 98.83, 95.5]
+Average Accuracy (CNN): 98.0
+2026-05-18 19:11:04,721 [trainer.py] => Average Accuracy (CNN): 98.0
+2026-05-18 19:11:04,723 [trainer.py] => All params: 1235818496
+2026-05-18 19:11:04,724 [trainer.py] => Trainable params: 1235818496
+2026-05-18 19:11:04,741 [ReProf.py] => Learning on 6-8
+2026-05-18 19:21:00,582 [ReProf.py] => Optimal lambda: 10000.0
+2026-05-18 19:21:04,662 [ReProf.py] => Optimal lambda: 100000.0
+2026-05-18 19:29:05,629 [trainer.py] => No NME accuracy.
+2026-05-18 19:29:05,630 [trainer.py] => CNN: {'total': 94.96, '00-01': 98.0, '02-03': 88.5, '04-05': 96.0, '06-07': 97.33, 'old': 94.17, 'new': 97.33}
+2026-05-18 19:29:05,630 [trainer.py] => Accuracy per class: {'human': 1.0, 'gpt2': 0.96, 'gpt3': 0.95, 'cohere': 0.82, 'chatgpt': 0.99, 'cohere-chat': 0.93, 'gpt4': 0.9833333333333333, 'mpt': 0.9633333333333334}
+2026-05-18 19:29:05,630 [trainer.py] => CNN top1 curve: [99.67, 98.83, 95.5, 94.96]
+Average Accuracy (CNN): 97.24
+2026-05-18 19:29:05,630 [trainer.py] => Average Accuracy (CNN): 97.24
+2026-05-18 19:29:05,630 [trainer.py] => All params: 1235818496
+2026-05-18 19:29:05,631 [trainer.py] => Trainable params: 1235818496
+2026-05-18 19:29:05,635 [ReProf.py] => Learning on 8-10
+2026-05-18 19:37:09,597 [ReProf.py] => Optimal lambda: 1000.0
+2026-05-18 19:37:13,456 [ReProf.py] => Optimal lambda: 10000.0
+2026-05-18 19:44:43,240 [trainer.py] => No NME accuracy.
+2026-05-18 19:44:43,240 [trainer.py] => CNN: {'total': 93.93, '00-01': 97.5, '02-03': 88.67, '04-05': 91.0, '06-07': 95.0, '08-09': 97.5, 'old': 93.04, 'new': 97.5}
+2026-05-18 19:44:43,240 [trainer.py] => Accuracy per class: {'human': 0.9966666666666667, 'gpt2': 0.9533333333333334, 'gpt3': 0.9533333333333334, 'cohere': 0.82, 'chatgpt': 0.9233333333333333, 'cohere-chat': 0.8966666666666666, 'gpt4': 0.97, 'mpt': 0.93, 'mpt-chat': 0.9533333333333334, 'llama-chat': 0.9966666666666667}
+2026-05-18 19:44:43,240 [trainer.py] => CNN top1 curve: [99.67, 98.83, 95.5, 94.96, 93.93]
+Average Accuracy (CNN): 96.578
+2026-05-18 19:44:43,241 [trainer.py] => Average Accuracy (CNN): 96.578
+2026-05-18 19:44:43,241 [trainer.py] => All params: 1235818496
+2026-05-18 19:44:43,243 [trainer.py] => Trainable params: 1235818496
+2026-05-18 19:44:43,247 [ReProf.py] => Learning on 10-12
+2026-05-18 19:52:17,925 [ReProf.py] => Optimal lambda: 10000.0
+2026-05-18 19:52:22,212 [ReProf.py] => Optimal lambda: 100000.0
+2026-05-18 20:01:31,916 [trainer.py] => No NME accuracy.
+2026-05-18 20:01:31,917 [trainer.py] => CNN: {'total': 91.25, '00-01': 96.83, '02-03': 86.33, '04-05': 84.17, '06-07': 94.5, '08-09': 95.5, '10-11': 90.17, 'old': 91.47, 'new': 90.17}
+2026-05-18 20:01:31,917 [trainer.py] => Accuracy per class: {'human': 1.0, 'gpt2': 0.9366666666666666, 'gpt3': 0.95, 'cohere': 0.7766666666666666, 'chatgpt': 0.8433333333333334, 'cohere-chat': 0.84, 'gpt4': 0.9666666666666667, 'mpt': 0.9233333333333333, 'mpt-chat': 0.9133333333333333, 'llama-chat': 0.9966666666666667, 'mistral': 0.94, 'mistral-chat': 0.8633333333333333}
+2026-05-18 20:01:31,917 [trainer.py] => CNN top1 curve: [99.67, 98.83, 95.5, 94.96, 93.93, 91.25]
+Average Accuracy (CNN): 95.69
+2026-05-18 20:01:31,917 [trainer.py] => Average Accuracy (CNN): 95.69
+2026-05-18 20:01:31,917 [trainer.py] => All params: 1235818496
+2026-05-18 20:01:31,918 [trainer.py] => Trainable params: 1235818496
+2026-05-18 20:01:31,923 [ReProf.py] => Learning on 12-14
+2026-05-18 20:09:05,696 [ReProf.py] => Optimal lambda: 1000.0
+2026-05-18 20:09:09,775 [ReProf.py] => Optimal lambda: 100000.0
+2026-05-18 20:19:46,148 [trainer.py] => No NME accuracy.
+2026-05-18 20:19:46,149 [trainer.py] => CNN: {'total': 93.0, '00-01': 96.5, '02-03': 87.33, '04-05': 86.17, '06-07': 93.67, '08-09': 95.0, '10-11': 92.5, '12-13': 99.83, 'old': 91.86, 'new': 99.83}
+2026-05-18 20:19:46,149 [trainer.py] => Accuracy per class: {'human': 1.0, 'gpt2': 0.93, 'gpt3': 0.95, 'cohere': 0.7966666666666666, 'chatgpt': 0.8633333333333333, 'cohere-chat': 0.86, 'gpt4': 0.9633333333333334, 'mpt': 0.91, 'mpt-chat': 0.9066666666666666, 'llama-chat': 0.9933333333333333, 'mistral': 0.9466666666666667, 'mistral-chat': 0.9033333333333333, 'gemini-pro': 1.0, 'glm-4-plus': 0.9966666666666667}
+2026-05-18 20:19:46,149 [trainer.py] => CNN top1 curve: [99.67, 98.83, 95.5, 94.96, 93.93, 91.25, 93.0]
+Average Accuracy (CNN): 95.30571428571429
+2026-05-18 20:19:46,149 [trainer.py] => Average Accuracy (CNN): 95.30571428571429
+2026-05-18 20:19:46,151 [trainer.py] => All params: 1235818496
+2026-05-18 20:19:46,152 [trainer.py] => Trainable params: 1235818496
+2026-05-18 20:19:46,156 [ReProf.py] => Learning on 14-16
+2026-05-18 20:27:23,297 [ReProf.py] => Optimal lambda: 1000.0
+2026-05-18 20:27:27,468 [ReProf.py] => Optimal lambda: 100000.0
+2026-05-18 20:39:13,707 [trainer.py] => No NME accuracy.
+2026-05-18 20:39:13,707 [trainer.py] => CNN: {'total': 93.6, '00-01': 97.0, '02-03': 87.17, '04-05': 86.17, '06-07': 93.5, '08-09': 95.17, '10-11': 91.83, '12-13': 99.83, '14-15': 98.17, 'old': 92.95, 'new': 98.17}
+2026-05-18 20:39:13,707 [trainer.py] => Accuracy per class: {'human': 1.0, 'gpt2': 0.94, 'gpt3': 0.9533333333333334, 'cohere': 0.79, 'chatgpt': 0.8666666666666667, 'cohere-chat': 0.8566666666666667, 'gpt4': 0.9633333333333334, 'mpt': 0.9066666666666666, 'mpt-chat': 0.9133333333333333, 'llama-chat': 0.99, 'mistral': 0.9466666666666667, 'mistral-chat': 0.89, 'gemini-pro': 1.0, 'glm-4-plus': 0.9966666666666667, 'gpt-4o': 0.9866666666666667, 'spark-max': 0.9766666666666667}
+2026-05-18 20:39:13,707 [trainer.py] => CNN top1 curve: [99.67, 98.83, 95.5, 94.96, 93.93, 91.25, 93.0, 93.6]
+Average Accuracy (CNN): 95.0925
+2026-05-18 20:39:13,707 [trainer.py] => Average Accuracy (CNN): 95.0925
+2026-05-18 20:39:13,708 [trainer.py] => All params: 1235818496
+2026-05-18 20:39:13,708 [trainer.py] => Trainable params: 1235818496
+2026-05-18 20:39:13,714 [ReProf.py] => Learning on 16-18
+2026-05-18 20:46:40,530 [ReProf.py] => Optimal lambda: 1000.0
+2026-05-18 20:46:49,302 [ReProf.py] => Optimal lambda: 100000.0
+2026-05-18 21:00:10,381 [trainer.py] => No NME accuracy.
+2026-05-18 21:00:10,381 [trainer.py] => CNN: {'total': 94.09, '00-01': 96.83, '02-03': 87.67, '04-05': 85.83, '06-07': 93.33, '08-09': 94.67, '10-11': 91.67, '12-13': 99.83, '14-15': 98.0, '16-17': 99.0, 'old': 93.48, 'new': 99.0}
+2026-05-18 21:00:10,381 [trainer.py] => Accuracy per class: {'human': 1.0, 'gpt2': 0.9366666666666666, 'gpt3': 0.95, 'cohere': 0.8033333333333333, 'chatgpt': 0.8666666666666667, 'cohere-chat': 0.85, 'gpt4': 0.96, 'mpt': 0.9066666666666666, 'mpt-chat': 0.9, 'llama-chat': 0.9933333333333333, 'mistral': 0.9466666666666667, 'mistral-chat': 0.8866666666666667, 'gemini-pro': 1.0, 'glm-4-plus': 0.9966666666666667, 'gpt-4o': 0.9833333333333333, 'spark-max': 0.9766666666666667, 'ernie-4.0-turbo': 0.9833333333333333, 'doubao-pro': 0.9966666666666667}
+2026-05-18 21:00:10,381 [trainer.py] => CNN top1 curve: [99.67, 98.83, 95.5, 94.96, 93.93, 91.25, 93.0, 93.6, 94.09]
+Average Accuracy (CNN): 94.98111111111112
+2026-05-18 21:00:10,381 [trainer.py] => Average Accuracy (CNN): 94.98111111111112
+2026-05-18 21:00:10,382 [trainer.py] => All params: 1235818496
+2026-05-18 21:00:10,383 [trainer.py] => Trainable params: 1235818496
+2026-05-18 21:00:10,387 [ReProf.py] => Learning on 18-20
+2026-05-18 21:07:38,389 [ReProf.py] => Optimal lambda: 1000.0
+2026-05-18 21:07:42,860 [ReProf.py] => Optimal lambda: 100000.0
+2026-05-18 21:22:33,367 [trainer.py] => No NME accuracy.
+2026-05-18 21:22:33,368 [trainer.py] => CNN: {'total': 93.5, '00-01': 96.83, '02-03': 87.17, '04-05': 85.33, '06-07': 93.5, '08-09': 94.5, '10-11': 91.67, '12-13': 99.17, '14-15': 95.83, '16-17': 98.83, '18-19': 92.17, 'old': 93.65, 'new': 92.17}
+2026-05-18 21:22:33,368 [trainer.py] => Accuracy per class: {'human': 1.0, 'gpt2': 0.9366666666666666, 'gpt3': 0.9466666666666667, 'cohere': 0.7966666666666666, 'chatgpt': 0.8566666666666667, 'cohere-chat': 0.85, 'gpt4': 0.9666666666666667, 'mpt': 0.9033333333333333, 'mpt-chat': 0.8966666666666666, 'llama-chat': 0.9933333333333333, 'mistral': 0.9466666666666667, 'mistral-chat': 0.8866666666666667, 'gemini-pro': 1.0, 'glm-4-plus': 0.9833333333333333, 'gpt-4o': 0.99, 'spark-max': 0.9266666666666666, 'ernie-4.0-turbo': 0.98, 'doubao-pro': 0.9966666666666667, 'qwen-plus': 0.8866666666666667, 'deepseek-chat': 0.9566666666666667}
+2026-05-18 21:22:33,368 [trainer.py] => CNN top1 curve: [99.67, 98.83, 95.5, 94.96, 93.93, 91.25, 93.0, 93.6, 94.09, 93.5]
+Average Accuracy (CNN): 94.833
+2026-05-18 21:22:33,368 [trainer.py] => Average Accuracy (CNN): 94.833
+2026-05-18 21:22:33,586 [trainer.py] => config: ./exps/ReProf.json
+2026-05-18 21:22:33,586 [trainer.py] => prefix:  
+2026-05-18 21:22:33,586 [trainer.py] => dataset: /home/wangyujie/code/Baselines/data/COT-Bench/reddit
+2026-05-18 21:22:33,586 [trainer.py] => memory_size: 0
+2026-05-18 21:22:33,586 [trainer.py] => memory_per_class: 0
+2026-05-18 21:22:33,587 [trainer.py] => fixed_memory: False
+2026-05-18 21:22:33,587 [trainer.py] => shuffle: False
+2026-05-18 21:22:33,587 [trainer.py] => init_cls: 2
+2026-05-18 21:22:33,587 [trainer.py] => increment: 2
+2026-05-18 21:22:33,588 [trainer.py] => model_name: ReProf
+2026-05-18 21:22:33,589 [trainer.py] => convnet_type: Llama-3.2-1B
+2026-05-18 21:22:33,589 [trainer.py] => device: [device(type='cuda', index=3)]
+2026-05-18 21:22:33,589 [trainer.py] => seed: 42
+2026-05-18 21:22:33,589 [trainer.py] => tuned_epoch: [0]
+2026-05-18 21:22:33,589 [trainer.py] => init_lr: 0.01
+2026-05-18 21:22:33,589 [trainer.py] => batch_size: 16
+2026-05-18 21:22:33,589 [trainer.py] => weight_decay: 0.05
+2026-05-18 21:22:33,589 [trainer.py] => group_Num: 2
+2026-05-18 21:22:33,589 [trainer.py] => min_lr: 1e-08
+2026-05-18 21:22:33,589 [trainer.py] => use_RP: True
+2026-05-18 21:22:33,589 [trainer.py] => M: 10000
+2026-05-18 21:22:33,589 [trainer.py] => K: [2]
+2026-05-18 21:22:33,589 [trainer.py] => fusion_type_list: ['M-F']
+2026-05-18 21:22:33,589 [trainer.py] => type: origin
+2026-05-18 21:22:33,589 [trainer.py] => method: pwcca
+2026-05-18 21:22:33,589 [trainer.py] => recalculate: False
+2026-05-18 21:22:33,589 [trainer.py] => merge_type: M-F
+2026-05-18 21:22:33,589 [trainer.py] => dataset_name: reddit
+2026-05-18 21:22:33,589 [trainer.py] => nb_classes: 20
+2026-05-18 21:22:33,589 [trainer.py] => nb_tasks: 10
+2026-05-18 21:22:33,984 [data_manager.py] => [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]
+Some weights of LlamaForSimple were not initialized from the model checkpoint at ../../model/Llama-3.2-1B and are newly initialized: ['score.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+This is for the BaseNet initialization.
+After BaseNet initialization.
+2026-05-18 21:22:34,607 [trainer.py] => All params: 1235818496
+2026-05-18 21:22:34,608 [trainer.py] => Trainable params: 1235818496
+2026-05-18 21:22:34,608 [ReProf.py] => Learning on 0-2
+2026-05-18 21:22:39,116 [ReProf.py] => Stage 1 分组.....
+2026-05-18 21:28:49,820 [ReProf.py] => [[15], [14], [13], [12], [11], [10], [9], [8], [7], [6], [5], [4], [3], [2], [1], [0]]
+2026-05-18 21:28:49,821 [ReProf.py] => groups: [[15], [16]] K: 2
+2026-05-18 21:30:17,625 [ReProf.py] => Optimal lambda: 10000.0
+2026-05-18 21:30:21,939 [ReProf.py] => Optimal lambda: 100000.0
+2026-05-18 21:31:53,965 [trainer.py] => No NME accuracy.
+2026-05-18 21:31:53,966 [trainer.py] => CNN: {'total': 98.83, '00-01': 98.83, 'old': 0, 'new': 98.83}
+2026-05-18 21:31:53,966 [trainer.py] => Accuracy per class: {'human': 1.0, 'gpt2': 0.9766666666666667}
+2026-05-18 21:31:53,966 [trainer.py] => CNN top1 curve: [98.83]
+Average Accuracy (CNN): 98.83
+2026-05-18 21:31:53,966 [trainer.py] => Average Accuracy (CNN): 98.83
+2026-05-18 21:31:53,966 [trainer.py] => All params: 1235818496
+2026-05-18 21:31:53,967 [trainer.py] => Trainable params: 1235818496
+2026-05-18 21:31:53,975 [ReProf.py] => Learning on 2-4
+2026-05-18 21:39:26,184 [ReProf.py] => Optimal lambda: 10000.0
+2026-05-18 21:39:30,419 [ReProf.py] => Optimal lambda: 100000.0
+2026-05-18 21:42:24,322 [trainer.py] => No NME accuracy.
+2026-05-18 21:42:24,322 [trainer.py] => CNN: {'total': 93.17, '00-01': 96.17, '02-03': 90.17, 'old': 96.17, 'new': 90.17}
+2026-05-18 21:42:24,322 [trainer.py] => Accuracy per class: {'human': 0.9833333333333333, 'gpt2': 0.94, 'gpt3': 0.9566666666666667, 'cohere': 0.8466666666666667}
+2026-05-18 21:42:24,322 [trainer.py] => CNN top1 curve: [98.83, 93.17]
+Average Accuracy (CNN): 96.0
+2026-05-18 21:42:24,322 [trainer.py] => Average Accuracy (CNN): 96.0
+2026-05-18 21:42:24,323 [trainer.py] => All params: 1235818496
+2026-05-18 21:42:24,324 [trainer.py] => Trainable params: 1235818496
+2026-05-18 21:42:24,334 [ReProf.py] => Learning on 4-6
+2026-05-18 21:49:55,617 [ReProf.py] => Optimal lambda: 10000.0
+2026-05-18 21:49:59,911 [ReProf.py] => Optimal lambda: 100000.0
+2026-05-18 21:54:31,378 [trainer.py] => No NME accuracy.
+2026-05-18 21:54:31,379 [trainer.py] => CNN: {'total': 83.72, '00-01': 94.0, '02-03': 75.0, '04-05': 82.17, 'old': 84.5, 'new': 82.17}
+2026-05-18 21:54:31,379 [trainer.py] => Accuracy per class: {'human': 0.9666666666666667, 'gpt2': 0.9133333333333333, 'gpt3': 0.8866666666666667, 'cohere': 0.6133333333333333, 'chatgpt': 0.9766666666666667, 'cohere-chat': 0.6666666666666666}
+2026-05-18 21:54:31,379 [trainer.py] => CNN top1 curve: [98.83, 93.17, 83.72]
+Average Accuracy (CNN): 91.90666666666668
+2026-05-18 21:54:31,379 [trainer.py] => Average Accuracy (CNN): 91.90666666666668
+2026-05-18 21:54:31,380 [trainer.py] => All params: 1235818496
+2026-05-18 21:54:31,380 [trainer.py] => Trainable params: 1235818496
+2026-05-18 21:54:31,389 [ReProf.py] => Learning on 6-8
+2026-05-18 22:01:57,383 [ReProf.py] => Optimal lambda: 10000.0
+2026-05-18 22:02:01,742 [ReProf.py] => Optimal lambda: 100000.0
+2026-05-18 22:07:58,139 [trainer.py] => No NME accuracy.
+2026-05-18 22:07:58,139 [trainer.py] => CNN: {'total': 82.75, '00-01': 91.67, '02-03': 73.17, '04-05': 78.5, '06-07': 87.67, 'old': 81.11, 'new': 87.67}
+2026-05-18 22:07:58,139 [trainer.py] => Accuracy per class: {'human': 0.9633333333333334, 'gpt2': 0.87, 'gpt3': 0.87, 'cohere': 0.5933333333333334, 'chatgpt': 0.9333333333333333, 'cohere-chat': 0.6366666666666667, 'gpt4': 0.96, 'mpt': 0.7933333333333333}
+2026-05-18 22:07:58,139 [trainer.py] => CNN top1 curve: [98.83, 93.17, 83.72, 82.75]
+Average Accuracy (CNN): 89.6175
+2026-05-18 22:07:58,139 [trainer.py] => Average Accuracy (CNN): 89.6175
+2026-05-18 22:07:58,140 [trainer.py] => All params: 1235818496
+2026-05-18 22:07:58,140 [trainer.py] => Trainable params: 1235818496
+2026-05-18 22:07:58,144 [ReProf.py] => Learning on 8-10
+2026-05-18 22:15:31,507 [ReProf.py] => Optimal lambda: 10000.0
+2026-05-18 22:15:39,771 [ReProf.py] => Optimal lambda: 100000.0
+2026-05-18 22:23:03,883 [trainer.py] => No NME accuracy.
+2026-05-18 22:23:03,884 [trainer.py] => CNN: {'total': 81.47, '00-01': 92.17, '02-03': 66.0, '04-05': 68.67, '06-07': 87.0, '08-09': 93.5, 'old': 78.46, 'new': 93.5}
+2026-05-18 22:23:03,884 [trainer.py] => Accuracy per class: {'human': 0.9633333333333334, 'gpt2': 0.88, 'gpt3': 0.72, 'cohere': 0.6, 'chatgpt': 0.7966666666666666, 'cohere-chat': 0.5766666666666667, 'gpt4': 0.96, 'mpt': 0.78, 'mpt-chat': 0.9133333333333333, 'llama-chat': 0.9566666666666667}
+2026-05-18 22:23:03,884 [trainer.py] => CNN top1 curve: [98.83, 93.17, 83.72, 82.75, 81.47]
+Average Accuracy (CNN): 87.98800000000001
+2026-05-18 22:23:03,884 [trainer.py] => Average Accuracy (CNN): 87.98800000000001
+2026-05-18 22:23:03,884 [trainer.py] => All params: 1235818496
+2026-05-18 22:23:03,885 [trainer.py] => Trainable params: 1235818496
+2026-05-18 22:23:03,888 [ReProf.py] => Learning on 10-12
+2026-05-18 22:30:35,312 [ReProf.py] => Optimal lambda: 10000.0
+2026-05-18 22:30:39,546 [ReProf.py] => Optimal lambda: 100000.0
+2026-05-18 22:39:41,276 [trainer.py] => No NME accuracy.
+2026-05-18 22:39:41,277 [trainer.py] => CNN: {'total': 76.19, '00-01': 86.67, '02-03': 61.83, '04-05': 64.0, '06-07': 81.5, '08-09': 90.83, '10-11': 72.33, 'old': 76.97, 'new': 72.33}
+2026-05-18 22:39:41,277 [trainer.py] => Accuracy per class: {'human': 0.9633333333333334, 'gpt2': 0.77, 'gpt3': 0.7033333333333334, 'cohere': 0.5333333333333333, 'chatgpt': 0.7633333333333333, 'cohere-chat': 0.5166666666666667, 'gpt4': 0.9566666666666667, 'mpt': 0.6733333333333333, 'mpt-chat': 0.8633333333333333, 'llama-chat': 0.9533333333333334, 'mistral': 0.7933333333333333, 'mistral-chat': 0.6533333333333333}
+2026-05-18 22:39:41,277 [trainer.py] => CNN top1 curve: [98.83, 93.17, 83.72, 82.75, 81.47, 76.19]
+Average Accuracy (CNN): 86.02166666666669
+2026-05-18 22:39:41,277 [trainer.py] => Average Accuracy (CNN): 86.02166666666669
+2026-05-18 22:39:41,277 [trainer.py] => All params: 1235818496
+2026-05-18 22:39:41,278 [trainer.py] => Trainable params: 1235818496
+2026-05-18 22:39:41,283 [ReProf.py] => Learning on 12-14
+2026-05-18 22:47:15,371 [ReProf.py] => Optimal lambda: 10000.0
+2026-05-18 22:47:23,232 [ReProf.py] => Optimal lambda: 100000.0
+2026-05-18 22:57:47,290 [trainer.py] => No NME accuracy.
+2026-05-18 22:57:47,290 [trainer.py] => CNN: {'total': 78.67, '00-01': 86.17, '02-03': 60.83, '04-05': 62.17, '06-07': 80.67, '08-09': 90.0, '10-11': 71.5, '12-13': 99.33, 'old': 75.22, 'new': 99.33}
+2026-05-18 22:57:47,290 [trainer.py] => Accuracy per class: {'human': 0.97, 'gpt2': 0.7533333333333333, 'gpt3': 0.6933333333333334, 'cohere': 0.5233333333333333, 'chatgpt': 0.7366666666666667, 'cohere-chat': 0.5066666666666667, 'gpt4': 0.9533333333333334, 'mpt': 0.66, 'mpt-chat': 0.8466666666666667, 'llama-chat': 0.9533333333333334, 'mistral': 0.7933333333333333, 'mistral-chat': 0.6366666666666667, 'gemini-pro': 0.99, 'glm-4-plus': 0.9966666666666667}
+2026-05-18 22:57:47,290 [trainer.py] => CNN top1 curve: [98.83, 93.17, 83.72, 82.75, 81.47, 76.19, 78.67]
+Average Accuracy (CNN): 84.97142857142858
+2026-05-18 22:57:47,290 [trainer.py] => Average Accuracy (CNN): 84.97142857142858
+2026-05-18 22:57:47,291 [trainer.py] => All params: 1235818496
+2026-05-18 22:57:47,292 [trainer.py] => Trainable params: 1235818496
+2026-05-18 22:57:47,298 [ReProf.py] => Learning on 14-16
+2026-05-18 23:05:29,584 [ReProf.py] => Optimal lambda: 10000.0
+2026-05-18 23:05:33,926 [ReProf.py] => Optimal lambda: 100000.0
+2026-05-18 23:17:27,916 [trainer.py] => No NME accuracy.
+2026-05-18 23:17:27,917 [trainer.py] => CNN: {'total': 79.46, '00-01': 86.33, '02-03': 59.83, '04-05': 57.5, '06-07': 81.17, '08-09': 89.67, '10-11': 70.67, '12-13': 99.17, '14-15': 91.33, 'old': 77.76, 'new': 91.33}
+2026-05-18 23:17:27,917 [trainer.py] => Accuracy per class: {'human': 0.97, 'gpt2': 0.7566666666666667, 'gpt3': 0.68, 'cohere': 0.5166666666666667, 'chatgpt': 0.6466666666666666, 'cohere-chat': 0.5033333333333333, 'gpt4': 0.9533333333333334, 'mpt': 0.67, 'mpt-chat': 0.8433333333333334, 'llama-chat': 0.95, 'mistral': 0.7933333333333333, 'mistral-chat': 0.62, 'gemini-pro': 0.9933333333333333, 'glm-4-plus': 0.99, 'gpt-4o': 0.9133333333333333, 'spark-max': 0.9133333333333333}
+2026-05-18 23:17:27,917 [trainer.py] => CNN top1 curve: [98.83, 93.17, 83.72, 82.75, 81.47, 76.19, 78.67, 79.46]
+Average Accuracy (CNN): 84.28250000000001
+2026-05-18 23:17:27,917 [trainer.py] => Average Accuracy (CNN): 84.28250000000001
+2026-05-18 23:17:27,918 [trainer.py] => All params: 1235818496
+2026-05-18 23:17:27,918 [trainer.py] => Trainable params: 1235818496
+2026-05-18 23:17:27,923 [ReProf.py] => Learning on 16-18
+2026-05-18 23:24:59,907 [ReProf.py] => Optimal lambda: 10000.0
+2026-05-18 23:25:04,270 [ReProf.py] => Optimal lambda: 100000.0
+2026-05-18 23:38:37,843 [trainer.py] => No NME accuracy.
+2026-05-18 23:38:37,844 [trainer.py] => CNN: {'total': 80.63, '00-01': 85.83, '02-03': 60.0, '04-05': 57.17, '06-07': 81.17, '08-09': 90.33, '10-11': 69.67, '12-13': 98.67, '14-15': 88.17, '16-17': 94.67, 'old': 78.88, 'new': 94.67}
+2026-05-18 23:38:37,844 [trainer.py] => Accuracy per class: {'human': 0.97, 'gpt2': 0.7466666666666667, 'gpt3': 0.6733333333333333, 'cohere': 0.5266666666666666, 'chatgpt': 0.65, 'cohere-chat': 0.49333333333333335, 'gpt4': 0.95, 'mpt': 0.6733333333333333, 'mpt-chat': 0.85, 'llama-chat': 0.9566666666666667, 'mistral': 0.7833333333333333, 'mistral-chat': 0.61, 'gemini-pro': 0.99, 'glm-4-plus': 0.9833333333333333, 'gpt-4o': 0.87, 'spark-max': 0.8933333333333333, 'ernie-4.0-turbo': 0.91, 'doubao-pro': 0.9833333333333333}
+2026-05-18 23:38:37,844 [trainer.py] => CNN top1 curve: [98.83, 93.17, 83.72, 82.75, 81.47, 76.19, 78.67, 79.46, 80.63]
+Average Accuracy (CNN): 83.87666666666668
+2026-05-18 23:38:37,844 [trainer.py] => Average Accuracy (CNN): 83.87666666666668
+2026-05-18 23:38:37,845 [trainer.py] => All params: 1235818496
+2026-05-18 23:38:37,845 [trainer.py] => Trainable params: 1235818496
+2026-05-18 23:38:37,849 [ReProf.py] => Learning on 18-20
+2026-05-18 23:46:09,415 [ReProf.py] => Optimal lambda: 10000.0
+2026-05-18 23:46:13,723 [ReProf.py] => Optimal lambda: 100000.0
+2026-05-19 00:01:19,053 [trainer.py] => No NME accuracy.
+2026-05-19 00:01:19,054 [trainer.py] => CNN: {'total': 79.22, '00-01': 86.0, '02-03': 59.67, '04-05': 56.67, '06-07': 81.17, '08-09': 90.33, '10-11': 70.17, '12-13': 97.67, '14-15': 79.17, '16-17': 87.83, '18-19': 83.5, 'old': 78.74, 'new': 83.5}
+2026-05-19 00:01:19,054 [trainer.py] => Accuracy per class: {'human': 0.97, 'gpt2': 0.75, 'gpt3': 0.6733333333333333, 'cohere': 0.52, 'chatgpt': 0.65, 'cohere-chat': 0.48333333333333334, 'gpt4': 0.9533333333333334, 'mpt': 0.67, 'mpt-chat': 0.8533333333333334, 'llama-chat': 0.9533333333333334, 'mistral': 0.7933333333333333, 'mistral-chat': 0.61, 'gemini-pro': 0.99, 'glm-4-plus': 0.9633333333333334, 'gpt-4o': 0.7666666666666667, 'spark-max': 0.8166666666666667, 'ernie-4.0-turbo': 0.78, 'doubao-pro': 0.9766666666666667, 'qwen-plus': 0.8433333333333334, 'deepseek-chat': 0.8266666666666667}
+2026-05-19 00:01:19,054 [trainer.py] => CNN top1 curve: [98.83, 93.17, 83.72, 82.75, 81.47, 76.19, 78.67, 79.46, 80.63, 79.22]
+Average Accuracy (CNN): 83.41100000000002
+2026-05-19 00:01:19,054 [trainer.py] => Average Accuracy (CNN): 83.41100000000002
+2026-05-19 00:01:19,282 [trainer.py] => config: ./exps/ReProf.json
+2026-05-19 00:01:19,283 [trainer.py] => prefix:  
+2026-05-19 00:01:19,284 [trainer.py] => dataset: /home/wangyujie/code/Baselines/data/COT-Bench/reviews
+2026-05-19 00:01:19,284 [trainer.py] => memory_size: 0
+2026-05-19 00:01:19,285 [trainer.py] => memory_per_class: 0
+2026-05-19 00:01:19,285 [trainer.py] => fixed_memory: False
+2026-05-19 00:01:19,285 [trainer.py] => shuffle: False
+2026-05-19 00:01:19,285 [trainer.py] => init_cls: 2
+2026-05-19 00:01:19,285 [trainer.py] => increment: 2
+2026-05-19 00:01:19,285 [trainer.py] => model_name: ReProf
+2026-05-19 00:01:19,285 [trainer.py] => convnet_type: Llama-3.2-1B
+2026-05-19 00:01:19,285 [trainer.py] => device: [device(type='cuda', index=3)]
+2026-05-19 00:01:19,285 [trainer.py] => seed: 42
+2026-05-19 00:01:19,285 [trainer.py] => tuned_epoch: [0]
+2026-05-19 00:01:19,285 [trainer.py] => init_lr: 0.01
+2026-05-19 00:01:19,285 [trainer.py] => batch_size: 16
+2026-05-19 00:01:19,285 [trainer.py] => weight_decay: 0.05
+2026-05-19 00:01:19,285 [trainer.py] => group_Num: 2
+2026-05-19 00:01:19,285 [trainer.py] => min_lr: 1e-08
+2026-05-19 00:01:19,285 [trainer.py] => use_RP: True
+2026-05-19 00:01:19,285 [trainer.py] => M: 10000
+2026-05-19 00:01:19,285 [trainer.py] => K: [2]
+2026-05-19 00:01:19,285 [trainer.py] => fusion_type_list: ['M-F']
+2026-05-19 00:01:19,285 [trainer.py] => type: origin
+2026-05-19 00:01:19,285 [trainer.py] => method: pwcca
+2026-05-19 00:01:19,285 [trainer.py] => recalculate: False
+2026-05-19 00:01:19,285 [trainer.py] => merge_type: M-F
+2026-05-19 00:01:19,285 [trainer.py] => dataset_name: reviews
+2026-05-19 00:01:19,285 [trainer.py] => nb_classes: 20
+2026-05-19 00:01:19,285 [trainer.py] => nb_tasks: 10
+2026-05-19 00:01:19,596 [data_manager.py] => [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]
+Some weights of LlamaForSimple were not initialized from the model checkpoint at ../../model/Llama-3.2-1B and are newly initialized: ['score.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+This is for the BaseNet initialization.
+After BaseNet initialization.
+2026-05-19 00:01:20,207 [trainer.py] => All params: 1235818496
+2026-05-19 00:01:20,208 [trainer.py] => Trainable params: 1235818496
+2026-05-19 00:01:20,208 [ReProf.py] => Learning on 0-2
+2026-05-19 00:01:23,950 [ReProf.py] => Stage 1 分组.....
+2026-05-19 00:04:56,520 [ReProf.py] => [[15, 14, 13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0]]
+2026-05-19 00:04:56,520 [ReProf.py] => groups: [[16, 15, 14, 13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1]] K: 1
+2026-05-19 00:05:43,172 [ReProf.py] => Optimal lambda: 10000.0
+2026-05-19 00:06:29,414 [trainer.py] => No NME accuracy.
+2026-05-19 00:06:29,414 [trainer.py] => CNN: {'total': 99.33, '00-01': 99.33, 'old': 0, 'new': 99.33}
+2026-05-19 00:06:29,415 [trainer.py] => Accuracy per class: {'human': 1.0, 'gpt2': 0.9866666666666667}
+2026-05-19 00:06:29,415 [trainer.py] => CNN top1 curve: [99.33]
+Average Accuracy (CNN): 99.33
+2026-05-19 00:06:29,415 [trainer.py] => Average Accuracy (CNN): 99.33
+2026-05-19 00:06:29,416 [trainer.py] => All params: 1235818496
+2026-05-19 00:06:29,416 [trainer.py] => Trainable params: 1235818496
+2026-05-19 00:06:29,421 [ReProf.py] => Learning on 2-4
+2026-05-19 00:10:37,758 [ReProf.py] => Optimal lambda: 10000.0
+2026-05-19 00:12:09,926 [trainer.py] => No NME accuracy.
+2026-05-19 00:12:09,926 [trainer.py] => CNN: {'total': 94.33, '00-01': 95.33, '02-03': 93.33, 'old': 95.33, 'new': 93.33}
+2026-05-19 00:12:09,926 [trainer.py] => Accuracy per class: {'human': 0.9266666666666666, 'gpt2': 0.98, 'gpt3': 0.9733333333333334, 'cohere': 0.8933333333333333}
+2026-05-19 00:12:09,926 [trainer.py] => CNN top1 curve: [99.33, 94.33]
+Average Accuracy (CNN): 96.83
+2026-05-19 00:12:09,926 [trainer.py] => Average Accuracy (CNN): 96.83
+2026-05-19 00:12:09,927 [trainer.py] => All params: 1235818496
+2026-05-19 00:12:09,927 [trainer.py] => Trainable params: 1235818496
+2026-05-19 00:12:09,931 [ReProf.py] => Learning on 4-6
+2026-05-19 00:16:10,189 [ReProf.py] => Optimal lambda: 1000.0
+2026-05-19 00:18:28,132 [trainer.py] => No NME accuracy.
+2026-05-19 00:18:28,132 [trainer.py] => CNN: {'total': 89.56, '00-01': 95.0, '02-03': 84.33, '04-05': 89.33, 'old': 89.67, 'new': 89.33}
+2026-05-19 00:18:28,132 [trainer.py] => Accuracy per class: {'human': 0.9266666666666666, 'gpt2': 0.9733333333333334, 'gpt3': 0.9466666666666667, 'cohere': 0.74, 'chatgpt': 1.0, 'cohere-chat': 0.7866666666666666}
+2026-05-19 00:18:28,132 [trainer.py] => CNN top1 curve: [99.33, 94.33, 89.56]
+Average Accuracy (CNN): 94.40666666666668
+2026-05-19 00:18:28,132 [trainer.py] => Average Accuracy (CNN): 94.40666666666668
+2026-05-19 00:18:28,133 [trainer.py] => All params: 1235818496
+2026-05-19 00:18:28,134 [trainer.py] => Trainable params: 1235818496
+2026-05-19 00:18:28,138 [ReProf.py] => Learning on 6-8
+2026-05-19 00:22:38,009 [ReProf.py] => Optimal lambda: 1000.0
+2026-05-19 00:25:41,840 [trainer.py] => No NME accuracy.
+2026-05-19 00:25:41,840 [trainer.py] => CNN: {'total': 90.92, '00-01': 94.33, '02-03': 85.67, '04-05': 88.67, '06-07': 95.0, 'old': 89.56, 'new': 95.0}
+2026-05-19 00:25:41,840 [trainer.py] => Accuracy per class: {'human': 0.9266666666666666, 'gpt2': 0.96, 'gpt3': 0.9533333333333334, 'cohere': 0.76, 'chatgpt': 1.0, 'cohere-chat': 0.7733333333333333, 'gpt4': 1.0, 'mpt': 0.9}
+2026-05-19 00:25:41,840 [trainer.py] => CNN top1 curve: [99.33, 94.33, 89.56, 90.92]
+Average Accuracy (CNN): 93.53500000000001
+2026-05-19 00:25:41,840 [trainer.py] => Average Accuracy (CNN): 93.53500000000001
+2026-05-19 00:25:41,841 [trainer.py] => All params: 1235818496
+2026-05-19 00:25:41,842 [trainer.py] => Trainable params: 1235818496
+2026-05-19 00:25:41,844 [ReProf.py] => Learning on 8-10
+2026-05-19 00:28:30,496 [ReProf.py] => Optimal lambda: 1000.0
+2026-05-19 00:30:15,455 [trainer.py] => No NME accuracy.
+2026-05-19 00:30:15,455 [trainer.py] => CNN: {'total': 90.0, '00-01': 93.67, '02-03': 82.67, '04-05': 83.33, '06-07': 95.0, '08-09': 95.33, 'old': 88.67, 'new': 95.33}
+2026-05-19 00:30:15,455 [trainer.py] => Accuracy per class: {'human': 0.92, 'gpt2': 0.9533333333333334, 'gpt3': 0.9133333333333333, 'cohere': 0.74, 'chatgpt': 0.9933333333333333, 'cohere-chat': 0.6733333333333333, 'gpt4': 1.0, 'mpt': 0.9, 'mpt-chat': 0.9333333333333333, 'llama-chat': 0.9733333333333334}
+2026-05-19 00:30:15,455 [trainer.py] => CNN top1 curve: [99.33, 94.33, 89.56, 90.92, 90.0]
+Average Accuracy (CNN): 92.828
+2026-05-19 00:30:15,455 [trainer.py] => Average Accuracy (CNN): 92.828
+2026-05-19 00:30:15,456 [trainer.py] => All params: 1235818496
+2026-05-19 00:30:15,457 [trainer.py] => Trainable params: 1235818496
+2026-05-19 00:30:15,458 [ReProf.py] => Learning on 10-12
+2026-05-19 00:32:13,089 [ReProf.py] => Optimal lambda: 1000.0
+2026-05-19 00:34:18,696 [trainer.py] => No NME accuracy.
+2026-05-19 00:34:18,696 [trainer.py] => CNN: {'total': 84.67, '00-01': 91.0, '02-03': 77.67, '04-05': 81.67, '06-07': 93.33, '08-09': 88.67, '10-11': 75.67, 'old': 86.47, 'new': 75.67}
+2026-05-19 00:34:18,696 [trainer.py] => Accuracy per class: {'human': 0.92, 'gpt2': 0.9, 'gpt3': 0.88, 'cohere': 0.6733333333333333, 'chatgpt': 0.9866666666666667, 'cohere-chat': 0.6466666666666666, 'gpt4': 1.0, 'mpt': 0.8666666666666667, 'mpt-chat': 0.8066666666666666, 'llama-chat': 0.9666666666666667, 'mistral': 0.7066666666666667, 'mistral-chat': 0.8066666666666666}
+2026-05-19 00:34:18,696 [trainer.py] => CNN top1 curve: [99.33, 94.33, 89.56, 90.92, 90.0, 84.67]
+Average Accuracy (CNN): 91.46833333333335
+2026-05-19 00:34:18,696 [trainer.py] => Average Accuracy (CNN): 91.46833333333335
+2026-05-19 00:34:18,697 [trainer.py] => All params: 1235818496
+2026-05-19 00:34:18,698 [trainer.py] => Trainable params: 1235818496
+2026-05-19 00:34:18,698 [ReProf.py] => Learning on 12-14
+2026-05-19 00:36:16,914 [ReProf.py] => Optimal lambda: 1000.0
+2026-05-19 00:38:43,545 [trainer.py] => No NME accuracy.
+2026-05-19 00:38:43,545 [trainer.py] => CNN: {'total': 86.81, '00-01': 90.33, '02-03': 78.0, '04-05': 82.0, '06-07': 92.67, '08-09': 88.67, '10-11': 76.0, '12-13': 100.0, 'old': 84.61, 'new': 100.0}
+2026-05-19 00:38:43,545 [trainer.py] => Accuracy per class: {'human': 0.92, 'gpt2': 0.8866666666666667, 'gpt3': 0.88, 'cohere': 0.68, 'chatgpt': 0.9866666666666667, 'cohere-chat': 0.6533333333333333, 'gpt4': 1.0, 'mpt': 0.8533333333333334, 'mpt-chat': 0.8066666666666666, 'llama-chat': 0.9666666666666667, 'mistral': 0.72, 'mistral-chat': 0.8, 'gemini-pro': 1.0, 'glm-4-plus': 1.0}
+2026-05-19 00:38:43,545 [trainer.py] => CNN top1 curve: [99.33, 94.33, 89.56, 90.92, 90.0, 84.67, 86.81]
+Average Accuracy (CNN): 90.80285714285716
+2026-05-19 00:38:43,545 [trainer.py] => Average Accuracy (CNN): 90.80285714285716
+2026-05-19 00:38:43,546 [trainer.py] => All params: 1235818496
+2026-05-19 00:38:43,547 [trainer.py] => Trainable params: 1235818496
+2026-05-19 00:38:43,547 [ReProf.py] => Learning on 14-16
+2026-05-19 00:40:41,748 [ReProf.py] => Optimal lambda: 1000.0
+2026-05-19 00:43:29,234 [trainer.py] => No NME accuracy.
+2026-05-19 00:43:29,235 [trainer.py] => CNN: {'total': 88.04, '00-01': 90.0, '02-03': 78.0, '04-05': 81.33, '06-07': 92.67, '08-09': 89.0, '10-11': 76.67, '12-13': 99.33, '14-15': 97.33, 'old': 86.71, 'new': 97.33}
+2026-05-19 00:43:29,235 [trainer.py] => Accuracy per class: {'human': 0.92, 'gpt2': 0.88, 'gpt3': 0.8866666666666667, 'cohere': 0.6733333333333333, 'chatgpt': 0.9866666666666667, 'cohere-chat': 0.64, 'gpt4': 1.0, 'mpt': 0.8533333333333334, 'mpt-chat': 0.8133333333333334, 'llama-chat': 0.9666666666666667, 'mistral': 0.7266666666666667, 'mistral-chat': 0.8066666666666666, 'gemini-pro': 1.0, 'glm-4-plus': 0.9866666666666667, 'gpt-4o': 0.9666666666666667, 'spark-max': 0.98}
+2026-05-19 00:43:29,235 [trainer.py] => CNN top1 curve: [99.33, 94.33, 89.56, 90.92, 90.0, 84.67, 86.81, 88.04]
+Average Accuracy (CNN): 90.45750000000001
+2026-05-19 00:43:29,235 [trainer.py] => Average Accuracy (CNN): 90.45750000000001
+2026-05-19 00:43:29,236 [trainer.py] => All params: 1235818496
+2026-05-19 00:43:29,236 [trainer.py] => Trainable params: 1235818496
+2026-05-19 00:43:29,237 [ReProf.py] => Learning on 16-18
+2026-05-19 00:45:32,628 [ReProf.py] => Optimal lambda: 1000.0
+2026-05-19 00:48:41,463 [trainer.py] => No NME accuracy.
+2026-05-19 00:48:41,464 [trainer.py] => CNN: {'total': 89.04, '00-01': 89.0, '02-03': 79.67, '04-05': 80.0, '06-07': 92.67, '08-09': 89.0, '10-11': 76.0, '12-13': 99.33, '14-15': 97.0, '16-17': 98.67, 'old': 87.83, 'new': 98.67}
+2026-05-19 00:48:41,464 [trainer.py] => Accuracy per class: {'human': 0.9133333333333333, 'gpt2': 0.8666666666666667, 'gpt3': 0.8866666666666667, 'cohere': 0.7066666666666667, 'chatgpt': 0.9866666666666667, 'cohere-chat': 0.6133333333333333, 'gpt4': 1.0, 'mpt': 0.8533333333333334, 'mpt-chat': 0.8133333333333334, 'llama-chat': 0.9666666666666667, 'mistral': 0.7066666666666667, 'mistral-chat': 0.8133333333333334, 'gemini-pro': 1.0, 'glm-4-plus': 0.9866666666666667, 'gpt-4o': 0.9666666666666667, 'spark-max': 0.9733333333333334, 'ernie-4.0-turbo': 0.9733333333333334, 'doubao-pro': 1.0}
+2026-05-19 00:48:41,464 [trainer.py] => CNN top1 curve: [99.33, 94.33, 89.56, 90.92, 90.0, 84.67, 86.81, 88.04, 89.04]
+Average Accuracy (CNN): 90.30000000000001
+2026-05-19 00:48:41,464 [trainer.py] => Average Accuracy (CNN): 90.30000000000001
+2026-05-19 00:48:41,466 [trainer.py] => All params: 1235818496
+2026-05-19 00:48:41,466 [trainer.py] => Trainable params: 1235818496
+2026-05-19 00:48:41,467 [ReProf.py] => Learning on 18-20
+2026-05-19 00:50:39,755 [ReProf.py] => Optimal lambda: 1000.0
+2026-05-19 00:54:09,053 [trainer.py] => No NME accuracy.
+2026-05-19 00:54:09,054 [trainer.py] => CNN: {'total': 89.63, '00-01': 90.0, '02-03': 79.67, '04-05': 81.0, '06-07': 92.67, '08-09': 89.33, '10-11': 75.67, '12-13': 99.0, '14-15': 95.33, '16-17': 97.0, '18-19': 96.67, 'old': 88.85, 'new': 96.67}
+2026-05-19 00:54:09,054 [trainer.py] => Accuracy per class: {'human': 0.92, 'gpt2': 0.88, 'gpt3': 0.8933333333333333, 'cohere': 0.7, 'chatgpt': 0.9866666666666667, 'cohere-chat': 0.6333333333333333, 'gpt4': 1.0, 'mpt': 0.8533333333333334, 'mpt-chat': 0.8133333333333334, 'llama-chat': 0.9733333333333334, 'mistral': 0.7, 'mistral-chat': 0.8133333333333334, 'gemini-pro': 1.0, 'glm-4-plus': 0.98, 'gpt-4o': 0.94, 'spark-max': 0.9666666666666667, 'ernie-4.0-turbo': 0.94, 'doubao-pro': 1.0, 'qwen-plus': 0.9533333333333334, 'deepseek-chat': 0.98}
+2026-05-19 00:54:09,054 [trainer.py] => CNN top1 curve: [99.33, 94.33, 89.56, 90.92, 90.0, 84.67, 86.81, 88.04, 89.04, 89.63]
+Average Accuracy (CNN): 90.233
+2026-05-19 00:54:09,054 [trainer.py] => Average Accuracy (CNN): 90.233
+2026-05-19 00:54:09,258 [trainer.py] => config: ./exps/ReProf.json
+2026-05-19 00:54:09,258 [trainer.py] => prefix:  
+2026-05-19 00:54:09,258 [trainer.py] => dataset: /home/wangyujie/code/Baselines/data/COT-Bench/wikipedia
+2026-05-19 00:54:09,258 [trainer.py] => memory_size: 0
+2026-05-19 00:54:09,259 [trainer.py] => memory_per_class: 0
+2026-05-19 00:54:09,259 [trainer.py] => fixed_memory: False
+2026-05-19 00:54:09,259 [trainer.py] => shuffle: False
+2026-05-19 00:54:09,259 [trainer.py] => init_cls: 2
+2026-05-19 00:54:09,260 [trainer.py] => increment: 2
+2026-05-19 00:54:09,260 [trainer.py] => model_name: ReProf
+2026-05-19 00:54:09,261 [trainer.py] => convnet_type: Llama-3.2-1B
+2026-05-19 00:54:09,261 [trainer.py] => device: [device(type='cuda', index=3)]
+2026-05-19 00:54:09,261 [trainer.py] => seed: 42
+2026-05-19 00:54:09,261 [trainer.py] => tuned_epoch: [0]
+2026-05-19 00:54:09,261 [trainer.py] => init_lr: 0.01
+2026-05-19 00:54:09,261 [trainer.py] => batch_size: 16
+2026-05-19 00:54:09,261 [trainer.py] => weight_decay: 0.05
+2026-05-19 00:54:09,261 [trainer.py] => group_Num: 2
+2026-05-19 00:54:09,261 [trainer.py] => min_lr: 1e-08
+2026-05-19 00:54:09,261 [trainer.py] => use_RP: True
+2026-05-19 00:54:09,261 [trainer.py] => M: 10000
+2026-05-19 00:54:09,261 [trainer.py] => K: [2]
+2026-05-19 00:54:09,261 [trainer.py] => fusion_type_list: ['M-F']
+2026-05-19 00:54:09,261 [trainer.py] => type: origin
+2026-05-19 00:54:09,261 [trainer.py] => method: pwcca
+2026-05-19 00:54:09,261 [trainer.py] => recalculate: False
+2026-05-19 00:54:09,261 [trainer.py] => merge_type: M-F
+2026-05-19 00:54:09,261 [trainer.py] => dataset_name: wikipedia
+2026-05-19 00:54:09,261 [trainer.py] => nb_classes: 20
+2026-05-19 00:54:09,261 [trainer.py] => nb_tasks: 10
+2026-05-19 00:54:09,822 [data_manager.py] => [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]
+Some weights of LlamaForSimple were not initialized from the model checkpoint at ../../model/Llama-3.2-1B and are newly initialized: ['score.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+This is for the BaseNet initialization.
+After BaseNet initialization.
+2026-05-19 00:54:10,447 [trainer.py] => All params: 1235818496
+2026-05-19 00:54:10,448 [trainer.py] => Trainable params: 1235818496
+2026-05-19 00:54:10,448 [ReProf.py] => Learning on 0-2
+2026-05-19 00:54:15,113 [ReProf.py] => Stage 1 分组.....
+2026-05-19 00:57:16,315 [ReProf.py] => [[15], [14], [13], [12], [11], [10], [9], [8], [7], [6], [5], [4], [3], [2], [1], [0]]
+2026-05-19 00:57:16,316 [ReProf.py] => groups: [[15], [16]] K: 2
+2026-05-19 00:58:01,171 [ReProf.py] => Optimal lambda: 10000.0
+2026-05-19 00:58:05,128 [ReProf.py] => Optimal lambda: 100000.0
+2026-05-19 00:58:46,923 [trainer.py] => No NME accuracy.
+2026-05-19 00:58:46,923 [trainer.py] => CNN: {'total': 99.17, '00-01': 99.17, 'old': 0, 'new': 99.17}
+2026-05-19 00:58:46,923 [trainer.py] => Accuracy per class: {'human': 0.9966666666666667, 'gpt2': 0.9866666666666667}
+2026-05-19 00:58:46,923 [trainer.py] => CNN top1 curve: [99.17]
+Average Accuracy (CNN): 99.17
+2026-05-19 00:58:46,923 [trainer.py] => Average Accuracy (CNN): 99.17
+2026-05-19 00:58:46,924 [trainer.py] => All params: 1235818496
+2026-05-19 00:58:46,925 [trainer.py] => Trainable params: 1235818496
+2026-05-19 00:58:46,925 [ReProf.py] => Learning on 2-4
+2026-05-19 01:02:19,935 [ReProf.py] => Optimal lambda: 10000.0
+2026-05-19 01:02:24,018 [ReProf.py] => Optimal lambda: 100000.0
+2026-05-19 01:03:47,547 [trainer.py] => No NME accuracy.
+2026-05-19 01:03:47,547 [trainer.py] => CNN: {'total': 85.75, '00-01': 96.0, '02-03': 75.5, 'old': 96.0, 'new': 75.5}
+2026-05-19 01:03:47,547 [trainer.py] => Accuracy per class: {'human': 0.9933333333333333, 'gpt2': 0.9266666666666666, 'gpt3': 0.77, 'cohere': 0.74}
+2026-05-19 01:03:47,547 [trainer.py] => CNN top1 curve: [99.17, 85.75]
+Average Accuracy (CNN): 92.46000000000001
+2026-05-19 01:03:47,547 [trainer.py] => Average Accuracy (CNN): 92.46000000000001
+2026-05-19 01:03:47,548 [trainer.py] => All params: 1235818496
+2026-05-19 01:03:47,549 [trainer.py] => Trainable params: 1235818496
+2026-05-19 01:03:47,550 [ReProf.py] => Learning on 4-6
+2026-05-19 01:07:22,888 [ReProf.py] => Optimal lambda: 10000.0
+2026-05-19 01:07:27,131 [ReProf.py] => Optimal lambda: 100000.0
+2026-05-19 01:09:32,428 [trainer.py] => No NME accuracy.
+2026-05-19 01:09:32,428 [trainer.py] => CNN: {'total': 78.83, '00-01': 96.33, '02-03': 58.5, '04-05': 81.67, 'old': 77.42, 'new': 81.67}
+2026-05-19 01:09:32,429 [trainer.py] => Accuracy per class: {'human': 0.9866666666666667, 'gpt2': 0.94, 'gpt3': 0.67, 'cohere': 0.5, 'chatgpt': 0.98, 'cohere-chat': 0.6533333333333333}
+2026-05-19 01:09:32,429 [trainer.py] => CNN top1 curve: [99.17, 85.75, 78.83]
+Average Accuracy (CNN): 87.91666666666667
+2026-05-19 01:09:32,429 [trainer.py] => Average Accuracy (CNN): 87.91666666666667
+2026-05-19 01:09:32,430 [trainer.py] => All params: 1235818496
+2026-05-19 01:09:32,431 [trainer.py] => Trainable params: 1235818496
+2026-05-19 01:09:32,432 [ReProf.py] => Learning on 6-8
+2026-05-19 01:13:09,253 [ReProf.py] => Optimal lambda: 10000.0
+2026-05-19 01:13:13,453 [ReProf.py] => Optimal lambda: 100000.0
+2026-05-19 01:16:01,550 [trainer.py] => No NME accuracy.
+2026-05-19 01:16:01,550 [trainer.py] => CNN: {'total': 80.96, '00-01': 95.33, '02-03': 54.5, '04-05': 83.0, '06-07': 91.0, 'old': 77.61, 'new': 91.0}
+2026-05-19 01:16:01,551 [trainer.py] => Accuracy per class: {'human': 0.9833333333333333, 'gpt2': 0.9233333333333333, 'gpt3': 0.6233333333333333, 'cohere': 0.4666666666666667, 'chatgpt': 0.9733333333333334, 'cohere-chat': 0.6866666666666666, 'gpt4': 0.9733333333333334, 'mpt': 0.8466666666666667}
+2026-05-19 01:16:01,551 [trainer.py] => CNN top1 curve: [99.17, 85.75, 78.83, 80.96]
+Average Accuracy (CNN): 86.1775
+2026-05-19 01:16:01,551 [trainer.py] => Average Accuracy (CNN): 86.1775
+2026-05-19 01:16:01,551 [trainer.py] => All params: 1235818496
+2026-05-19 01:16:01,552 [trainer.py] => Trainable params: 1235818496
+2026-05-19 01:16:01,553 [ReProf.py] => Learning on 8-10
+2026-05-19 01:19:38,086 [ReProf.py] => Optimal lambda: 10000.0
+2026-05-19 01:19:42,350 [ReProf.py] => Optimal lambda: 100000.0
+2026-05-19 01:23:12,448 [trainer.py] => No NME accuracy.
+2026-05-19 01:23:12,449 [trainer.py] => CNN: {'total': 80.43, '00-01': 95.5, '02-03': 54.17, '04-05': 72.83, '06-07': 91.83, '08-09': 87.83, 'old': 78.58, 'new': 87.83}
+2026-05-19 01:23:12,449 [trainer.py] => Accuracy per class: {'human': 0.9866666666666667, 'gpt2': 0.9233333333333333, 'gpt3': 0.6166666666666667, 'cohere': 0.4666666666666667, 'chatgpt': 0.9466666666666667, 'cohere-chat': 0.51, 'gpt4': 0.98, 'mpt': 0.8566666666666667, 'mpt-chat': 0.82, 'llama-chat': 0.9366666666666666}
+2026-05-19 01:23:12,449 [trainer.py] => CNN top1 curve: [99.17, 85.75, 78.83, 80.96, 80.43]
+Average Accuracy (CNN): 85.02799999999999
+2026-05-19 01:23:12,449 [trainer.py] => Average Accuracy (CNN): 85.02799999999999
+2026-05-19 01:23:12,450 [trainer.py] => All params: 1235818496
+2026-05-19 01:23:12,450 [trainer.py] => Trainable params: 1235818496
+2026-05-19 01:23:12,451 [ReProf.py] => Learning on 10-12
+2026-05-19 01:26:49,803 [ReProf.py] => Optimal lambda: 10000.0
+2026-05-19 01:26:54,095 [ReProf.py] => Optimal lambda: 100000.0
+2026-05-19 01:31:06,127 [trainer.py] => No NME accuracy.
+2026-05-19 01:31:06,127 [trainer.py] => CNN: {'total': 74.67, '00-01': 90.33, '02-03': 51.83, '04-05': 71.0, '06-07': 88.33, '08-09': 75.83, '10-11': 70.67, 'old': 75.47, 'new': 70.67}
+2026-05-19 01:31:06,127 [trainer.py] => Accuracy per class: {'human': 0.9833333333333333, 'gpt2': 0.8233333333333334, 'gpt3': 0.6166666666666667, 'cohere': 0.42, 'chatgpt': 0.9433333333333334, 'cohere-chat': 0.4766666666666667, 'gpt4': 0.96, 'mpt': 0.8066666666666666, 'mpt-chat': 0.6066666666666667, 'llama-chat': 0.91, 'mistral': 0.8433333333333334, 'mistral-chat': 0.57}
+2026-05-19 01:31:06,127 [trainer.py] => CNN top1 curve: [99.17, 85.75, 78.83, 80.96, 80.43, 74.67]
+Average Accuracy (CNN): 83.30166666666666
+2026-05-19 01:31:06,127 [trainer.py] => Average Accuracy (CNN): 83.30166666666666
+2026-05-19 01:31:06,128 [trainer.py] => All params: 1235818496
+2026-05-19 01:31:06,129 [trainer.py] => Trainable params: 1235818496
+2026-05-19 01:31:06,130 [ReProf.py] => Learning on 12-14
+2026-05-19 01:34:45,380 [ReProf.py] => Optimal lambda: 10000.0
+2026-05-19 01:34:49,606 [ReProf.py] => Optimal lambda: 100000.0
+2026-05-19 01:39:43,720 [trainer.py] => No NME accuracy.
+2026-05-19 01:39:43,720 [trainer.py] => CNN: {'total': 78.1, '00-01': 90.67, '02-03': 51.33, '04-05': 69.67, '06-07': 88.17, '08-09': 76.33, '10-11': 71.0, '12-13': 99.5, 'old': 74.53, 'new': 99.5}
+2026-05-19 01:39:43,721 [trainer.py] => Accuracy per class: {'human': 0.98, 'gpt2': 0.8333333333333334, 'gpt3': 0.6233333333333333, 'cohere': 0.4033333333333333, 'chatgpt': 0.94, 'cohere-chat': 0.4533333333333333, 'gpt4': 0.9733333333333334, 'mpt': 0.79, 'mpt-chat': 0.6133333333333333, 'llama-chat': 0.9133333333333333, 'mistral': 0.84, 'mistral-chat': 0.58, 'gemini-pro': 0.9933333333333333, 'glm-4-plus': 0.9966666666666667}
+2026-05-19 01:39:43,721 [trainer.py] => CNN top1 curve: [99.17, 85.75, 78.83, 80.96, 80.43, 74.67, 78.1]
+Average Accuracy (CNN): 82.55857142857143
+2026-05-19 01:39:43,721 [trainer.py] => Average Accuracy (CNN): 82.55857142857143
+2026-05-19 01:39:43,721 [trainer.py] => All params: 1235818496
+2026-05-19 01:39:43,722 [trainer.py] => Trainable params: 1235818496
+2026-05-19 01:39:43,723 [ReProf.py] => Learning on 14-16
+2026-05-19 01:43:23,341 [ReProf.py] => Optimal lambda: 10000.0
+2026-05-19 01:43:27,642 [ReProf.py] => Optimal lambda: 100000.0
+2026-05-19 01:49:03,871 [trainer.py] => No NME accuracy.
+2026-05-19 01:49:03,871 [trainer.py] => CNN: {'total': 80.52, '00-01': 90.67, '02-03': 51.33, '04-05': 69.0, '06-07': 87.5, '08-09': 77.0, '10-11': 70.83, '12-13': 99.33, '14-15': 98.5, 'old': 77.95, 'new': 98.5}
+2026-05-19 01:49:03,872 [trainer.py] => Accuracy per class: {'human': 0.98, 'gpt2': 0.8333333333333334, 'gpt3': 0.6166666666666667, 'cohere': 0.41, 'chatgpt': 0.9466666666666667, 'cohere-chat': 0.43333333333333335, 'gpt4': 0.97, 'mpt': 0.78, 'mpt-chat': 0.62, 'llama-chat': 0.92, 'mistral': 0.8433333333333334, 'mistral-chat': 0.5733333333333334, 'gemini-pro': 0.9966666666666667, 'glm-4-plus': 0.99, 'gpt-4o': 0.9866666666666667, 'spark-max': 0.9833333333333333}
+2026-05-19 01:49:03,872 [trainer.py] => CNN top1 curve: [99.17, 85.75, 78.83, 80.96, 80.43, 74.67, 78.1, 80.52]
+Average Accuracy (CNN): 82.30375
+2026-05-19 01:49:03,872 [trainer.py] => Average Accuracy (CNN): 82.30375
+2026-05-19 01:49:03,872 [trainer.py] => All params: 1235818496
+2026-05-19 01:49:03,873 [trainer.py] => Trainable params: 1235818496
+2026-05-19 01:49:03,874 [ReProf.py] => Learning on 16-18
+2026-05-19 01:52:43,730 [ReProf.py] => Optimal lambda: 10000.0
+2026-05-19 01:52:48,116 [ReProf.py] => Optimal lambda: 100000.0
+2026-05-19 01:59:06,294 [trainer.py] => No NME accuracy.
+2026-05-19 01:59:06,295 [trainer.py] => CNN: {'total': 81.44, '00-01': 90.33, '02-03': 50.33, '04-05': 68.33, '06-07': 87.5, '08-09': 77.17, '10-11': 70.17, '12-13': 98.33, '14-15': 95.5, '16-17': 95.33, 'old': 79.71, 'new': 95.33}
+2026-05-19 01:59:06,296 [trainer.py] => Accuracy per class: {'human': 0.98, 'gpt2': 0.8266666666666667, 'gpt3': 0.6, 'cohere': 0.4066666666666667, 'chatgpt': 0.9433333333333334, 'cohere-chat': 0.42333333333333334, 'gpt4': 0.9733333333333334, 'mpt': 0.7766666666666666, 'mpt-chat': 0.6266666666666667, 'llama-chat': 0.9166666666666666, 'mistral': 0.84, 'mistral-chat': 0.5633333333333334, 'gemini-pro': 0.99, 'glm-4-plus': 0.9766666666666667, 'gpt-4o': 0.9366666666666666, 'spark-max': 0.9733333333333334, 'ernie-4.0-turbo': 0.9066666666666666, 'doubao-pro': 1.0}
+2026-05-19 01:59:06,296 [trainer.py] => CNN top1 curve: [99.17, 85.75, 78.83, 80.96, 80.43, 74.67, 78.1, 80.52, 81.44]
+Average Accuracy (CNN): 82.20777777777776
+2026-05-19 01:59:06,296 [trainer.py] => Average Accuracy (CNN): 82.20777777777776
+2026-05-19 01:59:06,297 [trainer.py] => All params: 1235818496
+2026-05-19 01:59:06,298 [trainer.py] => Trainable params: 1235818496
+2026-05-19 01:59:06,300 [ReProf.py] => Learning on 18-20
+2026-05-19 02:02:45,423 [ReProf.py] => Optimal lambda: 10000.0
+2026-05-19 02:02:49,551 [ReProf.py] => Optimal lambda: 100000.0
+2026-05-19 02:09:49,766 [trainer.py] => No NME accuracy.
+2026-05-19 02:09:49,766 [trainer.py] => CNN: {'total': 81.08, '00-01': 89.83, '02-03': 49.5, '04-05': 68.83, '06-07': 87.33, '08-09': 76.5, '10-11': 70.17, '12-13': 98.17, '14-15': 95.33, '16-17': 93.5, '18-19': 81.67, 'old': 81.02, 'new': 81.67}
+2026-05-19 02:09:49,767 [trainer.py] => Accuracy per class: {'human': 0.97, 'gpt2': 0.8266666666666667, 'gpt3': 0.6, 'cohere': 0.39, 'chatgpt': 0.9466666666666667, 'cohere-chat': 0.43, 'gpt4': 0.9733333333333334, 'mpt': 0.7733333333333333, 'mpt-chat': 0.61, 'llama-chat': 0.92, 'mistral': 0.8433333333333334, 'mistral-chat': 0.56, 'gemini-pro': 0.99, 'glm-4-plus': 0.9733333333333334, 'gpt-4o': 0.94, 'spark-max': 0.9666666666666667, 'ernie-4.0-turbo': 0.8733333333333333, 'doubao-pro': 0.9966666666666667, 'qwen-plus': 0.82, 'deepseek-chat': 0.8133333333333334}
+2026-05-19 02:09:49,767 [trainer.py] => CNN top1 curve: [99.17, 85.75, 78.83, 80.96, 80.43, 74.67, 78.1, 80.52, 81.44, 81.08]
+Average Accuracy (CNN): 82.095
+2026-05-19 02:09:49,767 [trainer.py] => Average Accuracy (CNN): 82.095

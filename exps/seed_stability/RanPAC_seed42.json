@@ -1,0 +1,47 @@
+{
+    "prefix": " ",
+    "dataset": [
+        "/home/wangyujie/code/ReProf/data/COT-Bench/abstracts",
+        "/home/wangyujie/code/ReProf/data/COT-Bench/books",
+        "/home/wangyujie/code/ReProf/data/COT-Bench/news",
+        "/home/wangyujie/code/ReProf/data/COT-Bench/poetry",
+        "/home/wangyujie/code/ReProf/data/COT-Bench/recipes",
+        "/home/wangyujie/code/ReProf/data/COT-Bench/reddit",
+        "/home/wangyujie/code/ReProf/data/COT-Bench/reviews",
+        "/home/wangyujie/code/ReProf/data/COT-Bench/wikipedia"
+    ],
+    "memory_size": 0,
+    "memory_per_class": 0,
+    "fixed_memory": false,
+    "shuffle": false,
+    "init_cls": 2,
+    "increment": 2,
+    "model_name": "RanPAC",
+    "convnet_type": "Llama-3.2-1B",
+    "device": [
+        "7"
+    ],
+    "seed": [
+        42
+    ],
+    "tuned_epoch": [
+        0
+    ],
+    "init_lr": [
+        0.01
+    ],
+    "batch_size": [
+        16
+    ],
+    "weight_decay": 0.05,
+    "min_lr": 1e-08,
+    "use_RP": true,
+    "M": 10000,
+    "use_act": false,
+    "K": [
+        2
+    ],
+    "fusion_type_list": [
+        "M-F"
+    ]
+}

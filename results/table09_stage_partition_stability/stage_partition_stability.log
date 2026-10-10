@@ -1,0 +1,35 @@
+Stage-wise SVCCA layer-block partition stability (Table 9)
+cached features: /home/wangyujie/code/mutil_ranpac/Abstracts/train
+feature extractor: Llama-3.2-1B; layers=16; r=100; tau=0.80
+device: cuda:5
+
+Stage-wise partitions (Table 9 order: shallow to deep)
+Stage 1: L1 | L2–L3 | L4–L11 | L12–L16
+Stage 2: L1 | L2–L3 | L4–L10 | L11–L16
+Stage 3: L1 | L2 | L3–L9 | L10–L16
+Stage 4: L1 | L2–L3 | L4–L11 | L12–L16
+Stage 5: L1 | L2 | L3–L9 | L10–L16
+Stage 6: L1 | L2–L3 | L4–L10 | L11–L16
+Stage 7: L1 | L2–L3 | L4–L10 | L11–L16
+Stage 8: L1 | L2–L3 | L4–L9 | L10–L16
+Stage 9: L1 | L2–L3 | L4–L9 | L10–L16
+Stage 10: L1 | L2–L3 | L4–L9 | L10–L16
+
+Pooled partition
+All stages: L1 | L2–L3 | L4–L10 | L11–L16
+
+Rand Index relative to Stage 1
+Stage 1: 1.0000
+Stage 2: 0.9000
+Stage 3: 0.7583
+Stage 4: 1.0000
+Stage 5: 0.7583
+Stage 6: 0.9000
+Stage 7: 0.9000
+Stage 8: 0.8167
+Stage 9: 0.8167
+Stage 10: 0.8167
+Mean, Stages 2–10: 0.8519
+Mean, Stages 1–10: 0.8667
+
+Saved: /home/wangyujie/code/ReProf/results/table09_stage_partition_stability/stage_partition_stability.log

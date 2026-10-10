@@ -1,0 +1,26 @@
+2026-05-19 05:18:10,964 [trainer.py] => config: ./exps/ranpac_simplecil.json
+2026-05-19 05:18:10,964 [trainer.py] => prefix:  
+2026-05-19 05:18:10,964 [trainer.py] => dataset: /home/wangyujie/code/Baselines/data/COT-Bench/abstracts
+2026-05-19 05:18:10,964 [trainer.py] => memory_size: 0
+2026-05-19 05:18:10,964 [trainer.py] => memory_per_class: 0
+2026-05-19 05:18:10,964 [trainer.py] => fixed_memory: False
+2026-05-19 05:18:10,964 [trainer.py] => shuffle: False
+2026-05-19 05:18:10,964 [trainer.py] => init_cls: 2
+2026-05-19 05:18:10,964 [trainer.py] => increment: 2
+2026-05-19 05:18:10,964 [trainer.py] => model_name: ranpac_simplecil
+2026-05-19 05:18:10,964 [trainer.py] => convnet_type: Llama-3-8B-Instruct
+2026-05-19 05:18:10,965 [trainer.py] => device: [device(type='cuda', index=7)]
+2026-05-19 05:18:10,965 [trainer.py] => seed: 42
+2026-05-19 05:18:10,965 [trainer.py] => tuned_epoch: 0
+2026-05-19 05:18:10,965 [trainer.py] => init_lr: 0.01
+2026-05-19 05:18:10,965 [trainer.py] => batch_size: 16
+2026-05-19 05:18:10,965 [trainer.py] => weight_decay: 0.05
+2026-05-19 05:18:10,965 [trainer.py] => min_lr: 1e-08
+2026-05-19 05:18:10,965 [trainer.py] => use_RP: True
+2026-05-19 05:18:10,965 [trainer.py] => M: 10000
+2026-05-19 05:18:10,965 [trainer.py] => use_act: True
+2026-05-19 05:18:10,965 [trainer.py] => dataset_name: abstracts
+2026-05-19 05:18:11,654 [data_manager.py] => [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]
+2026-05-19 05:18:20,191 [trainer.py] => All params: 7504932864
+2026-05-19 05:18:20,192 [trainer.py] => Trainable params: 7504932864
+2026-05-19 05:18:21,415 [ranpac_simplecil.py] => Learning on 0-2
